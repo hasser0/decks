@@ -1,0 +1,3 @@
+what is AWS Organizations?: global service that allows to manage and create automatically multiple accounts, also restrict privileges and handle billing
+
+what cost benefits brings AWS Organizations?: consolidated billing, aggregated usage, pooling of reserved EC2

@@ -1,0 +1,33 @@
+what is serverless?: is a cloud paradigm in which customers don't have to manage servers
+what is fully managed?: is a paradigm where servers are still configurable using a web form interface
+
+what is ECR?: Elastic Container Repository is a private container to store docker images
+what is ECS?: Elastic Container Service is a service to launch docker containers
+what is Fargate?: is a service to run docker containers
+what is the difference between Fargate and ECS?: with EC2 the customer needs to provision EC2 instances and with Fargate is serverless
+what is Lambda Functions?: is a serverless FaaS service to deploy code/functions
+what is API Gateway?: is a fully managed serverless service to create, publish, maintain and monitor APIs
+what is Batch?: is a fully managed service to launch batch jobs on schedule
+what is the difference between Lambda Functions and Batch?: Lambda Function is a serverless with limited resources limited, while Batch is not serverless and is not limited
+what is Lightsail?: is an AWS light version intended for very low cloud experienced people
+
+who provides EC2 instances to run containers on ECS?: customer
+who cares of starting and stoping EC2 instances running ECS containers?: AWS
+
+how long can a lambda function run on a single call?: at most 15 minutes
+how are lambda calls billed?: per request and GBs compute time(the harder the hardware the more expensive)
+how to cron a lambda function?: trigger a lambda function on a cloudwatch event and cron a cloudwatch event
+how are handled new incomming requests?: they autoscale automatically
+
+API Gateway use case?: can be used to expose APIs written in Lambda Functions, since they are not exposed alone
+types of APIs supported by API Gateway?: restful APIs and websockets
+
+how are Batch jobs defined?: defined using docker images and run on ECS
+how are Batch jobs scaled?: Batch provides the right amount of compute and memory depending on your workload
+
+what can be launched on Lightsail?:
+    instances
+    databases
+    load balancers
+    storage
+    network

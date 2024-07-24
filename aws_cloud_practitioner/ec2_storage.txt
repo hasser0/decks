@@ -1,0 +1,52 @@
+# Services
+what is EBS?: Elastic Block Store is a network storage attachable to EC2 instances
+what is EBS Multi-Attach?: a new service to attach an EBS to multiple instances
+what are AMI?: Amazon Machine Image
+what are EBS snapshots?: backups from EBS volumes
+what is EFS?: Elastic File System is a network file system to share with multiple instances
+what is EFS Infrequent Access?: storage class cost optimize for infrequent accessed files
+what is FSx?: Amazon third party file systems
+
+# EBS
+is EBS volume a global service?: no, it's bound to an availability zone
+can we mount an EBS volume to multiple instances at the same time?: no, only one at a time
+can we attach an EBS volume in us-east-1a to an EC2 instance in us-east-1b?: no, only in same zone
+can we attach multiple EBS volumes to an instance?: yes, but only in the same zone
+how to create EBS ephemeral volumes?: using delete on termination field
+
+# Snapshots
+EBS snapshots use cases?: backup data or transfer to a different zone in case of failure
+what is recommended to do before an EBS snapshot?: detach the volume from any instance
+where can be restore snapshots?: at any zone region
+what are EBS snapshot archive?: snapshot feature that is cheaper for infrequent access data
+what are recycle bin snapshots?: rules to retain deleted snapshots in case of accidental deletion from 1 day to 1 year
+
+# AMI
+why would somebody use AMI?: faster boot, add software and configurations
+types of AMI:
+    public AMI
+    own AMI
+    marketplace AMI
+what is EC2 Image Builder?: a service to automate creation(build, validate, test) of VMs or containers
+
+# Instance Store
+what is the difference between EBS and EC2 Instance Store?: EBS is a network disk, while EC2 Instance Store is attached to instances
+when to use EC2 Instance Store over EBS?: get high IO performance
+drawbacks of EC2 Instance Store: it is ephemeral storage, risk of data loss in failure
+
+# EFS
+what is the main advantage of EFS over EBS?: can be connected to multiple instances in multiple zones
+what is the drawback of EFS?: it is 3x more expensive than EBS
+FSx options:
+    Windows File Server(for windows servers)
+    Lustre(linux cluster for high performance computing)
+
+# SRM
+who is responsable for setup backup/snapshots schedules?: customer
+who is responsable for encryption data?: customer
+who is responsable for EC2 Instance Store data lose?: customer
+who is responsable of the data stored?: customer
+who is responsable for infrastructure?: AWS
+who is responsable for backups stablish in your policies?: AWS
+who is responsable for faulty hardware?: AWS
+who is responsable for data privacy?: AWS

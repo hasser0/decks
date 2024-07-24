@@ -1,0 +1,53 @@
+# Billing
+who can manage billing and cost?: only the root user and admins when enabled by root user
+where can you see charges by service?: at billing/billing and payments/bills
+
+# Services
+what is EC2?: Elastic Compute Cloud
+what subservices is EC2 composed of?: EC2, EBS, ELB and ASG
+what is EBS?: Elastic Block Store
+
+# EC2
+what can be configured on an EC2 instance: OS, CPU, RAM, storage, network card
+types of EC2 instances:
+    general purpose(m/t)
+    compute optimize(c)
+    memory optimize(r)
+    storage optimize(i/d/h)
+    accelerated computing
+    high performance computing(h)
+what is the m in m5.2xlarge?: instance class
+what is the 5 in m5.2xlarge?: class generation
+what is the 2xlarge in m5.2xlarge?: size within classs
+what is EC2 User Data?: is a script launched at instance start only once
+
+# Security groups
+what are security groups?: groups of firewall rules
+what can be regulated with security groups?:
+    access ports
+    ip ranges
+    inbound
+    outbound
+does security groups have deny rules?: no they only have allow rules
+does security groups are attached to instances?: False, you can attach security groups to multiple instances
+how to know whether a broken connection is due application or permission error?: if it's a connection refused then it's an app error otherwise it would be a timeout error
+default inbound security group configuration: all is blocked
+default outbound security group configuration: all is allowed
+can security groups authorized other security groups?: yes, you can authorized security groups
+default port for SSH?: 22
+default port for FTP?: 21
+default port for SFTP?: 22
+default port for HTTP?: 80
+default port for HTTPS?: 443
+default port for RDP?: 3389
+what is RDP?: Remote Desktop Protocol
+what is the best way to attach permissions to an EC2 instance?: using EC2 instance roles
+
+# SRM
+who is responsable for infrastructure?: AWS
+who is responsable for ihysical isolation?: AWS
+who is responsable for iardware faults?: AWS
+who is responsable for security group rules?: customer
+who is responsable for OS patches?: customer
+who is responsable for installed software?: customer
+who is responsable for IAM roles assigned and data security?: customer

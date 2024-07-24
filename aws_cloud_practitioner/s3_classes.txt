@@ -1,0 +1,57 @@
+# S3 storage classes
+S3 storage classes:
+    Standard General Purpose
+    Standard Infrequent Access
+    Standard One Zone Infrequent Access
+    Glacier Instant Retrieval
+    Glacier Flexible Retrieval
+    Glacier Deep Archive
+    Intelligent Tiering
+features for Standard General Purpose storage class:
+    99.99% availability
+    low latency and high througput
+    for frequently accessed data
+features for Infrequent Access storage class:
+    lower cost than Standard General Purpose
+    less frequently accessed data
+features for Standard Infrequent Access storage class:
+    99.99% availability
+    use for disaster recovery and backups
+features for Standard One Zone Infrequent Access storage class:
+    99.5% availability
+    high durability
+    secondary backups of on premi se data
+features for Glacier Storage storage class:
+    low cost storage for archiving and backup
+    pricing for storage and object retrieval
+features for Glacier Instant Retrieval storage class:
+    minimum duration of 90 days
+    millisecond retrieval
+features for Glacier Flexible Retrieval storage class:
+    expedited(1 to 5 minutes)
+    standard(3 to 5 hours)
+    bulk(5 to 12 hours) free
+    minimum duration of 90 days
+features for Glacier Deep Archive storage class:
+    standard(12 hours)
+    bulk(48 hours)
+    minimum duration of 180 days
+features for Intelligent Tiering storage class:
+    small monthly fee for monitoring and auto tiering
+    no retrieval charges
+    moves object automatically based on usage
+how Intelligent Tiering moves objects for frequent access tier?:
+    default, automatic
+how Intelligent Tiering moves objects for infrequent access tier?:
+    not accessed for 30 days
+    automatic
+how Intelligent Tiering moves objects for archive instant access?:
+    not accessed for 90 days
+    automatic
+how Intelligent Tiering moves objects for archive access tier?:
+    configurable 90 days to 700+ days
+    optional
+how Intelligent Tiering moves objects for deep archive access?:
+    configurable from 180 days to 700+ days
+    optional
+what is lifecycle rules?: are rules to automatically change object storage classes with custom rules

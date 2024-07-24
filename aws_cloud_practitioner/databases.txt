@@ -1,0 +1,70 @@
+# Concepts
+types of databases:
+    relational databases
+    key value databases
+    document databases
+    in memory databases
+    graph databases
+why use AWS databases and not EC2 on top of databases?: it's a managed service and handle many parts for you
+which storage service is behind AWS?: EBS
+
+# Services
+what is RDS?: Relation Database Service is a fully managed database service
+what is Aurora DB?: is an AWS proprietary RDBMS accessible through RDS
+what is Multi-AZ RDS?: it's a feature to create a failover RDS in a different AZ in case the main RDS fail
+what is Multi Region RDS?: is a read replica across regions
+what are RDS read replicas?: RDS feature to scale read workloads
+what is Amazon Elasticache?: is a fully managed Redis or memcached database
+what is DynamoDB? is a fully managed serverless NoSQL key-value database
+what is DAX?: DynamoDB Accelerator it's a fully managed in memory cache for DynamoDB
+what is Redshift?: is a columnar database for OLAP based on PostgreSQL
+what is MPP?: Massively Parallel Query Execution used by Redshift
+what is EMR?: Elastic Map Reduce is a managed hadoop cluster
+what is Athena?: is a serverless service to query objects on S3 buckets
+what is QuickSight?: is a serverless service to create dashboards
+what is DocumentDB?: is AWS implemantation of MongoDB which is a document-based database
+what is Neptune?: is a fully managed graph database
+what is Timestream?: is a fully managed serverless time series database to store trillions of events
+what is QLDB?: is a fully managed serverless finantial transaction ledger database used to review historical data changes to the data
+what is Managed Blockchain?: is a managed service to create blockchain applications
+what is Glue?: is a managed ETL serverless service
+what is Glue Data Catalog?: is a catalog of datasets
+what is DMS?: Database Migration Service is a quick secure service to migrate databases
+what is the difference between Managed Blockchain and QLDB?: QLDB is centrallized while Blockchain can be decentrallize
+which databases are not serverless by default but can be converted?:
+    Aurora
+    DynamoDB
+
+# Aurora & RDS
+what cannot be done when using RDS?: access using SSH to the compute instances
+why use Aurora and not other RDS?:
+    AWS cloud optimize
+    supports PostgreSQL and MySQL as engines
+    performance improvement
+    automatically grows storage
+    best cost effective
+Aurora Serverless use cases?:
+    infrequent intermittent and unpredictable workloads
+    least management overhead
+RDS snapshots use cases?: to change RDS settings such as size, region, etc
+how many read replicas can be deployed?: up to 15 read replicas
+can read replicas create write workloads?: No, only read. Write operations are done on the main RDS
+how many Multi-AZ RDS can be deployed?: only one
+Multi Region RDS use cases?: disaster recovery and global reads
+
+# DynamoDB
+how does DynamoDB handle security?: using IAM
+main DynamoDB feature?: single digit millisecond latency
+why is DynamoDB so fast?: because it autoscales horizontally
+what can DynamoDB handle?: millions of requests per second, trillions of rows, hundreds of TB
+why DynamoDB prices are low?: it's serverless and use standard & infrequent access table class similar to storage classes
+DAX vs Elasticache?: DAX is just for DynamoDB while Elasticache can be used for any database
+what does DynamoDB Global Tables do?: make a DynamoDB table accessible to read/write in mulitple regions
+
+# Other databases specifications
+how is Redshift billed?: pay as you go for computation and storage
+how is Athena billed?: 5 USD per TB scanned
+which frameworks are compatible with Managed Blockchain?: Ethereum and Hyperledger Fabric
+types of DMS migrations?:
+    homogeneous: same source and target engines
+    heterogeneous: different source and target engines

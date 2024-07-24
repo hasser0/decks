@@ -1,0 +1,56 @@
+# Users, groups, policies
+what is a root user and how to use it?: root users are created by default when creating an aws account and should not be used or shared
+principle to apply while creating permissions: least privilege principle
+how do you assign permissions to users/groups?: using a policy written in a JSON file
+how many groups can a user belong to?: zero or more
+can groups contain other groups?: no, only users
+types of policies:
+    inline policy: policy attach to a single user
+    group policy
+structure of a policy:
+    version
+    id: optional, policy id
+    statement: array of objects
+structure of a statement in policy structure:
+    sid: optional, statement id
+    effect: deny or allow
+    principal: account/user/role
+    action: array of strings with the actions
+    resources: array of resources to apply the policy
+    condition: optional, case for applying the statement
+who can be attached to a policy?: users and groups
+
+# Security and access management
+how to secure IAM access?:
+    password policy
+    MFA:
+options that password policy provide: length, characters, renewal, no old passwords
+types of devices for MFA: virtual device (in phone), physical device
+how to access AWS?:
+    Web console
+    CLI
+    SDK
+how to access AWS programmatically?: create an Access Key(CLI or SDK)
+what is an IAM Role?: is a set of permissions to be used by AWS services
+what does IAM Credential Report do?: reports a list of all your users with their credentials
+what does IAM Access Advisor do?: Shows permissions granted to a user and last time accessed
+which service can help you to list users credential management?: IAM Credential Report
+which service can help you to list the services used by your accoutn?: IAM Access Advisor
+what is CloudShell?: is an AWS service that provides CLI to access resources
+
+# Best practices
+what should be done instead of using root account?: no, you should always use IAM admin user instead
+how many users should each physical user own?: only one
+which is the best way to assign permissions?: assigning users to groups and permissions to groups
+what is recommended to access AWS user?: strong password policy and MFA
+when is recommended to use IAM Roles?: to assign permissions to services
+when is used Access Keys?: for programmatic access by SDK or CLI
+which tools should be used to monitor IAM users?: IAM Credentials Report and IAM Access Advisor
+
+# SRM
+who is responsable for global network security?: AWS
+who is responsable for compliance validation?: AWS
+who is responsable for enable MFA?: customer
+who is responsable for monitoring and manage IAM?: customer
+who is responsable for permission management?: customer
+who is responsable for analyze access patterns?: customer

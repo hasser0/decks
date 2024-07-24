@@ -1,0 +1,27 @@
+# Data warehouse
+what is a data warehouse?: a database optimized for analytical purposes
+what is normalization?: process to remove redundancy
+
+# Layers
+what is a staging layer?: a previous layer to the core layer
+what is a cleansing layer?: an optional layer between staging and the core layer
+what is a core layer?: a layer that integrates, centralizes, and handles all historical data
+what is a data mart layer?: an optional layer between the core layer and the consumers
+staging layer purpose: standardizes sources in relational tables and reduces operational systems usage
+cleansing layer purpose: handles complicated transformations
+core layer purpose: centralizes and integrates data on a historical view
+data mart layer purpose: optimizes the core layer for usability and performance
+types of staging layers: persistent and temporary
+
+# Improve performance
+what is the main reason for improved query performance on cubes?: precalculated aggregations
+what is the main reason for improved query performance in memory databases?: eliminates time latency due to disk reads
+
+# Data warehouse operations
+what does drill operation do?:
+what does slice operation do?:
+what does dice operation do?:
+
+# Dimensional modeling
+what is dimensional modeling?: data warehouse design methodology
+what are star schemas?: data warehouse structure with a fact table
