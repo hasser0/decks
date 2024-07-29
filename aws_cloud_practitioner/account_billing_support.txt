@@ -1,3 +1,11 @@
-what is AWS Organizations?: global service that allows to manage and create automatically multiple accounts, also restrict privileges and handle billing
+what are AWS Organizations?: manage multiple AWS accounts
+what are SCP?: Service Control Policies whitelist or blacklist IAM actions at account level
+what is AWS Control Tower: easy way to set up and govern a secure and compliant multi account AWS environment
 
-what cost benefits brings AWS Organizations?: consolidated billing, aggregated usage, pooling of reserved EC2
+AWS Organizations usage: one billing, share savings plans, get disscounts, restrict account services
+multi account strategies:
+    per deparment
+    per project
+    per environment
+    separate restrictions
+relation among accounts and organization units: organization units contain accounts

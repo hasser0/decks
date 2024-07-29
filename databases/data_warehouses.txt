@@ -17,11 +17,31 @@ types of staging layers: persistent and temporary
 what is the main reason for improved query performance on cubes?: precalculated aggregations
 what is the main reason for improved query performance in memory databases?: eliminates time latency due to disk reads
 
-# Data warehouse operations
-what does drill operation do?:
-what does slice operation do?:
-what does dice operation do?:
-
 # Dimensional modeling
 what is dimensional modeling?: data warehouse design methodology
 what are star schemas?: data warehouse structure with a fact table
+
+# Facts
+what are additive facts?: facts that can be added across all dimensions
+what are semi-additive facts?: facts that can be added across some dimensions
+what are non-additive facts?: facts that can not be added across any dimension
+types of fact tables:
+    transactional
+    factless
+    periodic snapshot
+    accumulating snapshot
+what does a row represent in a transactional fact table?: a single event or transaction
+dimensional columns cardinality of transactional fact tables: high
+transactional fact table cardinality: high
+most common type of measures in a transactional fact table: additive
+what does a row represent in a periodic fact table?: a summarized measure
+dimensional columns cardinality of periodic fact tables: low
+periodic fact table cardinality: low
+what should be identify to design a fact table?: business process, sample unit, dimensions, measures
+type of keys used as primary keys on a data warehouse?: surrogate key
+why are surrogate keys used over natural keys?:
+    improve joins
+    less storage
+    handle dummy/null values
+    no natural keys exists
+naming recommendation for natural and surrogate keys?: keep natural keys identical and suffix surrogate keys with pk and fk

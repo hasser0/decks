@@ -12,3 +12,10 @@ types of volumes:
     named volumes
 does anonymous volumes persist after container is removed?: when container is run with --rm, no, otherwise they are persisted but not reused
 does named volumes persist after container is removed?: yes, they are not attached to any container
+use case for bind mount and COPY together: to create development and production images at the same time
+how to ignore files on COPY command?: using .dockerignore
+typical files to .dockerignore: Dockerfile, .git, __pycache__
+types of variables supported by docker:
+    ARG: build-time
+    ENV: runtime
+how are multiple environment variables, volumes declare when running a container: using multiple times the same flags
