@@ -54,3 +54,8 @@ who is responsable for enable MFA?: customer
 who is responsable for monitoring and manage IAM?: customer
 who is responsable for permission management?: customer
 who is responsable for analyze access patterns?: customer
+
+# Advanced Identity
+what is STS?: Security Token Service enables to create temporary limited-privileges credentials
+what is Cognito?: provides web and mobile identity
+what is IAM Identity Center?: Single Sign On for all AWS accounts

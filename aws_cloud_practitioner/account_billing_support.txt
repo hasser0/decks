@@ -1,6 +1,12 @@
 what are AWS Organizations?: manage multiple AWS accounts
 what are SCP?: Service Control Policies whitelist or blacklist IAM actions at account level
 what is AWS Control Tower: easy way to set up and govern a secure and compliant multi account AWS environment
+what is AWS RAM?: Resources Access Manager shares resources that you own with other AWS accounts
+what is AWS Service Catalog?: service to access and create admin authorized services using cloud formation templates
+what is AWS Compute Optimizer?: ML service to reduce costs by recommending optimal AWS resources
+what is AWS Cost Anomaly Detection?: ML service to detect unusual usage or cost
+what is AWS Service Quotas?: service to notify near threshold billing or shutdown services when reached
+what is AWS Trusted Advisor?: AWS account configuration recommendations
 
 AWS Organizations usage: one billing, share savings plans, get disscounts, restrict account services
 multi account strategies:
@@ -9,3 +15,25 @@ multi account strategies:
     per environment
     separate restrictions
 relation among accounts and organization units: organization units contain accounts
+
+# Pricing models
+pays as you go pricing model: pay for what you use
+save when you reserve pricing model: minimize risks, predict budgets, long term
+pay less by using more pricing model: volume based disscounts
+pay less as AWS grows pricing model: get disscounts as AWS scales
+free tier pricing model: for tests and learning
+types savings plans: ec2, compute, machine learning
+
+# Billing tools
+billing tool to estimate costs: Pricing Calculator
+billing tool to track costs: Billing Dashboard, Cost Allocation Tags, Cost Usage Reports, Cost Explorer
+billing tool to monitor cost plans: Billing Alarms, Budgets
+
+# Supports plans
+most basic support plan: basic support
+first support plan for email contact: developer support
+first support plan for 24/7 phone/email contact: business support
+support plan for critical workloads: enterprise on-ramp support
+first support plan with technical account manager: enterprise on-ramp support
+support plan for mission critical workloads: enterprise support
+support plan with designated technical account manager: enterprise support
