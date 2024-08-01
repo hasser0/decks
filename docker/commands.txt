@@ -23,11 +23,11 @@ create and start a node container in interactive mode|| docker run -it node
 create and start a node container and map host port 5000 to container port 80|| docker run -p 5000:80 node
 create and start a node container on the host network|| docker run --network host node
 create and start a node container called mycontainer|| docker run --name mycontainer node
-create and start a node container with a named volume myvolume mount on /app/feedback|| docker run -v myvolume:/app/feedback
+create and start a node container with a named volume myvolume mount on /app/feedback|| docker run -v myvolume:/app/feedback node
 
 # Start, stop and attach/dettach modes
 start an existing container called mypython|| docker start mypython
-start an existing and running container called mypython in attach mode|| docker start -a mypython
+start an existing container called mypython in attach mode|| docker start -a mypython
 attach to an existing and running container called mypython|| docker attach mypython
 stop an existing container called mypython|| docker stop mypython
 restart an existing container called mypython|| docker restart mypython
@@ -42,7 +42,7 @@ remove all unused images|| docker image prune
 
 # File system
 copy the host file ./test.txt to the container called mypython into /app|| docker cp ./test.txt mypython:/app/
-copy the file /app/test.txt from the container mypython to the host file ./test.txt|| docker cp mypython:/app/ ./test.txt
+copy the file /app/test.txt from the container mypython to the host file ./test.txt|| docker cp mypython:/app/test.txt ./test.txt
 
 # Share images
 share an image called mypython using docker hub to a repository called myrepo|| docker push myrepo/mypython
