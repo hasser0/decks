@@ -19,3 +19,7 @@ types of variables supported by docker:
     ARG: build-time
     ENV: runtime
 how are multiple environment variables, volumes declare when running a container: using multiple times the same flags
+types of docker network communication:
+    container-container
+    container-host
+    container-www
