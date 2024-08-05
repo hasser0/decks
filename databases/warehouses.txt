@@ -69,3 +69,12 @@ type 2 scd: additional row with efective_date and expiration_date
 type 3 scd: additional attribute
 type 2 scd additional capabilities: add is_current column, don't leave null in expiration_date, use 9999-12-31
 cons of type 1 scd: history is lost, can break queries
+
+# Indexes
+why are indexes needed?: to avoid unnecessary full table scan when querying data
+types of indexes and general use cases:
+    b-tree: high cardinality data
+    bitmap: repeating values
+types of indexes and dw use cases:
+    b-tree: unique columns, surrogate keys, high cardinality foreign keys on fact tables
+    bitmap: low cardinality foreign keys on fact tables
