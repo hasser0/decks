@@ -45,3 +45,27 @@ why are surrogate keys used over natural keys?:
     handle dummy/null values
     no natural keys exists
 naming recommendation for natural and surrogate keys?: keep natural keys identical and suffix surrogate keys with pk and fk
+
+# Dimensions
+most common dimension: date dimension
+what is a conformed dimension?: a dimension shared among multiple fact tables
+what is a degenerate dimension?: a dimension with a single column, occuring mostly in transactional facts
+what is a junk dimension?: dimension with various flags or indicators with low cardinality
+what is a role-playing dimension? dimension referenced multiple times by a fact
+date dimension most common columns: year, month(name/number), weekday(name/number) week, quarter, month day
+most common degenerated dimensions: payment_id, invoice_id, order_id
+date dimension meaningful surrogate key: YYYYMMDD
+junk dimension use cases: long text and flag values with low cardinality
+junk dimension alternative name: transactional indicator dimension
+how should null values be handle in dimensions?: add an extra value in the dimension for nulls
+how should hierarchies be handle in dimensions?: hierachies are usually represented as a snowflake dimension, we should denormalize this dimension
+how should degenerate dimensions be handle?: appended to the fact table and suffix with dd
+how can role playing dimensions be handle?: use views pointing to the same table
+
+# Slowly changing dimensions
+type 0 scd: no changes
+type 1 scd: overwrite/update old values
+type 2 scd: additional row with efective_date and expiration_date
+type 3 scd: additional attribute
+type 2 scd additional capabilities: add is_current column, don't leave null in expiration_date, use 9999-12-31
+cons of type 1 scd: history is lost, can break queries
