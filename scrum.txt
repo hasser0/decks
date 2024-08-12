@@ -1,0 +1,28 @@
+developers are self managing: False, scrum teams are self managed
+team size: 3 to 9
+developers tasks(1): quality attributes or non functional requirements
+each sprint should end with a release: True
+product owner tasks(2): order and communicate product backlog and goals
+scrum master tasks(2):	coach developers, remove impediments
+sprint planning questions: why, what, and how
+scrum teams are fixed: False, change as needed
+sprint goals equivalent: epics
+sprint release equivalent: increment
+sprint backlog is dynamic and always changing: True, redefine by developers
+scrum master should be a tech: False
+scrum formal events:
+	sprint planning
+	sprint release
+	sprint retrospective
+	daily scrum
+scrum formal artifacts:
+	product backlog
+	sprint backlog
+	increments
+daily scrum purpose: developers briefly discuss three questions
+when is the sprint goal defined?: sprint planning
+scrum master should be on all meetings: False, daily scrum is not necessary
+who is responsable for conducting the daily scrum?: developers
+when does the next sprint begin?: inmmediately after the previous sprint
+daily scrum properties?: 15 min and fixed time-location
+outcome of a sprint review: revised product backlog 

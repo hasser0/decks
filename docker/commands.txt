@@ -8,6 +8,10 @@ syntax to run "python app.py" when the container is started|| CMD ["python", "ap
 syntax to create an anonymous volume mounted on /app/feedback|| VOLUME ["/app/feedback"]
 syntax to set an environment variable called PORT with default value 80|| ENV PORT 80
 syntax to expose port assigned to an environment variable PORT|| EXPOSE $PORT
+syntax to run /bin/bash on interactive mode|| ENTRYPOINT ["/bin/bash"]
+syntax to change running user to myuser|| USER myuser
+syntax to start a stage called build from python 3.12|| FROM python:3.12 AS build
+syntax to copy files from stage build in folder /app/build to /app|| COPY --from=build /app/build /app
 
 # List objects
 list all existing images|| docker images
@@ -17,6 +21,7 @@ list all existing containers|| docker ps -a
 # Create objects
 pull the node 16.3 image|| docker pull node:16.3
 build a docker image called myimage from ./Dockerfile|| docker build . -t myimage
+build a docker image called myimage from a stage called build|| docker build --target build . -t myimage
 create and start a node container|| docker run node
 create and start a node container in detach mode|| docker run -d node
 create and start a node container in interactive mode|| docker run -it node
@@ -32,6 +37,7 @@ attach to an existing and running container called mypython|| docker attach mypy
 stop an existing container called mypython|| docker stop mypython
 restart an existing container called mypython|| docker restart mypython
 print the logs of an existing container called mypython|| docker logs mypython
+enter with interactive mode to mycontainer running /bin/bash|| docker exec -it mycontainer /bin/bash
 
 # Delete objects
 remove a stopped container called mypython|| docker rm mypython

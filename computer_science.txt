@@ -1,0 +1,13 @@
+# http
+what is an uri?: uniform resource identifier is a resource identificator used throughout http
+what is an urn?: uniform resource name is a resource identificator in a particular namespace
+which is the most common form of uri?: url
+what does url stands for?: uniform resource locator
+which parts compose mime types?: type/subtype
+
+# charset and encoding
+what is a charset?: is a set of characters
+what is a encoding?: is an algorithm or way to represent a charset in memory
+what is ASCII?: a charset
+what is unicode?: an encoding
+what is UTF-8?: a unicode encoding

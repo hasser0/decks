@@ -23,3 +23,7 @@ types of docker network communication:
     container-container
     container-host
     container-www
+types of networks drivers and its behaviour:
+    bridge: attach containers to a new network in your host
+    host: attach containers to your host
+    mcvlan: attach containers to your LAN

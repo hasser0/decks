@@ -42,3 +42,4 @@ command to build and start all resources in dettach mode|| docker-compose up -d
 command to build all images: docker-compose build
 command to stop all resources except volumes|| docker-compose down
 command to stop all resources include volumes|| docker-compose down -v
+command to run a specific service call myservice|| docker-compose run myservice
