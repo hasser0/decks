@@ -1,18 +1,15 @@
-developers are self managing: False, scrum teams are self managed
+developers are self managing: false, scrum teams are self managed
 team size: 3 to 9
-developers tasks(1): quality attributes or non functional requirements
-each sprint should end with a release: True
+each sprint should end with a release: true
 product owner tasks(2): order and communicate product backlog and goals
 scrum master tasks(2):	coach developers, remove impediments
 sprint planning questions: why, what, and how
-scrum teams are fixed: False, change as needed
-sprint goals equivalent: epics
-sprint release equivalent: increment
-sprint backlog is dynamic and always changing: True, redefine by developers
-scrum master should be a tech: False
+scrum teams are fixed: false, change as needed
+sprint backlog is dynamic and always changing: true, redefine by developers
+scrum master should be a tech: false
 scrum formal events:
 	sprint planning
-	sprint release
+	sprint review
 	sprint retrospective
 	daily scrum
 scrum formal artifacts:
@@ -21,8 +18,28 @@ scrum formal artifacts:
 	increments
 daily scrum purpose: developers briefly discuss three questions
 when is the sprint goal defined?: sprint planning
-scrum master should be on all meetings: False, daily scrum is not necessary
+scrum master should be on all meetings: false, daily scrum is not necessary
 who is responsable for conducting the daily scrum?: developers
 when does the next sprint begin?: inmmediately after the previous sprint
 daily scrum properties?: 15 min and fixed time-location
-outcome of a sprint review: revised product backlog 
+outcome of a sprint review: revised product backlog
+what is an increment?: acumulation of all usable product backlog items completed during the previous sprints
+which key value areas should be considered by a product owner?:
+	time to market
+	current value
+	ability to innovate
+the product owner must attend sprint retrospective and review: true
+scrum values:
+	respect
+	courage
+	commitment
+	focus
+	openness
+scrum events open to people outside the scrum team:
+	sprint planning
+	sprint review
+is mandatory to the product owner to use any tool?: no, all that is needed
+who is responsable for managing the progress during the sprint?: the developers
+when is an increment born?: at the moment the a product backlog item meets the definition of done
+role of scrum master during sprint retrospective: peer team
+role of scrum master during daily scrum: silent observer
