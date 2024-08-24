@@ -1,0 +1,11 @@
+what is cargo?: rust packager
+what is clippy?: rust linter
+what is rustc?: rust compiler
+what is rustfmt?: rust formater
+what is rust-std?: rust standard library
+what is rust-docs?: rust documentation
+
+start a new package projet called myproject|| cargo new myproject
+build a package in debug mode|| cargo build
+build a package in release mode|| cargo build --release
+build and execute a package|| cargo run
