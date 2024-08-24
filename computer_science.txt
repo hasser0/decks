@@ -5,9 +5,19 @@ which is the most common form of uri?: url
 what does url stands for?: uniform resource locator
 which parts compose mime types?: type/subtype
 
-# charset and encoding
-what is a charset?: is a set of characters
+# charset, encoding and collation
+what is a charset?: is a set of characters, sometimes also used to refer to the encoding
 what is a encoding?: is an algorithm or way to represent a charset in memory
+what is a collation?: is a set of rules on a charset mainly for comparison
 what is ASCII?: a charset
 what is unicode?: an encoding
 what is UTF-8?: a unicode encoding
+
+# devops and servers
+what is a wsgi? web server gateway interface is interface between python applications and reverse proxy to translate http requests to python objects
+what is a asgi? asynchronous server gateway interface is asynchronous version of wsgi
+what is a reverse proxy?: is a component between internet and web servers
+
+what is owasp?: open web applications security project is set of rules to improve application security
+how to store passwords in a database?: salt the passwords and use a slow hash function
+which is good hashing function for password?: bcrypt
