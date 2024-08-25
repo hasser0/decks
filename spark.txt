@@ -18,4 +18,3 @@ create a named Row spark_row with values (age=11, name="Sandra") and print the a
     from pyspark.sql import Row
     spark_row = Row(age=11, name="Sandra")
     print(spark_row["age"])
-cambio
