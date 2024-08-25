@@ -1,0 +1,21 @@
+# Concepts
+what is a Row in spark?: spark tuple abstraction
+
+# Create DataFrames
+create a single column(age) DataFrame spark_df with mylist list[int] using str schema||
+    spark_df = spark.createDataFrame(mylist, schema="age int")
+create a single column(age) DataFrame spark_df with mylist list[int] using class schema||
+    from pyspark.sql.types import IntegerType
+    spark_df = spark.createDataFrame(mylist, schema=IntegerType)
+create a multicolumn(age, name) DataFrame spark_df with mylist list[tuple[int, str]] using str schema||
+    spark_df = spark.createDataFrame(mylist, schema="age int, name string")
+
+# Rows
+create a Row spark_row with values (11, "Sandra")||
+    from pyspark.sql import Row
+    spark_row = Row(11, "Sandra")
+create a named Row spark_row with values (age=11, name="Sandra") and print the age||
+    from pyspark.sql import Row
+    spark_row = Row(age=11, name="Sandra")
+    print(spark_row["age"])
+cambio
