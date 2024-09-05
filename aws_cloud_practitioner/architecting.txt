@@ -1,18 +1,18 @@
-what is AWS CAF?: Cloud Adoption Framework is a white paper with best practices
-what is AWS Right Sizing?: match optimal instance types
-AWS CAF six perspectives: Business, People, Governance, Platform, Security and Operations
+what is AWS CAF?;; Cloud Adoption Framework is a white paper with best practices
+what is AWS Right Sizing?;; match optimal instance types
+AWS CAF six perspectives;; Business, People, Governance, Platform, Security and Operations
 
-what is operational excellence in the well-architected pillars?: run and monitor systems and continually improve them
-what is security in the well-architect pillars?: protect systems while delivering business value
-what is reliability in the well-architect pillars?: systems ability to recover from disruptions
-what is performance efficiency in the well-architect pillars?: use compute resources efficiently
-what is cost optimization in the well-architect pillars?: optimize costs
-what is sustainability in the well-architect pillars?: reduce the amount of energy
+what is operational excellence in the well-architected pillars?;; run and monitor systems and continually improve them
+what is security in the well-architect pillars?;; protect systems while delivering business value
+what is reliability in the well-architect pillars?;; systems ability to recover from disruptions
+what is performance efficiency in the well-architect pillars?;; use compute resources efficiently
+what is cost optimization in the well-architect pillars?;; optimize costs
+what is sustainability in the well-architect pillars?;; reduce the amount of energy
 
-operational excellence design principles: operations as code, small reversible changes
-security design principles: control identity and access, encryption and tokenization
-reliability design principles: simulate failures, automatically recover from failure
-performance efficiency design principles: use serverless, use advance technologies
-cost optimization desing principles: migrate to cloud, use tags on resources, use manage services
-sustainability design principles: understand impact, adopt new and more efficient hardware and software
+operational excellence design principles;; operations as code, small reversible changes
+security design principles;; control identity and access, encryption and tokenization
+reliability design principles;; simulate failures, automatically recover from failure
+performance efficiency design principles;; use serverless, use advance technologies
+cost optimization desing principles;; migrate to cloud, use tags on resources, use manage services
+sustainability design principles;; understand impact, adopt new and more efficient hardware and software
 

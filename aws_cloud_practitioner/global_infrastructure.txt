@@ -1,46 +1,46 @@
 # Concepts
-what is a global application?: is an application deployed in multiple regions
-what are edge locations?: AWS locations used for CDN
+what is a global application?;; is an application deployed in multiple regions
+what are edge locations?;; AWS locations used for CDN
 
 # Services
-what is Route53?: is a managed DNS
-what is CloudFront?: is a CDN
-what is OAC?: Origin Access Control is a security feature for CloudFront
-what is OAI?: Origin Access Identity is a deprecated security feature for CloudFront
-what is S3 Transfer Accelerator?: is a S3 feature to reduce uploads to S3 buckets world wide
-what is Global Accelerator?: is a global feature to reduce latency and application availability
-what is Outposts?: is a fully managed service to run AWS on your own servers
-what are WaveLength Zones?: they are infrastructure deployments at edge of 5G networks
-what are Local Zones?: feature to place AWS services closer to end users to run latency sensitive applications on "new AZ"
+what is Route53?;; is a managed DNS
+what is CloudFront?;; is a CDN
+what is OAC?;; Origin Access Control is a security feature for CloudFront
+what is OAI?;; Origin Access Identity is a deprecated security feature for CloudFront
+what is S3 Transfer Accelerator?;; is a S3 feature to reduce uploads to S3 buckets world wide
+what is Global Accelerator?;; is a global feature to reduce latency and application availability
+what is Outposts?;; is a fully managed service to run AWS on your own servers
+what are WaveLength Zones?;; they are infrastructure deployments at edge of 5G networks
+what are Local Zones?;; feature to place AWS services closer to end users to run latency sensitive applications on "new AZ"
 
 # Route53
-how does a simple routing policy work?: redirect the traffic, no health checks
-how does a weighted routing policy work?: redirect among multiple instances
-how does a latency routing policy work?: redirect to minimize latency
-how does failover routing policy work?: redirect in case of failure for disaster recovery
+how does a simple routing policy work?;; redirect the traffic, no health checks
+how does a weighted routing policy work?;; redirect among multiple instances
+how does a latency routing policy work?;; redirect to minimize latency
+how does failover routing policy work?;; redirect in case of failure for disaster recovery
 
 # CloudFront
-what is the difference between CloudFront and S3 Cross Region Replication?: CloudFront is to cache content around the world while S3 CRR is for read replication in specific regions
-CloudFront use case: get S3 and HTTP content is cached at edge locations
-CloudFront security features: OAC and DDoS protection
-how is CloudFront used with S3?: to cache S3 content, websites or to upload data
-how is CloudFront used with custom origins?: cache HTTP requests to ELB or EC2
-with which services does CloudFront integrate to protect against web attacks?: WAF and Shield
+what is the difference between CloudFront and S3 Cross Region Replication?;; CloudFront is to cache content around the world while S3 CRR is for read replication in specific regions
+CloudFront use case;; get S3 and HTTP content is cached at edge locations
+CloudFront security features;; OAC and DDoS protection
+how is CloudFront used with S3?;; to cache S3 content, websites or to upload data
+how is CloudFront used with custom origins?;; cache HTTP requests to ELB or EC2
+with which services does CloudFront integrate to protect against web attacks?;; WAF and Shield
 
 # Global
-S3 Transfer Accelerator use case: improve S3 uploads
-how does S3 Transfer Accelerator work?: upload files to edge locations and use AWS internal network to upload faster to the S3 region
-how does Global Accelerator work?: use edge locations and route traffic directly to end point using AWS internal network
-what is the difference between CloudFront and Global Accelerator?: CloudFront cache content while Global Accelerator improves requests times
-who is responsable for physical security on Outposts?: the customer
-advantages of Outposts over AWS?:
+S3 Transfer Accelerator use case;; improve S3 uploads
+how does S3 Transfer Accelerator work?;; upload files to edge locations and use AWS internal network to upload faster to the S3 region
+how does Global Accelerator work?;; use edge locations and route traffic directly to end point using AWS internal network
+what is the difference between CloudFront and Global Accelerator?;; CloudFront cache content while Global Accelerator improves requests times
+who is responsable for physical security on Outposts?;; the customer
+advantages of Outposts over AWS?;;
 	low latency from on premises
 	local processing
 	easier migration
 
 # Architecture
-features of single region single AZ architecture: low availability, high latency, easy
-features of single region multiple AZ architecture: high availability, high global latency, medium
-features of multi region active-passive: high availability, low global read latency, high global write latency, hard
-features of multi region active-active: high availability, low global latency, harder
+features of single region single AZ architecture;; low availability, high latency, easy
+features of single region multiple AZ architecture;; high availability, high global latency, medium
+features of multi region active-passive;; high availability, low global read latency, high global write latency, hard
+features of multi region active-active;; high availability, low global latency, harder
 
