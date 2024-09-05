@@ -11,15 +11,15 @@ what is ASG?: Auto Scaling Group is a service to implement elasticity by scaling
 
 # Load balancers
 why use a load balancer?:
-    balance load among servers
-    expose single DNS IP
-    instances failure
-    SSL to websites
-    high availability across zones
+	balance load among servers
+	expose single DNS IP
+	instances failure
+	SSL to websites
+	high availability across zones
 types of AWS load balancers:
-    Application Load Balancer - layer 7
-    Network Load Balancer - layer 4
-    Gateway Load Balancer - layer 3
+	Application Load Balancer - layer 7
+	Network Load Balancer - layer 4
+	Gateway Load Balancer - layer 3
 Application Load Balancer features?: HTTP/HTTPS/gRPC, static URL
 Network Load Balancer features?: TCP/UDP, high performance, static IP
 Gateway Load Balancer features?: GENEVE, firewalls, intrusion detection

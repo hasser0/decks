@@ -5,31 +5,31 @@ how do you assign permissions to users/groups?: using a policy written in a JSON
 how many groups can a user belong to?: zero or more
 can groups contain other groups?: no, only users
 types of policies:
-    inline policy: policy attach to a single user
-    group policy
+	inline policy: policy attach to a single user
+	group policy
 structure of a policy:
-    version
-    id: optional, policy id
-    statement: array of objects
+	version
+	id: optional, policy id
+	statement: array of objects
 structure of a statement in policy structure:
-    sid: optional, statement id
-    effect: deny or allow
-    principal: account/user/role
-    action: array of strings with the actions
-    resources: array of resources to apply the policy
-    condition: optional, case for applying the statement
+	sid: optional, statement id
+	effect: deny or allow
+	principal: account/user/role
+	action: array of strings with the actions
+	resources: array of resources to apply the policy
+	condition: optional, case for applying the statement
 who can be attached to a policy?: users and groups
 
 # Security and access management
 how to secure IAM access?:
-    password policy
-    MFA:
+	password policy
+	MFA:
 options that password policy provide: length, characters, renewal, no old passwords
 types of devices for MFA: virtual device (in phone), physical device
 how to access AWS?:
-    Web console
-    CLI
-    SDK
+	Web console
+	CLI
+	SDK
 how to access AWS programmatically?: create an Access Key(CLI or SDK)
 what is an IAM Role?: is a set of permissions to be used by AWS services
 what does IAM Credential Report do?: reports a list of all your users with their credentials

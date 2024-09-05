@@ -10,10 +10,10 @@ what is AWS Trusted Advisor?: AWS account configuration recommendations
 
 AWS Organizations usage: one billing, share savings plans, get disscounts, restrict account services
 multi account strategies:
-    per deparment
-    per project
-    per environment
-    separate restrictions
+	per deparment
+	per project
+	per environment
+	separate restrictions
 relation among accounts and organization units: organization units contain accounts
 
 # Pricing models

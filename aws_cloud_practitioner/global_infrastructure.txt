@@ -34,9 +34,9 @@ how does Global Accelerator work?: use edge locations and route traffic directly
 what is the difference between CloudFront and Global Accelerator?: CloudFront cache content while Global Accelerator improves requests times
 who is responsable for physical security on Outposts?: the customer
 advantages of Outposts over AWS?:
-    low latency from on premises
-    local processing
-    easier migration
+	low latency from on premises
+	local processing
+	easier migration
 
 # Architecture
 features of single region single AZ architecture: low availability, high latency, easy

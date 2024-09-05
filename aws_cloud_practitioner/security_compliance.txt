@@ -23,17 +23,17 @@ what is IAM Access Analyzer?: is a service to report AWS resources access outsid
 AWS Shield and AWS WAF similarities: both are used to protect from DDOS Attack
 AWS Shield and AWS WAF differences: AWS Shield protects on layer 7 while AWS WAF protects on layer 3 and 4
 services that can be managed with AWS Firewall Manager:
-    WAF rules
-    AWS Shield
-    AWS Network Firewall
-    VPC security groups
+	WAF rules
+	AWS Shield
+	AWS Network Firewall
+	VPC security groups
 
 types of attacks on AWS:
-    penetration testing on specific services are allowed
-    anything that may be seen like an attack is prohibited
+	penetration testing on specific services are allowed
+	anything that may be seen like an attack is prohibited
 types of encryption on AWS:
-    at rest: stored data
-    in transit: while data is being moved
+	at rest: stored data
+	in transit: while data is being moved
 types of KMS keys:
 what are customer managed keys?: created, managed and used by the customer
 what are AWS managed keys?: created, managed and used on customers behalf
@@ -43,7 +43,7 @@ what ACM integrates with?: ELB, CloudFront and API Gateway
 extra capabilities for AWS Secrets Manager: automatic rotation of secrets
 AWS GuardDuty use cases: CryptoCurrency attacks and EventBridge anomally alerts
 which actions can only be done by root user?:
-    change account name, email, root password, root access keys
-    close account
-    change and cancel support plan
-    register as seller in AWS marketplace
+	change account name, email, root password, root access keys
+	close account
+	change and cancel support plan
+	register as seller in AWS marketplace

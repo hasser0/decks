@@ -1,10 +1,10 @@
 # Concepts
 types of databases:
-    relational databases
-    key value databases
-    document databases
-    in memory databases
-    graph databases
+	relational databases
+	key value databases
+	document databases
+	in memory databases
+	graph databases
 why use AWS databases and not EC2 on top of databases?: it's a managed service and handle many parts for you
 which storage service is behind AWS?: EBS
 
@@ -32,20 +32,20 @@ what is Glue Data Catalog?: is a catalog of datasets
 what is DMS?: Database Migration Service is a quick secure service to migrate databases
 what is the difference between Managed Blockchain and QLDB?: QLDB is centrallized while Blockchain can be decentrallize
 which databases are not serverless by default but can be converted?:
-    Aurora
-    DynamoDB
+	Aurora
+	DynamoDB
 
 # Aurora & RDS
 what cannot be done when using RDS?: access using SSH to the compute instances
 why use Aurora and not other RDS?:
-    AWS cloud optimize
-    supports PostgreSQL and MySQL as engines
-    performance improvement
-    automatically grows storage
-    best cost effective
+	AWS cloud optimize
+	supports PostgreSQL and MySQL as engines
+	performance improvement
+	automatically grows storage
+	best cost effective
 Aurora Serverless use cases?:
-    infrequent intermittent and unpredictable workloads
-    least management overhead
+	infrequent intermittent and unpredictable workloads
+	least management overhead
 RDS snapshots use cases?: to change RDS settings such as size, region, etc
 how many read replicas can be deployed?: up to 15 read replicas
 can read replicas create write workloads?: No, only read. Write operations are done on the main RDS
@@ -66,5 +66,5 @@ how is Redshift billed?: pay as you go for computation and storage
 how is Athena billed?: 5 USD per TB scanned
 which frameworks are compatible with Managed Blockchain?: Ethereum and Hyperledger Fabric
 types of DMS migrations?:
-    homogeneous: same source and target engines
-    heterogeneous: different source and target engines
+	homogeneous: same source and target engines
+	heterogeneous: different source and target engines

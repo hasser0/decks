@@ -26,8 +26,8 @@ how are Batch jobs defined?: defined using docker images and run on ECS
 how are Batch jobs scaled?: Batch provides the right amount of compute and memory depending on your workload
 
 what can be launched on Lightsail?:
-    instances
-    databases
-    load balancers
-    storage
-    network
+	instances
+	databases
+	load balancers
+	storage
+	network

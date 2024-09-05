@@ -13,12 +13,12 @@ S3 service level: region level
 max object size: 5 TB
 how should larger objects be uploaded?: use multipart upload of 5 GB each
 S3 bucket name requirements/conventions:
-    globally unique name
-    no uppercase
-    no underscore
-    no IP
-    no start with xn
-    no end with s3alias
+	globally unique name
+	no uppercase
+	no underscore
+	no IP
+	no start with xn
+	no end with s3alias
 
 # Security and access management
 how are defined S3 bucket policies?: similar structure to IAM policies
@@ -27,17 +27,17 @@ how would you grant access to an IAM user to a bucket?: using an IAM policy
 how would you grant access to an EC2 instance to a bucket?: using EC2 instance roles
 how would you grant access to an IAM user on another account to a bucket?: using a bucket policy
 options to handle S3 security:
-    use security policies
-    encryption keys
+	use security policies
+	encryption keys
 types of S3 encryption?:
-    server side encryption
-    client side encryption
+	server side encryption
+	client side encryption
 which is the default encryption type?: server side encryption
 types of S3 security policies:
-    IAM policies: specify user operations
-    bucket policies: bucket level even with other accounts
-    object ACL: fine grain object control
-    bucket ACL: fine grain bucket control
+	IAM policies: specify user operations
+	bucket policies: bucket level even with other accounts
+	object ACL: fine grain object control
+	bucket ACL: fine grain bucket control
 
 # Versioning
 what is S3 versioning?: is a S3 feature that allow you saver versions of object files
@@ -45,31 +45,31 @@ S3 versioning level?: bucket level
 what happen to objects uploaded before S3 versioning is activated?: have version null
 what happen to objects deleted after S3 versioning is deactivated?: versions persist
 deleting the object vs deleting the version on S3 versioning enabled?:
-    deleting the object just creates a delete mark as a version
-    deleting the version delete part of the file history
+	deleting the object just creates a delete mark as a version
+	deleting the version delete part of the file history
 
 # Replication
 types of S3 replication?:
-    CRR: cross region replication
-    SRR: same region replication
+	CRR: cross region replication
+	SRR: same region replication
 what is needed to allow S3 replication?:
-    versioning must be enabled
-    proper IAM permissions
+	versioning must be enabled
+	proper IAM permissions
 what is IAM Access Analyzer for S3?: is a monitoring tool for S3 to ensure users and objects permissions are correct
 
 # Snow family
 what is the snow family?: AWS offline devices in cases that data transfer through the network is not feasiable
 which use cases snow family has?: for data migration and edge computing
 snow family products and use cases?:
-    Snowcone device for edge computing, shrink space and data migration up to 24TB eithe offline or online
-    Snowball device for edge computing, disaster recovery and data migration up to petabytes
-    Snowmobile device for data migration of exabytes
+	Snowcone device for edge computing, shrink space and data migration up to 24TB eithe offline or online
+	Snowball device for edge computing, disaster recovery and data migration up to petabytes
+	Snowmobile device for data migration of exabytes
 types of Snowball devices?:
-    compute optimize: 42TB HDD or 28TB NVme, 104 cores, 416GiB RAM, GPU(optional)
-    storage optimize 80TB HDD or 210TB NVme, 40 cores, 80GiB RAM
+	compute optimize: 42TB HDD or 28TB NVme, 104 cores, 416GiB RAM, GPU(optional)
+	storage optimize 80TB HDD or 210TB NVme, 40 cores, 80GiB RAM
 types of Snowcone devices?:
-    snowcone: 8TB HDD
-    snowcone SSD: 14TB SSD
+	snowcone: 8TB HDD
+	snowcone SSD: 14TB SSD
 long term options for edge computing using snow devices: 1 and 3 year discount
 what can be run inside a snow device?: EC2 instances and lambda functions using IoT Greengrass
 how to access snow devices using CLI?: using AWS OpsHub

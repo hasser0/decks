@@ -10,12 +10,12 @@ what is EBS?: Elastic Block Store
 # EC2
 what can be configured on an EC2 instance: OS, CPU, RAM, storage, network card
 types of EC2 instances:
-    general purpose(m/t)
-    compute optimize(c)
-    memory optimize(r)
-    storage optimize(i/d/h)
-    accelerated computing
-    high performance computing(h)
+	general purpose(m/t)
+	compute optimize(c)
+	memory optimize(r)
+	storage optimize(i/d/h)
+	accelerated computing
+	high performance computing(h)
 what is the m in m5.2xlarge?: instance class
 what is the 5 in m5.2xlarge?: class generation
 what is the 2xlarge in m5.2xlarge?: size within classs
@@ -24,10 +24,10 @@ what is EC2 User Data?: is a script launched at instance start only once
 # Security groups
 what are security groups?: groups of firewall rules
 what can be regulated with security groups?:
-    access ports
-    ip ranges
-    inbound
-    outbound
+	access ports
+	ip ranges
+	inbound
+	outbound
 does security groups have deny rules?: no they only have allow rules
 does security groups are attached to instances?: False, you can attach security groups to multiple instances
 how to know whether a broken connection is due application or permission error?: if it's a connection refused then it's an app error otherwise it would be a timeout error

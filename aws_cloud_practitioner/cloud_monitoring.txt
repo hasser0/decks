@@ -12,25 +12,25 @@ what is CodeGuru Profiler?: produ {[]}\ ction performance profiler
 what is Health Dashboard?: is a service to monitor all your services and regions historically
 
 what kind of triggers exists in by CloudWatch Alarms?:
-    autoscaling
-    ec2 instances actions
-    sns notifications
+	autoscaling
+	ec2 instances actions
+	sns notifications
 what kind of metrics exists on CloudWatch for EC2 instances?:
-    cpu utilization
-    status checks
-    network
+	cpu utilization
+	status checks
+	network
 what kind of metrics exists on CloudWatch for EBS?: disk read/writes
 what kind of metrics exists on CloudWatch for S3?:
-    bucket Size
-    number of objects
+	bucket Size
+	number of objects
 what can be done when there are no metrics for an specific scenario?: you can build your own custom metrics
 which services are integrated with CloudWatch Logs?: ECS, ElasticBeanstalk, Lambda, Route53
 what is needed to watch logs from an EC2 instance in CloudWatch Logs?: install the CloudWatch agent
 how was EventBridge named before?: CloudWatch Events
 what types of events can be used on EventBridge?:
-    events within aws account
-    cron schedules
-    custom events
+	events within aws account
+	cron schedules
+	custom events
 which scope applies to CloudTrail?: all regions or single region
 where can CloudTrail logs be stored?: in CloudWatch Logs or S3 buckets
 what problems resolve X-Ray?: difficult to debug and monitor microservices

@@ -24,9 +24,9 @@ what are recycle bin snapshots?: rules to retain deleted snapshots in case of ac
 # AMI
 why would somebody use AMI?: faster boot, add software and configurations
 types of AMI:
-    public AMI
-    own AMI
-    marketplace AMI
+	public AMI
+	own AMI
+	marketplace AMI
 what is EC2 Image Builder?: a service to automate creation(build, validate, test) of VMs or containers
 
 # Instance Store
@@ -38,8 +38,8 @@ drawbacks of EC2 Instance Store: it is ephemeral storage, risk of data loss in f
 what is the main advantage of EFS over EBS?: can be connected to multiple instances in multiple zones
 what is the drawback of EFS?: it is 3x more expensive than EBS
 FSx options:
-    Windows File Server(for windows servers)
-    Lustre(linux cluster for high performance computing)
+	Windows File Server(for windows servers)
+	Lustre(linux cluster for high performance computing)
 
 # SRM
 who is responsable for setup backup/snapshots schedules?: customer
