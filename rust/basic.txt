@@ -1,11 +1,23 @@
-what is cargo?: rust packager
-what is clippy?: rust linter
-what is rustc?: rust compiler
-what is rustfmt?: rust formater
-what is rust-std?: rust standard library
-what is rust-docs?: rust documentation
+what is cargo?;; rust packager
+what is clippy?;; rust linter
+what is rustc?;; rust compiler
+what is rustfmt?;; rust formater
+what is rust-std?;; rust standard library
+what is rust-docs?;; rust documentation
 
 start a new package projet called myproject|| cargo new myproject
 build a package in debug mode|| cargo build
 build a package in release mode|| cargo build --release
 build and execute a package|| cargo run
+
+variables rust format;; snake_case
+every variable in rust is _________ by default;; immutable
+integer data types;; i8, 116, 132, i64, i128
+unsigned integer data types;; u8, u16, u32, u64, u128
+
+create a variable x and set to "Hello World"|| let x = "Hello World";
+print variable x in a newline|| println!("{x}");
+print "Error" to the stderr in a new line|| eprintln!("Error");
+create a mutable variable x set to 10|| let mut x = 10;
+create a variable x of type i128 and set to the maximum possible value|| let x: i128 = i128::MAX
+create a variable x of type i32 and set to 2 usign binary|| let x: i32 = 

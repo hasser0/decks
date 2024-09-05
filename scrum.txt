@@ -1,99 +1,99 @@
-team size: 3 to 9
-main purpose of scrum: optimise the value of product and satisfy its users
+team size;; 3 to 9
+main purpose of scrum;; optimise the value of product and satisfy its users
 
 # Scrum Pillars and Values
-scrum empirical pillars:
+scrum empirical pillars;;
 	transparency
 	inspection
 	adaptation
-scrum values:
+scrum values;;
 	respect
 	courage
 	commitment
 	focus
 	openness
-difference between scrum pillars and scrum values: scrum values guides team members behaviour while scrum pillars guides scrum implementation
+difference between scrum pillars and scrum values;; scrum values guides team members behaviour while scrum pillars guides scrum implementation
 
 # Scrum Roles
-product owner tasks:
+product owner tasks;;
 	order product backlog
 	communicate goals
 	ensure product backlog is is visible, transparent and clear to all
-scrum master tasks(2):	coach developers, remove impediments, ensure all scrum events take place are positive
-the product owner must use burndown chart: false, it is recommended but not mandatory
-scrum teams are fixed: false, change as needed
-developers are self managing: false, scrum teams are self managed
-scrum master should be a tech: false, can be but is not mandatory
-key value areas product owner:
+scrum master tasks(2);;	coach developers, remove impediments, ensure all scrum events take place are positive
+the product owner must use burndown chart;; false, it is recommended but not mandatory
+scrum teams are fixed;; false, change as needed
+developers are self managing;; false, scrum teams are self managed
+scrum master should be a tech;; false, can be but is not mandatory
+key value areas product owner;;
 	time to market
 	current value
 	ability to innovate
 
 # Scrum Artifacts
-scrum formal artifacts:
+scrum formal artifacts;;
 	product backlog
 	sprint backlog
 	increments
-scrum artifacts commitments:
+scrum artifacts commitments;;
 	product backlog - product goal
 	sprint backlog - sprint goal
-	increment: definition of done
-sprint backlog is dynamic and always changing: true, redefine by developers
-product backlog properties:
+	increment;; definition of done
+sprint backlog is dynamic and always changing;; true, redefine by developers
+product backlog properties;;
 	dynamic and adaptative
 	transparent
-what is an increment?: acumulation of all usable product backlog items completed during the previous sprints
-when is an increment born?: at the moment the a product backlog item meets the definition of done
-what is a user story?: short description of a feature that a client wants
-what is a epic?: larger user story that cannot be delivered in one sprint
+what is an increment?;; acumulation of all usable product backlog items completed during the previous sprints
+when is an increment born?;; at the moment the a product backlog item meets the definition of done
+what is a user story?;; short description of a feature that a client wants
+what is a epic?;; larger user story that cannot be delivered in one sprint
 
 # Scrum Events
-when does the next sprint begin?: inmmediately after the previous sprint
-scrum formal events:
+when does the next sprint begin?;; inmmediately after the previous sprint
+scrum formal events;;
 	sprint planning
 	sprint review
 	sprint retrospective
 	daily scrum
-daily scrum purpose: developers briefly discuss three questions
-sprint planning questions: why, what, and how
-scrum events open to people outside the scrum team:
+daily scrum purpose;; developers briefly discuss three questions
+sprint planning questions;; why, what, and how
+scrum events open to people outside the scrum team;;
 	sprint planning
 	sprint review
-daily scrum properties:
+daily scrum properties;;
 	dynamic
 	transparent: fixed time-location
-maximum time duration of sprint: 1 month
-maximum time duration of daily scrum: 15 min
-maximum time duration of sprint planning: 8 hrs
-maximum time duration of sprint retrospective: 3 hrs
-maximum time duration of sprint review: 4 hrs
+maximum time duration of sprint;; 1 month
+maximum time duration of daily scrum;; 15 min
+maximum time duration of sprint planning;; 8 hrs
+maximum time duration of sprint retrospective;; 3 hrs
+maximum time duration of sprint review;; 4 hrs
 
 # Scrum Events and Scrum Roles
-scrum master should be on all meetings: false, daily scrum is not necessary
-the product owner must attend sprint retrospective and review: true
-who is responsable for conducting the daily scrum?: developers
-who participates in the sprint review?: scrum team and stakeholders
-role of scrum master during sprint retrospective: peer team
-role of scrum master during daily scrum: silent observer
-role of product owner during daily scrum: silent observer
+scrum master should be on all meetings;; false, daily scrum is not necessary
+the product owner must attend sprint retrospective and review;; true
+who is responsable for conducting the daily scrum?;; developers
+who participates in the sprint review?;; scrum team and stakeholders
+role of scrum master during sprint retrospective;; peer team
+role of scrum master during daily scrum;; silent observer
+role of product owner during daily scrum;; silent observer
 
 # Scrum Events and Scrum Artifacts
-outputs of sprint review: revised product backlog
-outputs of sprint planning: sprint backlog, sprint goal
-inputs of sprint planning: product backlog, latest increment, projected capacity, past performance
-responsable for managing the progress during the sprint: the developers
+outputs of sprint review;; revised product backlog
+outputs of sprint planning;; sprint backlog, sprint goal
+inputs of sprint planning;; product backlog, latest increment, projected capacity, past performance
+responsable for managing the progress during the sprint;; the developers
 
 # Scrum Roles and Scrum Artifacts
-who owns the sprint backlog?: the developers
-who owns the product backlog?: the product owner
-what can be delegated by the product owner?:
+who owns the sprint backlog?;; the developers
+who owns the product backlog?;; the product owner
+what can be delegated by the product owner?;;
 	ordering the product backlog
 	develop and communicate product goal
-what cannot be delegated by the product owner?:
+what cannot be delegated by the product owner?;;
 	attending sprint review and retrospective
 
-each sprint should end with a release: false
-during sprint:
+each sprint should end with a release;; false
+during sprint;;
 	no changes to sprint goal
 	quality does not decrease
 	product backlog is refined as needed
