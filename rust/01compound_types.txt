@@ -1,0 +1,24 @@
+create a tuple tup containing 1, "hi", 2.4|| let tup = (1, "hi", 2.4);
+print in a newline the tuple tup|| println!("{tup:?}");
+decompose the tuple tup (1, "hi", 2.4) into the variables x,y,z|| let (x, y, z) = tup;
+
+create an array arr containing 1,2,3|| let arr = [1, 2, 3];
+create an array arr containing element 1 10 times|| let arr = [1; 10];
+print in a newline the first element in the array arr|| println!("{}", arr[0]);
+import mem namespace from std package|| use std::mem;
+print in a newline the array arr|| println!("{arr:?}");
+print in a newline the size of the array arr|| println!("{}", mem::size_of_val(&arr));
+print in a newline the slice of indexes (0, 3) from the array arr|| println!("{:?}", &arr[0..3])
+print in a newline the slice of indexes (0, 3] from the array arr|| println!("{:?}", &arr[0..=3])
+
+rust string encoding;; utf-8
+types of strings;;
+    String: class like stored in the heap
+    string literal: hardcode inline immutable
+    string slice: &str
+create an String s from string literal "hello world"|| let s = String::from("hello world");
+add character '!' to the end of String s|| s.push('!');
+pop the last character from the end of String s|| s.pop();
+print in a newline a byte iterator over the String s|| println("{:?}", s.bytes());
+print in a newline a char iterator over the String s|| println("{:?}", s.chars());
+print in a newline the begining indexes of each char over the String s|| println("{:?}", s.char_indices());

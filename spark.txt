@@ -157,6 +157,20 @@ from df drop the duplicated rows on user_id and user_code||
 from df drop the duplicated rows not using dropDuplicates or drop_duplicates||
     df.distinct()
 
+# Sorting
+from df sort by name ascending with boolean flag||
+    df.sort(F.col("name"), ascending=True)
+from df sort by name ascending using sql functions||
+    df.sort(F.asc("name"))
+from df sort by name descending using col function||
+    df.sort(F.col("name").desc())
+from df sort by name descending using col function with nulls at the begining||
+    df.sort(F.col("name").desc_nulls_first())
+from df sort by name ascending using sql functions with nulls at the end||
+    df.sort(F.asc_nulls_last("name"))
+from df sort by name ascending, age descending nulls first using the most compact syntax||
+    df.sort(F.asc("name"), F.desc_nulls_first("age"))
+
 # Aggregate functions
 function to count rows|| count
 function to get max|| max
@@ -164,4 +178,15 @@ function to get min|| min
 function to count distinct rows|| countDistinct
 function to aggregate by numerical addititon|| sum
 function to aggregate by numerical weight|| avg
+from df group by deparment and count employee and average salary||
+    df.groupby("department").agg(F.count("employee"), F.avg("salary"))
 
+# Joining
+from games and teams perform inner join using alias on homeTeamID and teamID||
+    games.alias("games").join(teams.alias("teams), on=F.col("games.homeTeamID") == F.col("teams.teamID"), how="inner)
+from games and teams perform outer join using column name both on teamID||
+    games.join(teams, on="teamID", how="outer")
+from games and teams as broadcast perform outer join using column name both on teamID||
+    games.join(F.broadcast(teams), on="teamID", how="outer")
+from customers and sellers perform cross join||
+    customers.crossJoin(sellers)

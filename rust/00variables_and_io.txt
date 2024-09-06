@@ -10,14 +10,22 @@ build a package in debug mode|| cargo build
 build a package in release mode|| cargo build --release
 build and execute a package|| cargo run
 
-variables rust format;; snake_case
+variables rust naming convention;; snake_case
+constants rust naming convention;; SNAKE_CASE_UPPERCASE
 every variable in rust is _________ by default;; immutable
+constants are defined at _______ time;; compile
 integer data types;; i8, 116, 132, i64, i128
 unsigned integer data types;; u8, u16, u32, u64, u128
+float data types;; f32, f64
+notation to define a function;; fn function_name() {}
 
 create a variable x and set to "Hello World"|| let x = "Hello World";
 print variable x in a newline|| println!("{x}");
 print "Error" to the stderr in a new line|| eprintln!("Error");
 create a mutable variable x set to 10|| let mut x = 10;
-create a variable x of type i128 and set to the maximum possible value|| let x: i128 = i128::MAX
-create a variable x of type i32 and set to 2 usign binary|| let x: i32 = 
+create a variable x of type i128 and set to the maximum possible value|| let x: i128 = i128::MAX;
+create a variable x of type i32 and set to 2 usign binary|| let x: i32 = 0b10;
+create a variable x of type i32 and set to 15 usign hexadecimal|| let x: i32 = 0xf;
+
+import io namespace from std package|| use std::io;
+read from stdin a single line|| io::stdin().readline();
