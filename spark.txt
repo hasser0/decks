@@ -205,3 +205,5 @@ from df shuffle the DataFrame into 16 partitions on year column||
     df.repatition(16, "year")
 from df reduce the number of partitions to 1 single partition||
     df.coalesce(1)
+from df write to parquet partitioning by leagueID and season using format api in path||
+    df.write.partitionBy("leagueID", "season").format("parquet").save(path)
