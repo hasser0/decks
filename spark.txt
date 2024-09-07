@@ -207,3 +207,9 @@ from df reduce the number of partitions to 1 single partition||
     df.coalesce(1)
 from df write to parquet partitioning by leagueID and season using format api in path||
     df.write.partitionBy("leagueID", "season").format("parquet").save(path)
+
+# udf
+register an udf called tostr that convert anything to string type and save to tostr||
+    tostr = spark.udf.register("tostr", lambda x: str(x), StringType())
+write the decorator used in a function to create an udf that returns a string||
+    @F.udf(StringType())
