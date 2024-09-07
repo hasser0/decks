@@ -6,6 +6,7 @@ what are narrow transformations?;; transformations where each input row results 
 what are wide transformations?;; transformations where each input row results in multiple output rows
 what is shuffle?;; action required on wide transformations to repartition data across nodes
 how select expression works?;; it is similar to the columns selected after the select expression in sql
+difference between repartition and coalesce;; repartition shuffle the data between nodes based on column while coalesce only reduce the number of partitions by joining them
 
 
 # Create DataFrames
@@ -190,3 +191,17 @@ from games and teams as broadcast perform outer join using column name both on t
     games.join(F.broadcast(teams), on="teamID", how="outer")
 from customers and sellers perform cross join||
     customers.crossJoin(sellers)
+
+# Read and Write
+read csv at path using format api infering schema with header and delimiter "|"(options)||
+    spark.read.format("csv").options(inferSchema=True, header=True, sep="|").load("path")
+read parquet at path using direct api with schema "name string, age string"(key-value arguments)||
+    spark.read.parquet(path, schema="name string, age string")
+write df to csv in path using format api with header and delimiter "|"(key-value argument)||
+    df.write.format("csv").save(path, header=True, sep="|")
+write df to json in path using direct api in append mode(function) and gzip compresion(option)||
+    df.write.mode("append").option("compresion", "gzip").save(path)
+from df shuffle the DataFrame into 16 partitions on year column||
+    df.repatition(16, "year")
+from df reduce the number of partitions to 1 single partition||
+    df.coalesce(1)
