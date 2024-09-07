@@ -1,15 +1,15 @@
-# Billing
+# billing
 who can manage billing and cost?;; only the root user and admins when enabled by root user
 where can you see charges by service?;; at billing/billing and payments/bills
 
-# Services
-what is EC2?;; Elastic Compute Cloud
-what subservices is EC2 composed of?;; EC2, EBS, ELB and ASG
-what is EBS?;; Elastic Block Store
+# services
+what is ec2?;; elastic compute cloud
+what subservices is ec2 composed of?;; ec2, ebs, elb and asg
+what is ebs?;; elastic block store
 
-# EC2
-what can be configured on an EC2 instance;; OS, CPU, RAM, storage, network card
-types of EC2 instances;;
+# ec2
+what can be configured on an ec2 instance;; os, cpu, ram, storage, network card
+types of ec2 instances;;
 	general purpose(m/t)
 	compute optimize(c)
 	memory optimize(r)
@@ -19,9 +19,9 @@ types of EC2 instances;;
 what is the m in m5.2xlarge?;; instance class
 what is the 5 in m5.2xlarge?;; class generation
 what is the 2xlarge in m5.2xlarge?;; size within classs
-what is EC2 User Data?;; is a script launched at instance start only once
+what is ec2 user data?;; is a script launched at instance start only once
 
-# Security groups
+# security groups
 what are security groups?;; groups of firewall rules
 what can be regulated with security groups?;;
 	access ports
@@ -29,25 +29,25 @@ what can be regulated with security groups?;;
 	inbound
 	outbound
 does security groups have deny rules?;; no they only have allow rules
-does security groups are attached to instances?;; False, you can attach security groups to multiple instances
+does security groups are attached to instances?;; false, you can attach security groups to multiple instances
 how to know whether a broken connection is due application or permission error?;; if it's a connection refused then it's an app error otherwise it would be a timeout error
 default inbound security group configuration;; all is blocked
 default outbound security group configuration;; all is allowed
 can security groups authorized other security groups?;; yes, you can authorized security groups
-default port for SSH?;; 22
-default port for FTP?;; 21
-default port for SFTP?;; 22
-default port for HTTP?;; 80
-default port for HTTPS?;; 443
-default port for RDP?;; 3389
-what is RDP?;; Remote Desktop Protocol
-what is the best way to attach permissions to an EC2 instance?;; using EC2 instance roles
+default port for ssh?;; 22
+default port for ftp?;; 21
+default port for sftp?;; 22
+default port for http?;; 80
+default port for https?;; 443
+default port for rdp?;; 3389
+what is rdp?;; remote desktop protocol
+what is the best way to attach permissions to an ec2 instance?;; using ec2 instance roles
 
-# SRM
-who is responsable for infrastructure?;; AWS
-who is responsable for ihysical isolation?;; AWS
-who is responsable for iardware faults?;; AWS
+# srm
+who is responsable for infrastructure?;; aws
+who is responsable for ihysical isolation?;; aws
+who is responsable for iardware faults?;; aws
 who is responsable for security group rules?;; customer
-who is responsable for OS patches?;; customer
+who is responsable for os patches?;; customer
 who is responsable for installed software?;; customer
-who is responsable for IAM roles assigned and data security?;; customer
+who is responsable for iam roles assigned and data security?;; customer

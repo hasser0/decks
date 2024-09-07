@@ -1,45 +1,45 @@
-# Cloud
+# cloud
 types of cloud;;
 	private cloud
 	public cloud
 	hybrid cloud
-cloud computing advantages and characteristics;;
+cloud computing advantages and characteristics(macsone);;
+	measurement
+	agility
 	cost
 	scalability
-	elasticity
-	agility
-	measurement
 	on demand
 	no mantaining
+	elasticity
 types of cloud computing;;
-	IaaS: you manage hardware and bare metal
-	PaaS: you manage and deploy your applications
-	SaaS: you use the application managed by service provider
-what is managed by on premise but not IaaS?;; virtualization, servers, storage, networking
-what is managed by IaaS but not PaaS?;; middleware, OS, runtime
-what is managed by PaaS but not SaaS?;; data and application
-what is managed by SaaS?;; nothing
+	iaas: you manage hardware and bare metal
+	paas: you manage and deploy your applications
+	saas: you use the application managed by service provider
+what is managed by on premise but not iaas?;; virtualization, servers, storage, networking
+what is managed by iaas but not paas?;; middleware, os, runtime
+what is managed by paas but not saas?;; data and application
+what is managed by saas?;; nothing
 
-# Pricing
-cloud pricing model;; pay as you go pricing and on demand delivery
-AWS pricing fundamentals;;
+# pricing
+how are services pay on the cloud?;; pay as you go pricing and on demand delivery
+what is paid on aws?;;
 	compute: pay for what you compute
 	storage: pay for what you store
-	networking: pay for data transfer out of AWS
+	networking: pay for data transfer out of aws
 
-# Regions and AZ
+# regions and az
 what are regions and some examples?;; a cluster of data centers, for example us-east-1, eu-west-3
-points to think of when selecting a region for a service;;
+points to think of when selecting a region for a service(capp);;
 	compliance: legal restrictions
-	proximity
 	availability: different service per region
+	proximity
 	pricing: different pricing per region
 what are availability zones and some examples?;; groups of data centers(one or more) within the same region, for example us-east-1a, us-east-1b, us-east-1c
 why exists availability zones?;; for disaster recovery and connected with high bandwidth and ultralow latency
 how many availability zones have each region?;; 3 to 6
 how many data centers have each availability zone?;; one or more
-what are all the global services;; IAM, Route53, CloudFront and WAF
+what are all the global services;; iam, route53, cloudfront and waf
 
-# SRM
-what is the AWS shared responsability model(SRM)?;; is a model that divide customer and AWS responsabilities
-what is the AWS acceptable use policy;; policy that stablish you cannot do illegal, harmful or offensive use of content, not security or network violations
+# srm
+what is the aws shared responsability model(srm)?;; is a model that divide customer and aws responsabilities
+what is the aws acceptable use policy;; policy that stablish you cannot do illegal, harmful or offensive use of content, not security or network violations

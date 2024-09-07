@@ -1,32 +1,32 @@
-# Concepts
+# concepts
 what is scalability?;; accommodate larger load by making hardware stronger or by adding nodes
 what is scale up?;; make hardware stronger
 what is scale out?;; adding nodes
 what is elasticity?;; ability to scale automatically base on the load
 what are load balancers?;; servers that forward internet traffic to multiple servers
 
-# Services
-what is ELB?;; Elastic Load Balancer is managed load balancer
-what is ASG?;; Auto Scaling Group is a service to implement elasticity by scaling out based on demand
+# services
+what is elb?;; elastic load balancer is managed load balancer
+what is asg?;; auto scaling group is a service to implement elasticity by scaling out based on demand
 
-# Load balancers
+# load balancers
 why use a load balancer?;;
 	balance load among servers
-	expose single DNS IP
+	expose single dns ip
 	instances failure
-	SSL to websites
+	ssl to websites
 	high availability across zones
-types of AWS load balancers;;
-	Application Load Balancer - layer 7
-	Network Load Balancer - layer 4
-	Gateway Load Balancer - layer 3
-Application Load Balancer features?;; HTTP/HTTPS/gRPC, static URL
-Network Load Balancer features?;; TCP/UDP, high performance, static IP
-Gateway Load Balancer features?;; GENEVE, firewalls, intrusion detection
+types of aws load balancers;;
+	application load balancer - layer 7
+	network load balancer - layer 4
+	gateway load balancer - layer 3
+application load balancer features?;; http/https/grpc, static url
+network load balancer features?;; tcp/udp, high performance, static ip
+gateway load balancer features?;; geneve, firewalls, intrusion detection
 
-# Scaling strategies
+# scaling strategies
 what is a manual scaling?;; scaling strategy done by a physical user
 what is a step scaling?;; scaling strategy done on an alarm per instance
 what is a target tracking scaling;;? scaling strategy done on an alarm per target group
 what is a schedule scaling?;; scaling strategy done on a specific time
-what is a predictive scaling?;; scaling strategy handle by AWS ML models
+what is a predictive scaling?;; scaling strategy handle by aws ml models

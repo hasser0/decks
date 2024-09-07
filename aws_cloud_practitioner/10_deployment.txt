@@ -1,51 +1,51 @@
-# Concepts
+# concepts
 what is a 3-tier architecture?;; is an architecture use for webdev that consists of 3 tiers
-	an ELB
-	an ASG
-	a RDS(possibly with Elastic Cache)
+	an elb
+	an asg
+	a rds(possibly with elastic cache)
 
-# Services
-what is Cloud Formation?;; IaC declarative way to manage and define infrastructure in AWS
-what is CDK?;; Cloud Develoment Kit is a way to define infrastructure using a programming language
-what is Elastic Beanstalk?;; is a service to deploy 3-tier architectures all in a single view
-what is Cloud Deploy?;; is a service to deploy applications on EC2 instances or on premises servers
-what is Code Commit?;; is a source control service
-what id Code Build?;; is a serverless service that allows you to build, run and test packages
-what is Code Pipeline?;; is a fully managed service to orchestrate ci/cd pipelines well integrated with
-	Code Commit
-	Code Build
-	Code Deploy
-what is Code Artifact?;; is a artifact management service that allows you to securely store packages
-what is Code Star?;; is a centralize service to create, manage and view all Code Family/Cloud9 services
-what is Cloud9?;; is cloud IDE
-what is SSM System Manager?;; is a tool to manage EC2 instances and on premise servers
+# services
+what is cloud formation?;; iac declarative way to manage and define infrastructure in aws
+what is cdk?;; cloud develoment kit is a way to define infrastructure using a programming language
+what is elastic beanstalk?;; is a service to deploy 3-tier architectures all in a single view
+what is cloud deploy?;; is a service to deploy applications on ec2 instances or on premises servers
+what is code commit?;; is a source control service
+what id code build?;; is a serverless service that allows you to build, run and test packages
+what is code pipeline?;; is a fully managed service to orchestrate ci/cd pipelines well integrated with
+	code commit
+	code build
+	code deploy
+what is code artifact?;; is a artifact management service that allows you to securely store packages
+what is code star?;; is a centralize service to create, manage and view all code family/cloud9 services
+what is cloud9?;; is cloud ide
+what is ssm system manager?;; is a tool to manage ec2 instances and on premise servers
 
-# Cloud Formation
-saving strategy by using Cloud Formation?;; automate deletion or creation of templates no working hours
-do declarated Cloud Formation resources need to be defined in order?;; no, Cloud Formation can figure out the order
-which service is used to visualize Cloud Formation templates?;; Application Composer
-Cloud Formation use case;; recreate infrastructure using code in different environments, regions or accounts
+# cloud formation
+saving strategy by using cloud formation?;; automate deletion or creation of templates no working hours
+do declarated cloud formation resources need to be defined in order?;; no, cloud formation can figure out the order
+which service is used to visualize cloud formation templates?;; application composer
+cloud formation use case;; recreate infrastructure using code in different environments, regions or accounts
 
-# CDK
-how CDK works internally?;; it creates a json or yaml file from the code
-CDK use case;; deploy infrastructure along with code, for example Lambda Functions or ECS
+# cdk
+how cdk works internally?;; it creates a json or yaml file from the code
+cdk use case;; deploy infrastructure along with code, for example lambda functions or ecs
 
-# Elastic Beanstalk
-Elastic Beanstalk use case;; scaling and configuration concerns but want to focus on code
-what type of cloud service is Elastic Beanstalk?;; is PaaS
-how is Elastic Beanstalk billed?;; the platform is free but you pay for deployed resources
-what is the customer responsable for in Elastic Beanstalk?;; only for the code
-Elastic Beanstalk architectures;;
-	Single Instance
-	ASG
-	ELB + ASG
+# elastic beanstalk
+elastic beanstalk use case;; scaling and configuration concerns but want to focus on code
+what type of cloud service is elastic beanstalk?;; is paas
+how is elastic beanstalk billed?;; the platform is free but you pay for deployed resources
+what is the customer responsable for in elastic beanstalk?;; only for the code
+elastic beanstalk architectures;;
+	single instance
+	asg
+	elb + asg
 
-# Code Family
-how is CodeBuild billed?;; you pay only for the build time
-Code Artifact use case;; to create a python packages central repository
-what is the new replacement for Code Star?;; Code Catalyst
+# code family
+how is codebuild billed?;; you pay only for the build time
+code artifact use case;; to create a python packages central repository
+what is the new replacement for code star?;; code catalyst
 
-# SSM
-what can be done with SSM System Manager?;; automatic OS patches, run and configure multiple servers/instances on a single place
-what can be done with SSM Session Manager?;; access instances without ssh
-what can be done with SSM Parameter Store?;; save secrets and configuration variables
+# ssm
+what can be done with ssm system manager?;; automatic os patches, run and configure multiple servers/instances on a single place
+what can be done with ssm session manager?;; access instances without ssh
+what can be done with ssm parameter store?;; save secrets and configuration variables

@@ -1,6 +1,6 @@
-what is AWS CAF?;; Cloud Adoption Framework is a white paper with best practices
-what is AWS Right Sizing?;; match optimal instance types
-AWS CAF six perspectives;; Business, People, Governance, Platform, Security and Operations
+what is aws caf?;; cloud adoption framework is a white paper with best practices
+what is aws right sizing?;; match optimal instance types
+aws caf six perspectives;; business, people, governance, platform, security and operations
 
 what is operational excellence in the well-architected pillars?;; run and monitor systems and continually improve them
 what is security in the well-architect pillars?;; protect systems while delivering business value

@@ -1,39 +1,39 @@
-what is a VPC?;; virtual private cloud is a private network to deploy your resources
+what is a vpc?;; virtual private cloud is a private network to deploy your resources
 what is a subnet?;; is a partition of a network
 what is a public subnet?;; is a subnet that is accesible from the internet
 what is a private subnet?;; is a subnet that is no accesible from the internet
 what are route tables?;; is a file that defines access to the internet and between subnets
 what is an internet gateway?;; is a service to connect instances with the internet
 what is a nat gateway?;; is a service to connect instances in a private subnet to the internet
-what is Elastic IP?;; service to attach a fixed IPv4 address to an EC2 instance
-what is a NACL?;; network action control list is a firewall to control traffic from and to the subnet
-what are security groups?;; firewall that controls traffic from and to EC2 instances
-what is VPC Flow Logs?;; is a service to capture traffic on a VPC
-what is VPC Peering?;; is a service to connect two VPC
-what is VPC Endpoints?;; is a way to connect EC2 instances within a VPC to AWS services using private network
-what happens to an EC2 public IPv4 on reboot?;; it changes
-what happens to an EC2 private IPv4 on reboot?;; it is the same
-what is AWS PrivateLink?;; is a service that provides connectivity between VPC's that scale up to 1000s of VPCs
-what is AWS Site to Site VPN?;; is a service to connect on premises VPN to AWS that goes over encrypted public network
-what is AWS Direct Connect?;; is a service to connect on premises VPN to AWS that goes over private network
-what is AWS VPN Client?;; is a service to connect to a VPC from your computer as if you were on your the VPC
-what is AWS Transite Gateway?;; is a solution to have transitive peering between thousands of VPC and on premises
-how are you billed for IPv4 and IPv6 public address?;; IPv6 is free and IPv4 is charged per hour
+what is elastic ip?;; service to attach a fixed ipv4 address to an ec2 instance
+what is a nacl?;; network action control list is a firewall to control traffic from and to the subnet
+what are security groups?;; firewall that controls traffic from and to ec2 instances
+what is vpc flow logs?;; is a service to capture traffic on a vpc
+what is vpc peering?;; is a service to connect two vpc
+what is vpc endpoints?;; is a way to connect ec2 instances within a vpc to aws services using private network
+what happens to an ec2 public ipv4 on reboot?;; it changes
+what happens to an ec2 private ipv4 on reboot?;; it is the same
+what is aws privatelink?;; is a service that provides connectivity between vpc's that scale up to 1000s of vpcs
+what is aws site to site vpn?;; is a service to connect on premises vpn to aws that goes over encrypted public network
+what is aws direct connect?;; is a service to connect on premises vpn to aws that goes over private network
+what is aws vpn client?;; is a service to connect to a vpc from your computer as if you were on your the vpc
+what is aws transite gateway?;; is a solution to have transitive peering between thousands of vpc and on premises
+how are you billed for ipv4 and ipv6 public address?;; ipv6 is free and ipv4 is charged per hour
 
-how is traffic route from a public subnet to the internet?;; using a Internet Gateway
-how is traffic route from a private subnet to the internet?;; using a NAT gateway and an Internet Gateway
-nat gateway use case;; update OS or install software within your private subnet
+how is traffic route from a public subnet to the internet?;; using a internet gateway
+how is traffic route from a private subnet to the internet?;; using a nat gateway and an internet gateway
+nat gateway use case;; update os or install software within your private subnet
 
-what actions are available in a NACL?;; allow and deny
-what is affected on NACL by a single rule?;; a single IP
-at which level NACL operates?;; subnet level
+what actions are available in a nacl?;; allow and deny
+what is affected on nacl by a single rule?;; a single ip
+at which level nacl operates?;; subnet level
 what actions are available in a security group?;; allow only
-what is affected on security by a single rule?;; IP addresses and other security groups
+what is affected on security by a single rule?;; ip addresses and other security groups
 at which level security groups operates?;; instance and groups level
-VPC Flow Logs use case;; monitor and troubleshoot connetivity issues
-VPC Flow Logs sinks?;; S3, CloudWatch Logs and Kinesis Data Firehose
-is VPC Peering transitive?;; False only connect pairs of VPC
-type of VPC Endpoint for S3 and DynamoDB;; Gateway
-type of VPC Endpoint for all services except S3 and DynamoDB;; Interface
-what needs to be implemented on premises to use Site to Site VPN?;; customer gateway
-what needs to be implemented on AWS to use Site to Site VPN?;; virtual private gateway
+vpc flow logs use case;; monitor and troubleshoot connetivity issues
+vpc flow logs sinks?;; s3, cloudwatch logs and kinesis data firehose
+is vpc peering transitive?;; false only connect pairs of vpc
+type of vpc endpoint for s3 and dynamodb;; gateway
+type of vpc endpoint for all services except s3 and dynamodb;; interface
+what needs to be implemented on premises to use site to site vpn?;; customer gateway
+what needs to be implemented on aws to use site to site vpn?;; virtual private gateway

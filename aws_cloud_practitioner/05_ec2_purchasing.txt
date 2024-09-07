@@ -1,4 +1,4 @@
-# Purchasing options
+# purchasing options
 kinds of ec2 purchasing options?;;
 	on demand instances
 	reserved instances

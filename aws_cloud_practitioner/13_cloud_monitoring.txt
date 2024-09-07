@@ -1,38 +1,38 @@
-what is CloudWatch Alarms?;; a CloudWatch service that trigger actions based on metrics
-what is CloudWatch Metrics?;; metrics taken on time interval about AWS services
-what is CloudWatch Billing?;; a service to measure billing costs of AWS services
-what is CloudWatch Dashboards?;; a graphical representation of CloudWatch Metrics
-what is CloudWatch Logs?;; a service to monitor, store and access log files
-what is EventBridge?;; is serverless service to connect applications using events
-what is CloudTrail?;; is a governance, audit and compliance service to monitor user and API activities
-what is X-Ray?;; is a service to debug and monitor microservices architectures
-what is CodeGuru?;; is a ML service for automated code reviews and application performance recommendations
-what is CodeGuru Reviewer?;; automated code reviews
-what is CodeGuru Profiler?;; produ {[]}\ ction performance profiler
-what is Health Dashboard?;; is a service to monitor all your services and regions historically
+what is cloudwatch alarms?;; a cloudwatch service that trigger actions based on metrics
+what is cloudwatch metrics?;; metrics taken on time interval about aws services
+what is cloudwatch billing?;; a service to measure billing costs of aws services
+what is cloudwatch dashboards?;; a graphical representation of cloudwatch metrics
+what is cloudwatch logs?;; a service to monitor, store and access log files
+what is eventbridge?;; is serverless service to connect applications using events
+what is cloudtrail?;; is a governance, audit and compliance service to monitor user and api activities
+what is x-ray?;; is a service to debug and monitor microservices architectures
+what is codeguru?;; is a ml service for automated code reviews and application performance recommendations
+what is codeguru reviewer?;; automated code reviews
+what is codeguru profiler?;; produ {[]}\ ction performance profiler
+what is health dashboard?;; is a service to monitor all your services and regions historically
 
-what kind of triggers exists in by CloudWatch Alarms?;;
+what kind of triggers exists in by cloudwatch alarms?;;
 	autoscaling
 	ec2 instances actions
 	sns notifications
-what kind of metrics exists on CloudWatch for EC2 instances?;;
+what kind of metrics exists on cloudwatch for ec2 instances?;;
 	cpu utilization
 	status checks
 	network
-what kind of metrics exists on CloudWatch for EBS?;; disk read/writes
-what kind of metrics exists on CloudWatch for S3?;;
-	bucket Size
+what kind of metrics exists on cloudwatch for ebs?;; disk read/writes
+what kind of metrics exists on cloudwatch for s3?;;
+	bucket size
 	number of objects
 what can be done when there are no metrics for an specific scenario?;; you can build your own custom metrics
-which services are integrated with CloudWatch Logs?;; ECS, ElasticBeanstalk, Lambda, Route53
-what is needed to watch logs from an EC2 instance in CloudWatch Logs?;; install the CloudWatch agent
-how was EventBridge named before?;; CloudWatch Events
-what types of events can be used on EventBridge?;;
+which services are integrated with cloudwatch logs?;; ecs, elasticbeanstalk, lambda, route53
+what is needed to watch logs from an ec2 instance in cloudwatch logs?;; install the cloudwatch agent
+how was eventbridge named before?;; cloudwatch events
+what types of events can be used on eventbridge?;;
 	events within aws account
 	cron schedules
 	custom events
-which scope applies to CloudTrail?;; all regions or single region
-where can CloudTrail logs be stored?;; in CloudWatch Logs or S3 buckets
-what problems resolve X-Ray?;; difficult to debug and monitor microservices
-how was Health Dashboard Service History named before?;; Service Health Dashboard
-how was Health Dashboard Account named before?;; Personal Health Dashboard
+which scope applies to cloudtrail?;; all regions or single region
+where can cloudtrail logs be stored?;; in cloudwatch logs or s3 buckets
+what problems resolve x-ray?;; difficult to debug and monitor microservices
+how was health dashboard service history named before?;; service health dashboard
+how was health dashboard account named before?;; personal health dashboard
