@@ -1,28 +1,32 @@
-# services
-what is ebs?;; elastic block store is a network storage attachable to ec2 instances
-what is ebs multi-attach?;; a new service to attach an ebs to multiple instances
-what are ami?;; amazon machine image
-what are ebs snapshots?;; backups from ebs volumes
-what is efs?;; elastic file system is a network file system to share with multiple instances
-what is efs infrequent access?;; storage class cost optimize for infrequent accessed files
+what is ebs?;; elastic block store is a network storage service designed for ec2 instances
+what is ebs multi-attach?;; service to attach an ebs volume to multiple instances
+what is an ami?;; amazon machine image is a template containing software configurations
+what is an ebs snapshot?;; backup from ebs volume stored in s3
+what is recycle bin snapshots?;; rules to retain deleted snapshots in case of accidental deletion
+what is ebs snapshot archive?;; ebs snapshot feature cheaper for infrequent access data
+what is efs?;; elastic file system is a fully managed serverless network file storage service
+what is efs infrequent access?;; efs storage class cost optimize for infrequent accessed data
 what is fsx?;; amazon third party file systems
+what is ec2 instance store;; ephemeral, high performant, instance attached storage
 
 # ebs
-is ebs volume a global service?;; no, it's bound to an availability zone
-can we mount an ebs volume to multiple instances at the same time?;; no, only one at a time
-can we attach an ebs volume in us-east-1a to an ec2 instance in us-east-1b?;; no, only in same zone
-can we attach multiple ebs volumes to an instance?;; yes, but only in the same zone
-how to create ebs ephemeral volumes?;; using delete on termination field
+ebs volumes are inherently tied to ...;; a specific availability zone
+ebs volumes can be mounted to ... at the same time;; only one ec2 instance
+ebs volumes can be mounted to ec2 instances in ...;; the same availability zone
+... can be mounted on a single ec2 instance;; multiple ebs volumes
+ephemeral ebs volumes can be created using ...;; delete on termination field
 
 # snapshots
-ebs snapshots use cases?;; backup data or transfer to a different zone in case of failure
-what is recommended to do before an ebs snapshot?;; detach the volume from any instance
-where can be restore snapshots?;; at any zone region
-what are ebs snapshot archive?;; snapshot feature that is cheaper for infrequent access data
-what are recycle bin snapshots?;; rules to retain deleted snapshots in case of accidental deletion from 1 day to 1 year
+ebs snapshots are inherently tied to ...;; a specific region
+ebs snapshots are used for ...;; backup data and transfer to a different availability zones
+before creating an ebs snapshot it is recommended to ...;; detach the volume from any instance
+recycle bin snapshots can retain data from ... up to ...;; 1 day ... 1 year
 
 # ami
-why would somebody use ami?;; faster boot, add software and configurations
+advantages of using ami;;
+	faster boot
+	add software
+	add configuration
 types of ami;;
 	public ami
 	own ami
@@ -30,23 +34,13 @@ types of ami;;
 what is ec2 image builder?;; a service to automate creation(build, validate, test) of vms or containers
 
 # instance store
-what is the difference between ebs and ec2 instance store?;; ebs is a network disk, while ec2 instance store is attached to instances
 when to use ec2 instance store over ebs?;; get high io performance
-drawbacks of ec2 instance store;; it is ephemeral storage, risk of data loss in failure
+while ebs is ... ec2 instance store is ...;; a network disk ... disk attached to instances
+the main disadvantage of ec2 instance store is that ...;; it is ephemeral and can incur in data loss
 
 # efs
-what is the main advantage of efs over ebs?;; can be connected to multiple instances in multiple zones
-what is the drawback of efs?;; it is 3x more expensive than ebs
+in contrast to ebs, efs can be ...;; mounted on multiple ec2 instances on multiple availability zones
+ebs is ... than efs;; 3x cheaper
 fsx options;;
 	windows file server(for windows servers)
 	lustre(linux cluster for high performance computing)
-
-# srm
-who is responsable for setup backup/snapshots schedules?;; customer
-who is responsable for encryption data?;; customer
-who is responsable for ec2 instance store data lose?;; customer
-who is responsable of the data stored?;; customer
-who is responsable for infrastructure?;; aws
-who is responsable for backups stablish in your policies?;; aws
-who is responsable for faulty hardware?;; aws
-who is responsable for data privacy?;; aws

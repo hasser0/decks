@@ -1,9 +1,22 @@
+what is the shared responsability model(srm)?;; model that divide customer and aws responsabilities
+what is the acceptable use policy?;; don't use aws for
+	illegal purposes
+	delivery of harmful or offensive content
+	security or network violations
+
 # cloud
 types of cloud;;
 	private cloud
 	public cloud
 	hybrid cloud
-cloud computing advantages and characteristics(macsone);;
+cloud computing advantages(6);;
+	trade fixed expense for variable expense
+	benefit from massive economies of scale
+	stop guessing capacity
+	increase speed and agility
+	stop spending money running and maintaining data centers
+	go global in minutes
+cloud computing characteristics(macsone);;
 	measurement
 	agility
 	cost
@@ -11,7 +24,7 @@ cloud computing advantages and characteristics(macsone);;
 	on demand
 	no mantaining
 	elasticity
-types of cloud computing;;
+cloud computing models;;
 	iaas: you manage hardware and bare metal
 	paas: you manage and deploy your applications
 	saas: you use the application managed by service provider
@@ -28,18 +41,16 @@ what is paid on aws?;;
 	networking: pay for data transfer out of aws
 
 # regions and az
-what are regions and some examples?;; a cluster of data centers, for example us-east-1, eu-west-3
-points to think of when selecting a region for a service(capp);;
+what are all the global services;; iam, route53, cloudfront and waf
+what are regions?;; cluster of data centers
+what are availability zones?;; groups of data centers(one or more) within the same region
+us-east-1, eu-west-3 are examples of ...;; regions
+us-east-1a, us-east-1b, us-east-1c are examples of ...;; availability zone
+how many availability zones contain each region?;; 3 to 6
+how many data centers contain each availability zone?;; one or more
+main availability zones purpose;; disaster recovery
+key points to take into account when selecting a region for a service(capp);;
 	compliance: legal restrictions
 	availability: different service per region
 	proximity
 	pricing: different pricing per region
-what are availability zones and some examples?;; groups of data centers(one or more) within the same region, for example us-east-1a, us-east-1b, us-east-1c
-why exists availability zones?;; for disaster recovery and connected with high bandwidth and ultralow latency
-how many availability zones have each region?;; 3 to 6
-how many data centers have each availability zone?;; one or more
-what are all the global services;; iam, route53, cloudfront and waf
-
-# srm
-what is the aws shared responsability model(srm)?;; is a model that divide customer and aws responsabilities
-what is the aws acceptable use policy;; policy that stablish you cannot do illegal, harmful or offensive use of content, not security or network violations

@@ -1,3 +1,8 @@
+# billing
+who can manage billing and cost?;; only the root user and admins when enabled by root user
+where can you see charges by service?;; at billing/billing and payments/bills
+
+
 what are aws organizations?;; manage multiple aws accounts
 what are scp?;; service control policies whitelist or blacklist iam actions at account level
 what is aws control tower;; easy way to set up and govern a secure and compliant multi account aws environment

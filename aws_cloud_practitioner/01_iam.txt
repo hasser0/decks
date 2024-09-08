@@ -1,49 +1,53 @@
-what is an iam role?;; set of permissions to be used by aws services
-what is iam access advisor?;; shows permissions granted to a user and last time accessed
+what is iam access advisor?;; shows permissions granted to a user and last time were used
 what is iam credential report?;; list all your users with their credentials
+what is iam identity center?;; single sign on for all aws accounts
 what is sts?;; security token service to create temporary limited-privileges credentials
 what is cognito?;; service for identity on web and mobile
-what is iam identity center?;; single sign on for all aws accounts
-
-# users, groups, policies
+what is cloudshell?;; service that provides a shell to access resources
+what is an iam role?;; set of permissions to be used by aws services
 what is a root user?;; root users are created by default when creating an aws account
+
+# users, groups and policies
 when should root users be used?;; should not be used or shared
 principle to apply while creating permissions;; least privilege principle
-how do you assign permissions to users/groups?;; json policy
+how do you assign permissions to users or groups?;; using json policies
 how many groups can a user belong to?;; zero or more
 can groups contain other groups?;; no, only users
+who can be attached to a policy?;; users and groups
 types of policies;;
-	inline policy: policy attach to a single user
+	inline policy: (single user)
 	group policy
 structure of a policy(vis);;
 	version
-	id: optional, policy id
-	statement: array of objects
+	id
+	statement
 structure of a statement in policy structure(crepas);;
-	condition: optional, case for applying the statement
-	resources: array of resources to apply the policy
-	effect: deny or allow
-	principal: account/user/role
-	action: array of strings with the actions
-	sid: optional, statement id
-who can be attached to a policy?;; users and groups
+	condition
+	resources
+	effect
+	principal
+	action
+	sid
 
-# security and access management
-how to secure iam access?;;
-	password policy
+# iam security
+how to secure iam access?(2);;
+	stron password policy
 	mfa
-options that password policy provide;; length, characters, renewal, no old passwords
-types of devices for mfa;; virtual device (in phone), physical device
-how to access aws programmatically?;; with an cccess key(cli or sdk)
-which service can help you to list users credential management?;; iam credential report
-which service can help you to list the services used by your accoutn?;; iam access advisor
-what is cloudshell?;; is an aws service that provides cli to access resources
+password policies(4);;
+	length
+	characters
+	periodic renewal
+	no old passwords
+types of devices for mfa(2);;
+	virtual device (in phone)
+	physical device
+how to access aws programmatically?;; with an access key(cli or sdk)
 
 # best practices
-what should be done instead of using root account?;; use iam admin user instead
-how many users should each physical user own?;; only one
-which is the best way to assign permissions?;; assigning users to groups and permissions to groups
-what is recommended to access aws user?;; strong password policy and mfa
-when is recommended to use iam roles?;; to assign permissions to services
-when is used access keys?;; for programmatic access by sdk or cli
-which tools should be used to monitor iam users?;; iam credentials report and iam access advisor
+use ... instead of using root account?;; iam admin user
+number of users per physical user;; one
+permission is to group as user is to;; group
+when are access keys used?;; for programmatic access by sdk or cli
+tools to monitor iam users(2);;
+	iam credentials report
+	iam access advisor
