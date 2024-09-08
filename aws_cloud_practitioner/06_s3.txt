@@ -1,88 +1,74 @@
-# concepts
-what is durability?;; probability to not incur in data loss
-what is availability?;; probability that the service ready to use
-s3 is open source;; false, it is propetary storage technology
+what is durability?;; probability that data will remain intact over a specify period of time
+what is availability?;; probability that a service will be accessible and operational over a specify period of time
+what is s3?;; simple storage service is an object storage service
+what is an s3 bucket?;; container for objects
+what is an s3 object?;; file and any metadata that describes the file
+what is storage gateway?;; hybrid cloud storage service to bridge on premise and aws cloud
+what is iam access analyzer for s3?;; monitoring tool that ensures users and objects permissions are correct
+what is s3 versioning?;; s3 feature to presever object versions
+what is the snow family?;; offline devices for situations where network data transfer is impractical
 
 # s3
-what is s3?;; simple storage service can be seen as an infinitely serverless storage
-how to bridge on premise systems and s3?;; using storage gateway
-what is an s3 object?;; can be seen as a file
-what is an s3 bucket?;; can be seen as a directory
+whereasfile storage ..., object storage ...;; saves data in a hierachical structure ... saves data in a flat structure
+s3, ebs, instance store and efs are ... respectively;; object storage, block storage, block storage and file storage
 what is the key of an object?;; the full path
-s3 service level;; region level
+s3 buckets are tied to ...;; an specific region
 max object size;; 5 tb
-how should larger objects be uploaded?;; use multipart upload of 5 gb each
-s3 bucket name requirements/conventions;;
-	globally unique name
-	no uppercase
-	no underscore
-	no ip
-	no start with xn
-	no end with s3alias
+s3 large objects should be uploaded using...;; multipart object upload of 5 gb each
+s3 bucket name requirements and conventions(6);;
+	[a-z0-9.-]{3..63}
+	^\w.*\w$
+	not ip nor double dot
+	not prefix xn, sthree-, amzn-s3-demo-
+	not suffix -s3alias, --ol-s3, .mrap, --x-s3
+	unique across all accounts
 
 # security and access management
 how are defined s3 bucket policies?;; similar structure to iam policies
-how would you grant access to anybody to a bucket?;; using a public bucket policy
-how would you grant access to an iam user to a bucket?;; using an iam policy
-how would you grant access to an ec2 instance to a bucket?;; using ec2 instance roles
-how would you grant access to an iam user on another account to a bucket?;; using a bucket policy
-options to handle s3 security;;
-	use security policies
-	encryption keys
+the best way to grant access anybody to a bucket is ...;; using a public bucket policy
+the best way to grant access an iam user to a bucket is ...;; using an iam policy
+the best way to grant access an ec2 instance to a bucket is ...;; using ec2 instance roles
+the best way to grant access an iam user on another account to a bucket is ...;; using a bucket policy
 types of s3 encryption?;;
 	server side encryption
 	client side encryption
 which is the default encryption type?;; server side encryption
-types of s3 security policies;;
-	iam policies: specify user operations
-	bucket policies: bucket level even with other accounts
-	object acl: fine grain object control
-	bucket acl: fine grain bucket control
+tools to implement security on s3;;
+	iam policies
+	bucket policies
 
 # versioning
-what is s3 versioning?;; is a s3 feature that allow you saver versions of object files
-s3 versioning level?;; bucket level
-what happen to objects uploaded before s3 versioning is activated?;; have version null
-what happen to objects deleted after s3 versioning is deactivated?;; versions persist
-deleting the object vs deleting the version on s3 versioning enabled?;;
-	deleting the object just creates a delete mark as a version
-	deleting the version delete part of the file history
+s3 versioning is apply at ... level;; bucket
+on s3 versioning, objects uploaded before activation  ...;; have version null
+on s3 versioning, objects deleted after activation  ...;; persists versions
+when s3 versioning is active, deleting an object ...;; creates a new delete version
+when s3 versioning is active, deleting a version ...;; deletes part of the file history
 
 # replication
-types of s3 replication?;;
+types of s3 replication;;
 	crr: cross region replication
 	srr: same region replication
-what is needed to allow s3 replication?;;
+requirements for s3 replication;;
 	versioning must be enabled
 	proper iam permissions
-what is iam access analyzer for s3?;; is a monitoring tool for s3 to ensure users and objects permissions are correct
 
 # snow family
-what is the snow family?;; aws offline devices in cases that data transfer through the network is not feasiable
-which use cases snow family has?;; for data migration and edge computing
-snow family products and use cases?;;
-	snowcone device for edge computing, shrink space and data migration up to 24tb eithe offline or online
-	snowball device for edge computing, disaster recovery and data migration up to petabytes
-	snowmobile device for data migration of exabytes
-types of snowball devices?;;
+main use cases for snow family;;
+	data migration
+	edge computing
+snow family products;;
+	snowcone
+	snowball
+	snowmobile
+snowcone use cases;; edge computing, shrink space and data migration up to 24tb
+snowball use cases;; edge computing, disaster recovery and petabyte data migration
+snowmobile use cases;; exabyte data migration
+types of snowball devices;;
 	compute optimize: 42tb hdd or 28tb nvme, 104 cores, 416gib ram, gpu(optional)
 	storage optimize 80tb hdd or 210tb nvme, 40 cores, 80gib ram
-types of snowcone devices?;;
+types of snowcone devices;;
 	snowcone: 8tb hdd
 	snowcone ssd: 14tb ssd
 long term options for edge computing using snow devices;; 1 and 3 year discount
-what can be run inside a snow device?;; ec2 instances and lambda functions using iot greengrass
 how to access snow devices using cli?;; using aws opshub
-what is free in aws snow services?;; data transfer is free
-how are you billed for in aws snow services?;; you are billed per job which includes some days for usage and additional days are paid
-how can we decrease the pricing?;; using monthly, 1 year or 3 year long term commitment
-
-# srm
-who is responsable for infrastructure?;; aws
-who is responsable for compliance?;; aws
-who is responsable for vulnerability analysis?;; aws
-who is responsable for versioning?;; customer
-who is responsable for policies?;; customer
-who is responsable for replication?;; customer
-who is responsable for storage classes?;; customer
-who is responsable for encryption on client side?;; customer
+snow family pricing?;; per job(days of usage) and data transfer is free

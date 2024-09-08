@@ -1,10 +1,10 @@
-what is ebs?;; elastic block store is a network storage service designed for ec2 instances
+what is ebs?;; elastic block store is a network block storage service designed for ec2 instances
 what is ebs multi-attach?;; service to attach an ebs volume to multiple instances
 what is an ami?;; amazon machine image is a template containing software configurations
 what is an ebs snapshot?;; backup from ebs volume stored in s3
 what is recycle bin snapshots?;; rules to retain deleted snapshots in case of accidental deletion
 what is ebs snapshot archive?;; ebs snapshot feature cheaper for infrequent access data
-what is efs?;; elastic file system is a fully managed serverless network file storage service
+what is efs?;; elastic file system is a fully managed serverless network file system service
 what is efs infrequent access?;; efs storage class cost optimize for infrequent accessed data
 what is fsx?;; amazon third party file systems
 what is ec2 instance store;; ephemeral, high performant, instance attached storage

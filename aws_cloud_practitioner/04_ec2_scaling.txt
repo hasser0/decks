@@ -1,32 +1,37 @@
-# concepts
-what is scalability?;; accommodate larger load by making hardware stronger or by adding nodes
-what is scale up?;; make hardware stronger
-what is scale out?;; adding nodes
+what is scalability?;; ability to handle increasing workloads by upgrading existing hardware or by adding more components
+what is scale up?;; upgrade existing hardware
+what is scale out?;; add more components
 what is elasticity?;; ability to scale automatically base on the load
-what are load balancers?;; servers that forward internet traffic to multiple servers
-
-# services
-what is elb?;; elastic load balancer is managed load balancer
-what is asg?;; auto scaling group is a service to implement elasticity by scaling out based on demand
+what are load balancers?;; device or service that distributes network traffic dynamically across resources
+what is elb?;; elastic load balancer is a fully managed load balancing service
+what is asg?;; auto scaling group is a managed service to implement elasticity by scaling out based on demand
 
 # load balancers
-why use a load balancer?;;
+why use a load balancer?(5);;
 	balance load among servers
 	expose single dns ip
 	instances failure
 	ssl to websites
 	high availability across zones
-types of aws load balancers;;
+types of load balancers(3);;
 	application load balancer - layer 7
 	network load balancer - layer 4
 	gateway load balancer - layer 3
-application load balancer features?;; http/https/grpc, static url
-network load balancer features?;; tcp/udp, high performance, static ip
-gateway load balancer features?;; geneve, firewalls, intrusion detection
+application load balancer features(2);;
+	http/https/grpc
+	static url
+network load balancer features(3);;
+	tcp/udp
+	high performance
+	static ip
+gateway load balancer features(3);;
+	geneve
+	firewalls
+	intrusion detection
 
 # scaling strategies
 what is a manual scaling?;; scaling strategy done by a physical user
 what is a step scaling?;; scaling strategy done on an alarm per instance
-what is a target tracking scaling;;? scaling strategy done on an alarm per target group
-what is a schedule scaling?;; scaling strategy done on a specific time
-what is a predictive scaling?;; scaling strategy handle by aws ml models
+what is a target tracking scaling;;? scaling strategy done on an alarm per scaling group
+what is a schedule scaling?;; scaling strategy done on at a specific time
+what is a predictive scaling?;; scaling strategy handle by ml models
