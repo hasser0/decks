@@ -1,70 +1,50 @@
-# concepts
 types of databases;;
-	relational databases
-	key value databases
-	document databases
-	in memory databases
-	graph databases
-why use aws databases and not ec2 on top of databases?;; it's a managed service and handle many parts for you
-which storage service is behind aws?;; ebs
-
-# services
-what is rds?;; relation database service is a fully managed database service
-what is aurora db?;; is an aws proprietary rdbms accessible through rds
-what is multi-az rds?;; it's a feature to create a failover rds in a different az in case the main rds fail
-what is multi region rds?;; is a read replica across regions
+	relational
+	key-value
+	document
+	in memory
+	graph
+what is rds?;; relation database service is a managed database service
+what is multi-az rds?;; feature to create a failover rds in a different az in case of failure
+what is multi-region rds?;; read replica across regions
 what are rds read replicas?;; rds feature to scale read workloads
-what is amazon elasticache?;; is a fully managed redis or memcached database
-what is dynamodb? is a fully managed serverless nosql key-value database
-what is dax?;; dynamodb accelerator it's a fully managed in memory cache for dynamodb
-what is redshift?;; is a columnar database for olap based on postgresql
+what is aurora?;; fully managed aws proprietary database technology that supports mysql and postgresql with additional improvements
+what is elasticache?;; fully managed redis or memcached database
+what is dynamodb? fully managed serverless nosql key-value database
+what is dax?;; dynamodb accelerator is a managed in memory cache for dynamodb
+what is redshift?;; fully managed petabyte scale data warehouse
 what is mpp?;; massively parallel query execution used by redshift
-what is emr?;; elastic map reduce is a managed hadoop cluster
-what is athena?;; is a serverless service to query objects on s3 buckets
-what is quicksight?;; is a serverless service to create dashboards
-what is documentdb?;; is aws implemantation of mongodb which is a document-based database
-what is neptune?;; is a fully managed graph database
-what is timestream?;; is a fully managed serverless time series database to store trillions of events
-what is qldb?;; is a fully managed serverless finantial transaction ledger database used to review historical data changes to the data
-what is managed blockchain?;; is a managed service to create blockchain applications
-what is glue?;; is a managed etl serverless service
-what is glue data catalog?;; is a catalog of datasets
+what is emr?;; elastic map reduce is a managed cluster for simplify running big data frameworks
+what is athena?;; interactive serverless query service to analyze data store in s3
+what is quicksight?;; serverless service to create dashboards
+what is documentdb?;; fully managed document database implemantation compatible with mongodb
+what is neptune?;; fully managed graph database
+what is timestream?;; fully managed serverless time series database to store trillions of events
+what is qldb?;; fully managed serverless finantial transaction ledger database used to review historical data changes
+what is managed blockchain?;; managed service to create blockchain applications
+what is glue?;; managed etl serverless service
+what is glue data catalog?;; catalog of datasets
 what is dms?;; database migration service is a quick secure service to migrate databases
-what is the difference between managed blockchain and qldb?;; qldb is centrallized while blockchain can be decentrallize
-which databases are not serverless by default but can be converted?;;
-	aurora
-	dynamodb
 
 # aurora & rds
-what cannot be done when using rds?;; access using ssh to the compute instances
-why use aurora and not other rds?;;
-	aws cloud optimize
-	supports postgresql and mysql as engines
-	performance improvement
-	automatically grows storage
-	best cost effective
-aurora serverless use cases?;;
-	infrequent intermittent and unpredictable workloads
-	least management overhead
-rds snapshots use cases?;; to change rds settings such as size, region, etc
-how many read replicas can be deployed?;; up to 15 read replicas
-can read replicas create write workloads?;; no, only read. write operations are done on the main rds
-how many multi-az rds can be deployed?;; only one
-multi region rds use cases?;; disaster recovery and global reads
+aurora serverless use cases;; infrequent intermittent and unpredictable workloads
+rds snapshots use cases;; to change rds settings such as size, region, etc
+rds multi region use cases;; disaster recovery and global reads
+up to ... rds read replicas can be deployed;; 15
+only ... rds multi-az can be deployed;; one
 
 # dynamodb
 how does dynamodb handle security?;; using iam
 main dynamodb feature?;; single digit millisecond latency
 why is dynamodb so fast?;; because it autoscales horizontally
-what can dynamodb handle?;; millions of requests per second, trillions of rows, hundreds of tb
-why dynamodb prices are low?;; it's serverless and use standard & infrequent access table class similar to storage classes
-dax vs elasticache?;; dax is just for dynamodb while elasticache can be used for any database
-what does dynamodb global tables do?;; make a dynamodb table accessible to read/write in mulitple regions
+while dax ..., elasticache ...;; is just for dynamodb ... can be used for any database
+dynamodb global tables make dynamodb tables ...;; accessible to read/write in mulitple regions
 
 # other databases specifications
-how is redshift billed?;; pay as you go for computation and storage
-how is athena billed?;; 5 usd per tb scanned
+while qldb is ..., blockchain ...;; is centrallized ... can be decentrallize
+athena billed is billed per ...;; scanned tb
 which frameworks are compatible with managed blockchain?;; ethereum and hyperledger fabric
 types of dms migrations?;;
 	homogeneous: same source and target engines
 	heterogeneous: different source and target engines
+while aurora and redshift ... dynamodb ...;; can be serverless ... is serverless by default

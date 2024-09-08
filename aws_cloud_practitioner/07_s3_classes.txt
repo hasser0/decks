@@ -1,57 +1,13 @@
-# s3 storage classes
-s3 storage classes;;
-	standard general purpose
+s3 storage classes(7);;
+	standard
 	standard infrequent access
-	standard one zone infrequent access
+	one zone infrequent access
 	glacier instant retrieval
 	glacier flexible retrieval
 	glacier deep archive
 	intelligent tiering
-features for standard general purpose storage class;;
-	99.99% availability
 	low latency and high througput
-	for frequently accessed data
-features for infrequent access storage class;;
-	lower cost than standard general purpose
-	less frequently accessed data
-features for standard infrequent access storage class;;
-	99.99% availability
-	use for disaster recovery and backups
-features for standard one zone infrequent access storage class;;
-	99.5% availability
-	high durability
-	secondary backups of on premi se data
-features for glacier storage storage class;;
-	low cost storage for archiving and backup
-	pricing for storage and object retrieval
-features for glacier instant retrieval storage class;;
-	minimum duration of 90 days
-	millisecond retrieval
-features for glacier flexible retrieval storage class;;
-	expedited(1 to 5 minutes)
-	standard(3 to 5 hours)
-	bulk(5 to 12 hours) free
-	minimum duration of 90 days
-features for glacier deep archive storage class;;
-	standard(12 hours)
-	bulk(48 hours)
-	minimum duration of 180 days
-features for intelligent tiering storage class;;
-	small monthly fee for monitoring and auto tiering
-	no retrieval charges
-	moves object automatically based on usage
-how intelligent tiering moves objects for frequent access tier?;;
-	default, automatic
-how intelligent tiering moves objects for infrequent access tier?;;
-	not accessed for 30 days
-	automatic
-how intelligent tiering moves objects for archive instant access?;;
-	not accessed for 90 days
-	automatic
-how intelligent tiering moves objects for archive access tier?;;
-	configurable 90 days to 700+ days
-	optional
-how intelligent tiering moves objects for deep archive access?;;
-	configurable from 180 days to 700+ days
-	optional
-what is lifecycle rules?;; are rules to automatically change object storage classes with custom rules
+storage class with lowest availability;; one zone infrequent access
+storage classes without retrival fee;; standard
+storage classes with minute to hour retrieval latency;; glacier deep archive and glacier flexible retrieval
+what are lifecycle rules?;; rules to automatically change object storage classes with custom rules
