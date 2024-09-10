@@ -1,24 +1,16 @@
 # concepts
-what is a 3-tier architecture?;; is an architecture use for webdev that consists of 3 tiers
-	an elb
-	an asg
-	a rds(possibly with elastic cache)
-
-# services
-what is cloud formation?;; iac declarative way to manage and define infrastructure in aws
-what is cdk?;; cloud develoment kit is a way to define infrastructure using a programming language
-what is elastic beanstalk?;; is a service to deploy 3-tier architectures all in a single view
-what is cloud deploy?;; is a service to deploy applications on ec2 instances or on premises servers
-what is code commit?;; is a source control service
-what id code build?;; is a serverless service that allows you to build, run and test packages
-what is code pipeline?;; is a fully managed service to orchestrate ci/cd pipelines well integrated with
-	code commit
-	code build
-	code deploy
-what is code artifact?;; is a artifact management service that allows you to securely store packages
-what is code star?;; is a centralize service to create, manage and view all code family/cloud9 services
-what is cloud9?;; is cloud ide
-what is ssm system manager?;; is a tool to manage ec2 instances and on premise servers
+what is a 3-tier architecture?;; webdev architecture that consists of a load balancer, scaling group and database
+what is cloud formation?;; iac service to manage infrastructure using declarative language
+what is cdk?;; cloud develoment kit is a tool to manage infrastructure using a programming language
+what is elastic beanstalk?;; service to deploy 3-tier architectures all in a single view
+what is cloud deploy?;; service to deploy applications on ec2 instances or on premises servers
+what is code commit?;; source control service
+what id code build?;; serverless service to build, run and test artifacts
+what is code pipeline?;; fully managed service to orchestrate ci/cd pipelines well integrated with code family
+what is code artifact?;; artifact management service that allows you to securely store packages
+what is cloud9?;; cloud ide
+what is code star?;; centralize service to create, manage and view all code family/cloud9 services
+what is ssm agent?;; systems manager agent is a tool to manage ec2 instances and on premise servers
 
 # cloud formation
 saving strategy by using cloud formation?;; automate deletion or creation of templates no working hours
@@ -27,7 +19,7 @@ which service is used to visualize cloud formation templates?;; application comp
 cloud formation use case;; recreate infrastructure using code in different environments, regions or accounts
 
 # cdk
-how cdk works internally?;; it creates a json or yaml file from the code
+how cdk works internally?;; it creates cloud formation json or yaml file from the code
 cdk use case;; deploy infrastructure along with code, for example lambda functions or ecs
 
 # elastic beanstalk
@@ -35,17 +27,14 @@ elastic beanstalk use case;; scaling and configuration concerns but want to focu
 what type of cloud service is elastic beanstalk?;; is paas
 how is elastic beanstalk billed?;; the platform is free but you pay for deployed resources
 what is the customer responsable for in elastic beanstalk?;; only for the code
-elastic beanstalk architectures;;
-	single instance
-	asg
-	elb + asg
+elastic beanstalk architectures(3);; single instance, asg and elb + asg
 
 # code family
 how is codebuild billed?;; you pay only for the build time
-code artifact use case;; to create a python packages central repository
+code artifact use case;; to save packages
 what is the new replacement for code star?;; code catalyst
 
 # ssm
-what can be done with ssm system manager?;; automatic os patches, run and configure multiple servers/instances on a single place
-what can be done with ssm session manager?;; access instances without ssh
-what can be done with ssm parameter store?;; save secrets and configuration variables
+with ssm system manager you can ...;; patch os automatically and configure multiple servers at the same time
+with ssm session manager you can ...;; access instances without ssh
+with ssm parameter store you can ...;; save secrets and configuration variables

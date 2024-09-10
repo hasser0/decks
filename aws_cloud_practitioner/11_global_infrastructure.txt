@@ -1,37 +1,34 @@
-# concepts
 what is a global application?;; is an application deployed in multiple regions
-what are edge locations?;; aws locations used for cdn
-
-# services
-what is route53?;; is a managed dns
-what is cloudfront?;; is a cdn
+what is an edge locations?;; aws locations used for content delivery for cloudfront
+what is route53?;; dns
+what is cloudfront?;; cdn
 what is oac?;; origin access control is a security feature for cloudfront
 what is oai?;; origin access identity is a deprecated security feature for cloudfront
-what is s3 transfer accelerator?;; is a s3 feature to reduce uploads to s3 buckets world wide
-what is global accelerator?;; is a global feature to reduce latency and application availability
-what is outposts?;; is a fully managed service to run aws on your own servers
-what are wavelength zones?;; they are infrastructure deployments at edge of 5g networks
-what are local zones?;; feature to place aws services closer to end users to run latency sensitive applications on "new az"
+what is s3 transfer accelerator?;; s3 feature to reduce uploads to s3 buckets world wide
+what is global accelerator?;; global feature to reduce latency and application availability
+what is outposts?;; fully managed service to extend aws on premises
+what are wavelength zones?;; 5g network infrastructure at edge location for iot
+what are local zones?;; feature to place aws services closer to end users to run latency sensitive applications
 
 # route53
-how does a simple routing policy work?;; redirect the traffic, no health checks
-how does a weighted routing policy work?;; redirect among multiple instances
-how does a latency routing policy work?;; redirect to minimize latency
-how does failover routing policy work?;; redirect in case of failure for disaster recovery
+simple routing policy ...;; redirect the traffic, no health checks
+weighted routing policy ...;; redirect among multiple instances
+latency routing policy ...;; redirect to minimize latency
+failover routing policy ...;; redirect in case of failure for disaster recovery
 
 # cloudfront
-what is the difference between cloudfront and s3 cross region replication?;; cloudfront is to cache content around the world while s3 crr is for read replication in specific regions
+while cloudfront ..., s3 cross region replication ...;; cache content around the world ... s3 crr is for read replication in specific regions
 cloudfront use case;; get s3 and http content is cached at edge locations
 cloudfront security features;; oac and ddos protection
 how is cloudfront used with s3?;; to cache s3 content, websites or to upload data
 how is cloudfront used with custom origins?;; cache http requests to elb or ec2
-with which services does cloudfront integrate to protect against web attacks?;; waf and shield
+cloudfront integrate with ... to protect against web attacks;; waf and shield
 
 # global
-s3 transfer accelerator use case;; improve s3 uploads
-how does s3 transfer accelerator work?;; upload files to edge locations and use aws internal network to upload faster to the s3 region
-how does global accelerator work?;; use edge locations and route traffic directly to end point using aws internal network
-what is the difference between cloudfront and global accelerator?;; cloudfront cache content while global accelerator improves requests times
+main s3 transfer accelerator use case;; reduce s3 upload latency
+s3 transfer accelerator reduce latenct by ...;; uploading files to edge locations and route traffic over aws internal network
+global accelerator reduce latency by ...;; using edge locations and route traffic over aws internal network
+while cloudfront ..., global accelerator ...;; cache content ... improves requests times
 who is responsable for physical security on outposts?;; the customer
 advantages of outposts over aws?;;
 	low latency from on premises
@@ -39,8 +36,5 @@ advantages of outposts over aws?;;
 	easier migration
 
 # architecture
-features of single region single az architecture;; low availability, high latency, easy
-features of single region multiple az architecture;; high availability, high global latency, medium
-features of multi region active-passive;; high availability, low global read latency, high global write latency, hard
-features of multi region active-active;; high availability, low global latency, harder
-
+which of region/zone factor affect latency?;; region
+which of region/zone factor affect availability?;; region an zone

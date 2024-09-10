@@ -32,6 +32,9 @@ what is managed by on premise but not iaas?;; virtualization, servers, storage, 
 what is managed by iaas but not paas?;; middleware, os, runtime
 what is managed by paas but not saas?;; data and application
 what is managed by saas?;; nothing
+what is serverless?;; cloud computing model to build simple applications without managing or scaling infrastructure
+what is a managed service?;; cloud services with share cloud provider/customer management and support
+what is a fully managed service?;; cloud services with full management and support from cloud provider
 
 # pricing
 how are services pay on the cloud?;; pay as you go pricing and on demand delivery
