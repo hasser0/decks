@@ -1,15 +1,15 @@
-what is aws rekognition?;; is a ml service to find objects in images and videos
-what is aws transcribe?;; is a ml service to automatically convert speech to text
-what is aws polly?;; is a ml service to turn text into speech
-what is aws translate?;; is a ml service to translate text between languages
-what is aws lex?;; is a ml service to recognize speech and intention and process request, usefull for chatbots
-what is aws connect?;; is a ml service to receive calls, understand them using aws lex an process, usefull for contact centers
-what is aws comprehend?;; is a ml service to find insights and relationships in text
-what is aws sagemaker?;; is a fully managed ml service to create and deploy custom ml models
-what is aws forecast?;; is a fully managed ml service to deliver time series forecasts
-what is aws kendra?;; is a fully managed document search service powered by ml to extract answers from documents
-what is aws personalize?;; is a fully managed ml service for system recommendation
-what is aws textract?;; is a service to extract text from documents
+what is aws rekognition?;; ml service to find objects in images and videos
+what is aws transcribe?;; ml service to automatically convert speech to text
+what is aws polly?;; ml service to turn text into speech
+what is aws translate?;; ml service to translate text between languages
+what is aws lex?;; ml service to recognize speech and intention and process request, usefull for chatbots
+what is aws connect?;; ml service to receive calls, understand them using aws lex an process, usefull for contact centers
+what is aws comprehend?;; ml service to find insights and relationships in text
+what is aws sagemaker?;; fully managed ml service to create and deploy custom ml models
+what is aws forecast?;; fully managed ml service to deliver time series forecasts
+what is aws kendra?;; fully managed document search service powered by ml to extract answers from documents
+what is aws personalize?;; fully managed ml service for system recommendation
+what is aws textract?;; service to extract text from documents
 
 aws transcribe feature to ensure personal information is not saved?;; identify and manage pii
 
