@@ -1,0 +1,10 @@
+conjunto;; grupo de objetos
+relación n-adica;; criterio bien definido que asocia n objetos un valor de verdad
+relación idéntica;; relación diádica que es verdadera cuando ambos objetos son el mismo objeto
+función n-adica;; criterio bien definido que asocia n objetos, otro objeto
+estructura;; conjunto, junto con diversas relaciones y funciones
+lenguaje formal;; colección de símbolos divididos en categorías
+variable;; simbolo destinado a tener una interpretación
+constante;; simbolo destinado a nombrar algún objeto
+relator;; simbolo destinado a nombrar alguna relación
+funtor;; simbolo destinado a nombrar alguna función
