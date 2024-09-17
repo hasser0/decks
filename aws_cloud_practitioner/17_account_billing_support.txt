@@ -1,20 +1,25 @@
 # billing
-who can manage billing and cost?;; only the root user and admins when enabled by root user
+who can manage billing and cost?(2);;
+	root user
+	admins enabled by root user
 where can you see charges by service?;; at billing/billing and payments/bills
 
-
-what are aws organizations?;; manage multiple aws accounts
+what are organizations?;; service to manage multiple aws accounts
 what are scp?;; service control policies whitelist or blacklist iam actions at account level
-what is aws control tower;; easy way to set up and govern a secure and compliant multi account aws environment
-what is aws ram?;; resources access manager shares resources that you own with other aws accounts
-what is aws service catalog?;; service to access and create admin authorized services using cloud formation templates
-what is aws compute optimizer?;; ml service to reduce costs by recommending optimal aws resources
-what is aws cost anomaly detection?;; ml service to detect unusual usage or cost
-what is aws service quotas?;; service to notify near threshold billing or shutdown services when reached
-what is aws trusted advisor?;; aws account configuration recommendations
+what is control tower;; service to set up and govern a secure and compliant multi account aws environment
+what is ram?;; resources access manager shares resources that you own with other aws accounts
+what is service catalog?;; service to access and create admin authorized services using cloud formation templates
+what is compute optimizer?;; ml service to reduce costs by recommending optimal aws resources
+what is cost anomaly detection?;; ml service to detect unusual usage or cost
+what is service quotas?;; service to notify near threshold billing or shutdown services when reached
+what is trusted advisor?;; aws account configuration recommendations
 
-aws organizations usage;; one billing, share savings plans, get disscounts, restrict account services
-multi account strategies;;
+aws organizations usage(4);;
+	one billing
+	share savings plans
+	disscounts
+	restrict account services
+multi account strategies(4);;
 	per deparment
 	per project
 	per environment
@@ -31,14 +36,20 @@ types savings plans;; ec2, compute, machine learning
 
 # billing tools
 billing tool to estimate costs;; pricing calculator
-billing tool to track costs;; billing dashboard, cost allocation tags, cost usage reports, cost explorer
-billing tool to monitor cost plans;; billing alarms, budgets
+billing tools to track costs(4);;
+	billing dashboard
+	cost allocation tags
+	cost usage reports
+	cost explorer
+billing tools to monitor cost plans(2);;
+	billing alarms
+	budgets
 
 # supports plans
-most basic support plan;; basic support
+simplest support plan;; basic support
 first support plan for email contact;; developer support
 first support plan for 24/7 phone/email contact;; business support
-support plan for critical workloads;; enterprise on-ramp support
+first support plan for critical workloads;; enterprise on-ramp support
 first support plan with technical account manager;; enterprise on-ramp support
-support plan for mission critical workloads;; enterprise support
-support plan with designated technical account manager;; enterprise support
+first support plan for mission critical workloads;; enterprise support
+first support plan with designated technical account manager;; enterprise support

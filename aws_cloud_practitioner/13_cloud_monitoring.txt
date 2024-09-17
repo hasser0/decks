@@ -1,21 +1,22 @@
-what is cloudwatch alarms?;; a cloudwatch service that trigger actions based on metrics
+what is cloudwatch?;; monitoring service for aws cloud resources and applications
+what is cloudwatch alarms?;; cloudwatch service that trigger actions based on metrics
 what is cloudwatch metrics?;; metrics taken on time interval about aws services
-what is cloudwatch billing?;; a service to measure billing costs of aws services
-what is cloudwatch dashboards?;; a graphical representation of cloudwatch metrics
-what is cloudwatch logs?;; a service to monitor, store and access log files
-what is eventbridge?;; is serverless service to connect applications using events
-what is cloudtrail?;; is a governance, audit and compliance service to monitor user and api activities
-what is x-ray?;; is a service to debug and monitor microservices architectures
-what is codeguru?;; is a ml service for automated code reviews and application performance recommendations
+what is cloudwatch billing?;; service to measure billing costs of aws services
+what is cloudwatch dashboards?;; graphical representation of cloudwatch metrics
+what is cloudwatch logs?;; monitoring service to store and access log files
+what is eventbridge?;; serverless service to connect applications using events
+what is cloudtrail?;; governance, audit and compliance service to monitor user and api activities
+what is x-ray?;; service to debug and monitor microservices architectures
+what is codeguru?;; ml service for automated code reviews and application performance recommendations
 what is codeguru reviewer?;; automated code reviews
-what is codeguru profiler?;; produ {[]}\ ction performance profiler
-what is health dashboard?;; is a service to monitor all your services and regions historically
+what is codeguru profiler?;; production performance profiler
+what is health dashboard?;; service to monitor all your services and regions historically
 
-what kind of triggers exists in by cloudwatch alarms?;;
+what kind of triggers exists in cloudwatch alarms?;;
 	autoscaling
 	ec2 instances actions
-	sns notifications
 what kind of metrics exists on cloudwatch for ec2 instances?;;
+	sns notifications
 	cpu utilization
 	status checks
 	network
@@ -23,7 +24,7 @@ what kind of metrics exists on cloudwatch for ebs?;; disk read/writes
 what kind of metrics exists on cloudwatch for s3?;;
 	bucket size
 	number of objects
-what can be done when there are no metrics for an specific scenario?;; you can build your own custom metrics
+when there are no metrics for an specific scenario you can ...;; build your own custom metrics
 which services are integrated with cloudwatch logs?;; ecs, elasticbeanstalk, lambda, route53
 what is needed to watch logs from an ec2 instance in cloudwatch logs?;; install the cloudwatch agent
 how was eventbridge named before?;; cloudwatch events
