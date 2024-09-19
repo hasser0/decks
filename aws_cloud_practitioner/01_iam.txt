@@ -1,4 +1,4 @@
-what is iam?: identity access management is a service that helps you control access to resources
+what is iam?;; identity access management is a service that helps you control access to resources
 what is iam access advisor?;; shows permissions granted to a user and last time were used
 what is iam credential report?;; list all your users with their credentials
 what is iam identity center?;; single sign on for multiple accounts

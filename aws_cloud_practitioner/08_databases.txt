@@ -10,7 +10,7 @@ what is multi-region rds?;; read replica across regions
 what are rds read replicas?;; rds feature to scale read workloads
 what is aurora?;; fully managed aws proprietary database technology that supports mysql and postgresql with additional improvements
 what is elasticache?;; fully managed redis or memcached database
-what is dynamodb? fully managed serverless nosql key-value database
+what is dynamodb?;; fully managed serverless nosql key-value database
 what is dax?;; dynamodb accelerator is a managed in memory cache for dynamodb
 what is redshift?;; fully managed petabyte scale data warehouse
 what is mpp?;; massively parallel query execution used by redshift
