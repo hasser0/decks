@@ -1,0 +1,19 @@
+driver;; spark node that schedule jobs and optimize processing
+worker;; spark node that executes and report status
+executor;; worker
+slot;; cores
+job;; work to do, set of tasks
+stage;; subparts of a job that include shuffling
+task;; smallest unit of work
+each task is executed by a single ...;; slot
+transformations;; unit of work with business logic
+actions;; unit of work that demand results
+narrow transformations;; transformations that do not require shuffling
+wide transformations;; transformations that may require shuffling
+local deployment mode;; driver and workers on local machine
+client deployment mode;; driver on local machine and workers on cloud
+cluster deployment mode;; driver and workers on cloud
+coalesce partition size;; uneven
+repartition partition size;; even
+coalesce can ... number of partitions;; only decrease
+repartition can ... number of partitions;; increase or decrease

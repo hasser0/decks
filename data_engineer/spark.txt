@@ -139,9 +139,9 @@ from df filter using sql syntax where age >= 18||
     df.filter("age >= 18")
 from df filter using columns where age >= 18||
     df.filter(F.col("age") >= 18)
-from df filter using columns where age >= 18 and name == "Susan"
+from df filter using columns where age >= 18 and name == "Susan"||
     df.filter((F.col("age") >= 18) & (F.col("name") == "Susan"))
-from df filter using columns where age >= 18 or name == "Susan"
+from df filter using columns where age >= 18 or name == "Susan"||
     df.filter((F.col("age") >= 18) | (F.col("name") == "Susan"))
 
 # Dropping

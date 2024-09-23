@@ -1,0 +1,36 @@
+# Review
+data mart;;
+acid;;
+lakehouse;;
+dimensional modelling;;
+entity relation modelling;;
+3vs;;
+    volume
+    velocity
+    variety
+olap systems generations;; warehouses, lake, lakehouse
+
+# OLAP Systems
+data warehouse pipeline type;; etl
+data warehouse data type;; structured
+data warehouse schema on ...;; write
+data lake pipeline type;; elt
+data lake data type;; structured, semistructured, unstructured
+data lake schema on ...;; read
+
+# Terminology
+data mesh;; domain based data management
+data mesh slogan;; teams own data products by domain
+data lineage;; visual dataflow representation
+schema evolution;; adapt to data schema changes
+
+# Formats
+human optimized data formats;; csv, json
+machine optimized data formats;; avro, parquet
+avro use cases;;
+    real-time
+    schema evolution
+parquet use cases;;
+    columnar processing
+    analytics
+    distributed systems
