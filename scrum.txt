@@ -1,7 +1,33 @@
+# agile
+agile;; ability create and respond to change
+agile is good for ...;; unpredictable and exploratory domains
+agile focus on ...;; individuals interations
+agile principles(12);;
+    customer satisfaction
+    welcome changing requirements
+    frequent delivery
+    businees people and developers work together
+    motivated individuals
+    face to face communication
+    working software is measure of success
+    processes sustain development
+    good design enhances agility
+    simplicity
+    self organizing teams
+    reflection at regular intervals
+
+
 team size;; 3 to 9
 main purpose of scrum;; optimise the value of product and satisfy its users
 
 # Scrum Pillars and Values
+scrum principals;;
+	empirical process control
+	self organization
+	collaboration
+	value based prioritization
+	time boxing
+	iterated development
 scrum empirical pillars;;
 	transparency
 	inspection
@@ -12,6 +38,12 @@ scrum values;;
 	commitment
 	focus
 	openness
+scrum aspects;;
+	organization
+	businees justification
+	quality
+	change
+	risk
 difference between scrum pillars and scrum values;; scrum values guides team members behaviour while scrum pillars guides scrum implementation
 
 # Scrum Roles
