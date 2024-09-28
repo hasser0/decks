@@ -1,19 +1,19 @@
 # agile
-agile;; ability create and respond to change
+what is agile?;; ability create and respond to change
 agile is good for ...;; unpredictable and exploratory domains
 agile focus on ...;; individuals interations
-agile principles(12);;
+agile principles  (simply because we are frequently facing work together motivated by design and organized in process);;
+    simplicity
     customer satisfaction
     welcome changing requirements
     frequent delivery
-    businees people and developers work together
-    motivated individuals
     face to face communication
-    working software is measure of success
+	working software
+    together business and developers
+    motivated individuals
+    organizing self teams
     processes sustain development
-    good design enhances agility
-    simplicity
-    self organizing teams
+    design enhances agility
     reflection at regular intervals
 
 
@@ -21,29 +21,23 @@ team size;; 3 to 9
 main purpose of scrum;; optimise the value of product and satisfy its users
 
 # Scrum Pillars and Values
-scrum principals;;
+scrum principles  (es covit);;
 	empirical process control
 	self organization
 	collaboration
 	value based prioritization
-	time boxing
 	iterated development
-scrum empirical pillars;;
+	time boxing
+scrum empirical pillars   (tai);;
 	transparency
 	inspection
 	adaptation
-scrum values;;
+scrum values   (frocc);;
 	respect
 	courage
 	commitment
 	focus
 	openness
-scrum aspects;;
-	organization
-	businees justification
-	quality
-	change
-	risk
 difference between scrum pillars and scrum values;; scrum values guides team members behaviour while scrum pillars guides scrum implementation
 
 # Scrum Roles
@@ -130,3 +124,45 @@ during sprint;;
 	quality does not decrease
 	product backlog is refined as needed
 	scope may be clarified and renegotiated
+
+
+initiate phase processes;;
+	create product vision
+	identify scrum master and businees stakeholders
+	form scrum team
+	develop epics
+	create prioritized product backlog
+	conduct release planning
+create product vision outputs;;
+	product owner
+	product vision
+identify scrum master and businees stakeholders outputs;;
+	scrum master
+	stakeholders
+form scrum team outputs;;
+	scrum team
+create prioritized product backlog outputs;;
+	prioritized product backlog
+create prioritized product backlog methods;;
+	MoSCoW
+	Paired Comparison
+	100 point method
+conduct release planning outputs;;
+	sprint lenght
+	release dates
+plan and estimate phase processes;;
+	create user stories
+	estimate user stories
+	commit user stories
+	identify and estimate tasks
+estimate user stories methods;;
+	planning poker: consensus of estimation
+	wideband delphi: anonymous planning poker
+	fist to five: 1(disagree)-5(agree) fingers
+	affinity estimation: US size classification
+
+form scrum team phases;;
+	forming
+	storming
+	norming
+	realization
