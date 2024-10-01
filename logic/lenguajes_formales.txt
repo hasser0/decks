@@ -31,3 +31,15 @@ modelo;; colección de objetos junto con criterios de asociación entre:
 valoración;; criterio que asigna objetos a variables
 un modelo satisface una fórmula respecto a una valoración cuando ...;; la valoración de la fórmula es verdadera al razonar informalmente
 un término denota un objeto en un modelo cuando ...;; la valoración del término es equivalente al objeto
+
+# Teoremas
+teorema de corrección;; KL es un sistema formal deductivo correcto
+teorema de deducción;; si existe una deducción de b desde a1, ..., an, a que no ocupe IG en variables libres de a luego podemos deducir a -> b
+axiomas lógicos,teoremas lógicos y consecuencias lógicas ;;
+    axiomas de KL
+    teoremas de KL
+    consecuencias de KL
+
+forma prenexa;; fórmula en la que todos los cuantificadores están al inicio
+fórmula Sigma n prenexa;; fórmula en forma prenexa que empieza con un cuantificador existencial
+fórmula Pi n prenexa;; fórmula en forma prenexa que empieza con un cuantificador universal
