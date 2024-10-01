@@ -7,10 +7,10 @@ what is cognito?;; service for identity on web and mobile
 what is cloudshell?;; service that provides a shell to access resources
 
 what is a user?;; entity that represents one person
-what is a group?;; set of users with polcies attached
+what is a group?;; set of users with policies attached
 what is a role?;; identity with set of permissions assumable temporarily
 what is a policy?;; document that defines a set of permissions
-what is a root user?;; root users are created by default when creating an aws account
+what is a root user?;; default user account created with any aws account
 
 # users, groups and policies
 when should root users be used?;; should not be used or shared
@@ -22,7 +22,7 @@ policies are attached to ...;; users, roles and groups
 types of policies;;
 	inline policy: (single user)
 	group policy
-structure of a policy(vis);;
+structure of a policy;;
 	version
 	id
 	statement
@@ -35,24 +35,25 @@ structure of a statement in policy structure(crepas);;
 	sid
 
 # iam security
-how to secure iam access?(2);;
-	stron password policy
+how to secure iam access?;;
+	strong password policy
 	mfa
-password policies(4);;
+password policies;;
 	length
 	characters
 	periodic renewal
 	no old passwords
-types of devices for mfa(2);;
+types of devices for mfa;;
 	virtual device (in phone)
 	physical device
-how to access programmatically?;; with an access key(cli or sdk)
+how to access programmatically?;; with an access key
+	cli
+	sdk
 
 # best practices
 use ... instead of using root account?;; iam admin user
 number of users per physical user;; one
 permission is to group as user is to;; group
-when are access keys used?;; for programmatic access by sdk or cli
-tools to monitor iam users(2);;
+tools to monitor iam users;;
 	iam credentials report
 	iam access advisor

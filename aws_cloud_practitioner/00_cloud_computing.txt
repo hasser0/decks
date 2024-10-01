@@ -10,31 +10,38 @@ types of cloud;;
 	public cloud
 	hybrid cloud
 cloud computing advantages(6);;
-	trade fixed expense for variable expense
+	trade capex for opex
 	benefit from massive economies of scale
 	stop guessing capacity
 	increase speed and agility
 	stop spending money running and maintaining data centers
 	go global in minutes
-cloud computing characteristics(macsone);;
-	measurement
-	agility
-	cost
-	scalability
-	on demand
-	no mantaining
-	elasticity
+cloud computing characteristics(brrom);;
+	broad network access
+	resource pooling
+	rapid elasticity
+	on demand self service
+	measure service
 cloud computing models;;
 	iaas: you manage hardware and bare metal
 	paas: you manage and deploy your applications
 	saas: you use the application managed by service provider
-what is managed by on premise but not iaas?;; virtualization, servers, storage, networking
-what is managed by iaas but not paas?;; middleware, os, runtime
-what is managed by paas but not saas?;; data and application
+what is managed by on premise but not iaas?;;
+	virtualization
+	servers
+	storage
+	networking
+what is managed by iaas but not paas?;;
+	middleware
+	os
+	runtime
+what is managed by paas but not saas?;;
+	data
+	application
 what is managed by saas?;; nothing
 what is serverless?;; cloud computing model to build simple applications without managing or scaling infrastructure
-what is a managed service?;; cloud services with share cloud provider/customer management and support
-what is a fully managed service?;; cloud services with full management and support from cloud provider
+what is a managed service?;; cloud services where customer manage certain part of the infrastructure
+what is a fully managed service?;; cloud services with full infrastructure management done by cloud provider
 
 # pricing
 how are services pay on the cloud?;; pay as you go pricing and on demand delivery
@@ -44,7 +51,11 @@ what is paid on aws?;;
 	networking: pay for data transfer out of aws
 
 # regions and az
-what are all the global services;; iam, route53, cloudfront and waf
+what are all the global services;;
+	iam
+	route53
+	cloudfront
+	waf
 what are regions?;; cluster of data centers
 what are availability zones?;; groups of data centers(one or more) within the same region
 us-east-1, eu-west-3 are examples of ...;; regions

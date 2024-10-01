@@ -7,24 +7,24 @@ what is elb?;; elastic load balancer is a fully managed load balancing service
 what is asg?;; auto scaling group is a managed service to implement elasticity by scaling out based on demand
 
 # load balancers
-why use a load balancer?(5);;
+why use a load balancer?;;
 	balance load among servers
 	expose single dns ip
 	instances failure
 	ssl to websites
 	high availability across zones
-types of load balancers(3);;
+types of load balancers;;
 	application load balancer - layer 7
 	network load balancer - layer 4
 	gateway load balancer - layer 3
-application load balancer features(2);;
+application load balancer features;;
 	http/https/grpc
 	static url
-network load balancer features(3);;
+network load balancer features;;
 	tcp/udp
 	high performance
 	static ip
-gateway load balancer features(3);;
+gateway load balancer features;;
 	geneve
 	firewalls
 	intrusion detection

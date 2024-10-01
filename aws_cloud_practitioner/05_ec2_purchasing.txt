@@ -1,4 +1,4 @@
-types of ec2 purchasing options(7);;
+types of ec2 purchasing options;;
 	on demand instances
 	reserved instances
 	savings plan

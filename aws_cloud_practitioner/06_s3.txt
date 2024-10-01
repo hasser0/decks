@@ -15,7 +15,7 @@ what is the key of an object?;; the full path
 s3 buckets are tied to ...;; an specific region
 max object size;; 5 tb
 s3 large objects should be uploaded using...;; multipart object upload of 5 gb each
-s3 bucket name requirements and conventions(4);;
+s3 bucket name requirements and conventions;;
 	[a-z0-9.-]{3..63}
 	^\w.*\w$
 	not ip

@@ -1,5 +1,5 @@
 # billing
-who can manage billing and cost?(2);;
+who can manage billing and cost?;;
 	root user
 	admins enabled by root user
 where can you see charges by service?;; at billing/billing and payments/bills
@@ -14,12 +14,12 @@ what is cost anomaly detection?;; ml service to detect unusual usage or cost
 what is service quotas?;; service to notify near threshold billing or shutdown services when reached
 what is trusted advisor?;; aws account configuration recommendations
 
-aws organizations usage(4);;
+aws organizations usage;;
 	one billing
 	share savings plans
 	disscounts
 	restrict account services
-multi account strategies(4);;
+multi account strategies;;
 	per deparment
 	per project
 	per environment
@@ -36,12 +36,12 @@ types savings plans;; ec2, compute, machine learning
 
 # billing tools
 billing tool to estimate costs;; pricing calculator
-billing tools to track costs(4);;
+billing tools to track costs;;
 	billing dashboard
 	cost allocation tags
 	cost usage reports
 	cost explorer
-billing tools to monitor cost plans(2);;
+billing tools to monitor cost plans;;
 	billing alarms
 	budgets
 
