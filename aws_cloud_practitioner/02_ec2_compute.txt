@@ -23,7 +23,7 @@ types of ec2 instances;;
 	high performance computing(h)
 what is the m in m5.2xlarge?;; instance class
 what is the 5 in m5.2xlarge?;; class generation
-what is the 2xlarge in m5.2xlarge?;; size within classs
+what is the 2xlarge in m5.2xlarge?;; size within class
 
 # security groups
 what can be restricted with security groups?;;
@@ -35,7 +35,7 @@ default outbound security group configuration;; all is allowed
 default inbound security group configuration;; all is blocked
 security groups only have ... rules;; allow
 you can add ... to a security group;; multiple instances
-you can apply inbound and outbound rules on ...;; other security groups
+you can apply inbound and outbound rules on ...;; security groups
 best option to grant permissions on a ec2 instance?;; using iam roles, specifically ec2 instance roles
 default port for ssh;; 22
 default port for ftp;; 21

@@ -32,6 +32,6 @@ gateway load balancer features;;
 # scaling strategies
 what is a manual scaling?;; scaling strategy done by a physical user
 what is a step scaling?;; scaling strategy done on an alarm per instance
-what is a target tracking scaling;;? scaling strategy done on an alarm per scaling group
+what is a target tracking scaling?;; scaling strategy done on an alarm per scaling group
 what is a schedule scaling?;; scaling strategy done on at a specific time
 what is a predictive scaling?;; scaling strategy handle by ml models

@@ -1,8 +1,8 @@
 docker use cases;;
     production and development environments reproducible
     manage versions within many projects
-which of attach or dettach is the default mode when creating a container?;; attach
-which of attach or dettach is the default mode when starting an existing container?;; dettach
+which of attach or detach is the default mode when creating a container?;; attach
+which of attach or detach is the default mode when starting an existing container?;; detach
 difference between attach and interactive mode;; both allow us to see output, but interactive allow us to input data
 types of external data storages;;
     volumes: managed by docker

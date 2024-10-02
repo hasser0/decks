@@ -7,7 +7,7 @@ types of ec2 purchasing options;;
 	dedicated instances
 	capacity reservation
 ec2 on demand;; short term uninterrupted workloads
-	hightest cost
+	highest cost
 	pay for what you use
 	no long term commitment
 ec2 reserved instances;; state applications, databases

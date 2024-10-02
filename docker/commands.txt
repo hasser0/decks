@@ -30,7 +30,7 @@ create and start a node container on the host network|| docker run --network hos
 create and start a node container called mycontainer|| docker run --name mycontainer node
 create and start a node container with a named volume myvolume mount on /app/feedback|| docker run -v myvolume:/app/feedback node
 
-# Start, stop and attach/dettach modes
+# Start, stop and attach/detach modes
 start an existing container called mypython|| docker start mypython
 start an existing container called mypython in attach mode|| docker start -a mypython
 attach to an existing and running container called mypython|| docker attach mypython
