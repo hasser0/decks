@@ -1,0 +1,73 @@
+# Dockerfile syntax
+syntax to create an image based on python 3.12|| FROM python:3.12
+syntax to define /app as the directory to run the commands from|| WORKDIR /app
+syntax to copy all files from the host to /app in the image|| COPY . /app
+syntax to install pandas==2.2.2 during build phase|| RUN pip install pandas==2.2.2
+syntax to expose port 5000|| EXPOSE 5000
+syntax to run "python app.py" when the container is started|| CMD ["python", "app.py"]
+syntax to create an anonymous volume mounted on /app/feedback|| VOLUME ["/app/feedback"]
+syntax to set an environment variable called PORT with default value 80|| ENV PORT 80
+syntax to expose port assigned to an environment variable PORT|| EXPOSE $PORT
+syntax to run /bin/bash on interactive mode|| ENTRYPOINT ["/bin/bash"]
+syntax to change running user to myuser|| USER myuser
+syntax to start a stage called build from python 3.12|| FROM python:3.12 AS build
+syntax to copy files from stage build in folder /app/build to /app|| COPY --from=build /app/build /app
+
+# List objects
+list all existing images|| docker images
+list all running containers|| docker ps
+list all existing containers|| docker ps -a
+
+# Create objects
+pull the node 16.3 image|| docker pull node:16.3
+build a docker image called myimage from ./Dockerfile|| docker build . -t myimage
+build a docker image called myimage from a stage called build|| docker build --target build . -t myimage
+create and start a node container|| docker run node
+create and start a node container in detach mode|| docker run -d node
+create and start a node container in interactive mode|| docker run -it node
+create and start a node container and map host port 5000 to container port 80|| docker run -p 5000:80 node
+create and start a node container on the host network|| docker run --network host node
+create and start a node container called mycontainer|| docker run --name mycontainer node
+create and start a node container with a named volume myvolume mount on /app/feedback|| docker run -v myvolume:/app/feedback node
+
+# Start, stop and attach/detach modes
+start an existing container called mypython|| docker start mypython
+start an existing container called mypython in attach mode|| docker start -a mypython
+attach to an existing and running container called mypython|| docker attach mypython
+stop an existing container called mypython|| docker stop mypython
+restart an existing container called mypython|| docker restart mypython
+print the logs of an existing container called mypython|| docker logs mypython
+enter with interactive mode to mycontainer running /bin/bash|| docker exec -it mycontainer /bin/bash
+
+# Delete objects
+remove a stopped container called mypython|| docker rm mypython
+remove a running container called mypython|| docker rm -f mypython
+remove an image called mypython without associated containers|| docker rmi mypython
+remove an image called mypython with associated containers|| docker rmi -f mypython
+remove all unused images|| docker image prune
+
+# File system
+copy the host file ./test.txt to the container called mypython into /app|| docker cp ./test.txt mypython:/app/
+copy the file /app/test.txt from the container mypython to the host file ./test.txt|| docker cp mypython:/app/test.txt ./test.txt
+
+# Share images
+share an image called mypython using docker hub to a repository called myrepo|| docker push myrepo/mypython
+use and image called mypython in a docker hub repository called  myrepo|| docker pull myrepo/mypython
+login to a docker account|| docker login
+logout from a docker account|| docker logout
+
+# Volumes
+run a container from an image myimage with an anonymous volume on /data|| docker run -v /data myimage
+run a container from an image myimage with a named volume myvolume on /data|| docker run -v myvolume:/data myimage
+run a container from an image myimage with a bind mount from the working directory to /app|| docker run -v $(pwd):/app myimage
+run a container from an image myimage with an only read bind mount from the working directory to /app|| docker run -v $(pwd):/app:ro myimage
+
+# ENV ARG
+run a container from an image myimage with an environment variable PORT with value 8000|| docker run --env PORT=8000 myimage
+run a container from an image myimage with an argument variable PORT with value 8000|| docker run --build-arg PORT=8000 myimage
+run a container from an image myimage with environment variables on .env file|| docker run --env-file ./.env myimage
+
+# Networking
+run a container from an image myimage an exposer por 5000 on the host to 5000 on the container|| docker run -p 127.0.0.1:5000:5000 myimage
+create a docker network called mynetwork|| docker network create mynetwork
+list all existing networks|| docker network ls

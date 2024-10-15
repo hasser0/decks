@@ -1,0 +1,80 @@
+# Data warehouse
+what is a data warehouse?;; a database optimized for analytical purposes
+what is normalization?;; process to remove redundancy
+
+# Layers
+what is a staging layer?;; a previous layer to the core layer
+what is a cleansing layer?;; an optional layer between staging and the core layer
+what is a core layer?;; a layer that integrates, centralizes, and handles all historical data
+what is a data mart layer?;; an optional layer between the core layer and the consumers
+staging layer purpose;; standardizes sources in relational tables and reduces operational systems usage
+cleansing layer purpose;; handles complicated transformations
+core layer purpose;; centralizes and integrates data on a historical view
+data mart layer purpose;; optimizes the core layer for usability and performance
+types of staging layers;; persistent and temporary
+
+# Improve performance
+what is the main reason for improved query performance on cubes?;; precalculated aggregations
+what is the main reason for improved query performance in memory databases?;; eliminates time latency due to disk reads
+
+# Dimensional modeling
+what is dimensional modeling?;; data warehouse design methodology
+what are star schemas?;; data warehouse structure with a fact table
+
+# Facts
+what are additive facts?;; facts that can be added across all dimensions
+what are semi-additive facts?;; facts that can be added across some dimensions
+what are non-additive facts?;; facts that can not be added across any dimension
+types of fact tables;;
+    transactional
+    factless
+    periodic snapshot
+    accumulating snapshot
+what does a row represent in a transactional fact table?;; a single event or transaction
+dimensional columns cardinality of transactional fact tables;; high
+transactional fact table cardinality;; high
+most common type of measures in a transactional fact table;; additive
+what does a row represent in a periodic fact table?;; a summarized measure
+dimensional columns cardinality of periodic fact tables;; low
+periodic fact table cardinality;; low
+what should be identify to design a fact table?;; business process, sample unit, dimensions, measures
+type of keys used as primary keys on a data warehouse?;; surrogate key
+why are surrogate keys used over natural keys?;;
+    improve joins
+    less storage
+    handle dummy/null values
+    no natural keys exists
+naming recommendation for natural and surrogate keys?;; keep natural keys identical and suffix surrogate keys with pk and fk
+
+# Dimensions
+most common dimension;; date dimension
+what is a conformed dimension?;; a dimension shared among multiple fact tables
+what is a degenerate dimension?;; a dimension with a single column, occuring mostly in transactional facts
+what is a junk dimension?;; dimension with various flags or indicators with low cardinality
+what is a role-playing dimension? dimension referenced multiple times by a fact
+date dimension most common columns;; year, month(name/number), weekday(name/number) week, quarter, month day
+most common degenerated dimensions;; payment_id, invoice_id, order_id
+date dimension meaningful surrogate key;; YYYYMMDD
+junk dimension use cases;; long text and flag values with low cardinality
+junk dimension alternative name;; transactional indicator dimension
+how should null values be handle in dimensions?;; add an extra value in the dimension for nulls
+how should hierarchies be handle in dimensions?;; hierachies are usually represented as a snowflake dimension, we should denormalize this dimension
+how should degenerate dimensions be handle?;; appended to the fact table and suffix with dd
+how can role playing dimensions be handle?;; use views pointing to the same table
+
+# Slowly changing dimensions
+type 0 scd;; no changes
+type 1 scd;; overwrite/update old values
+type 2 scd;; additional row with efective_date and expiration_date
+type 3 scd;; additional attribute
+type 2 scd additional capabilities;; add is_current column, don't leave null in expiration_date, use 9999-12-31
+cons of type 1 scd;; history is lost, can break queries
+
+# Indexes
+why are indexes needed?;; to avoid unnecessary full table scan when querying data
+types of indexes and general use cases;;
+    b-tree;; high cardinality data
+    bitmap;; repeating values
+types of indexes and dw use cases;;
+    b-tree;; unique columns, surrogate keys, high cardinality foreign keys on fact tables
+    bitmap;; low cardinality foreign keys on fact tables

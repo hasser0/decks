@@ -1,0 +1,215 @@
+# Concepts
+what is a Row in spark?;; spark record abstraction for a table
+what is an ArrayType in spark?;; spark list abstraction for a single cell in a table
+what is an MapType in spark?;; spark dict abstraction for a single cell in a table
+what are narrow transformations?;; transformations where each input row results in a single output row
+what are wide transformations?;; transformations where each input row results in multiple output rows
+what is shuffle?;; action required on wide transformations to repartition data across nodes
+how select expression works?;; it is similar to the columns selected after the select expression in sql
+difference between repartition and coalesce;; repartition shuffle the data between nodes based on column while coalesce only reduce the number of partitions by joining them
+
+
+# Create DataFrames
+import types for str and int||
+    from pyspark.sql.types import StringType, IntegerType
+import types needed to create a struct||
+    from pyspark.sql.types import StructType, StructField
+create a single column age DataFrame with mylist list[int] using str schema||
+    spark.createDataFrame(mylist, schema="age int")
+create a single column age DataFrame with mylist list[int] using spark types||
+    spark.createDataFrame(mylist, schema=IntegerType())
+create a multicolumn age, name DataFrame with mylist list[tuple[int, str]] using str schema||
+    spark.createDataFrame(mylist, schema="age int, name string")
+create a spark DataFrame from a pandas DataFrame pandas_df||
+    spark.createDataFrame(pandas_df)
+create an schema for "age int ,name str" with spark types||
+    StructType([StructField("age", IntegerType()), StructField("name", StringType())])
+create or replace a temporary view users from df||
+    df.createOrReplaceTempView("users")
+
+# ArrayType
+create a single column nums DataFrame with mylist of type list[list[int]] using str schema||
+    spark.createDataFrame(mylist, schema="nums array<int>")
+select from df the first element in "nums array<int>" renamed as num_one||
+    df.select(F.col("nums")[0].alias("num_one"))
+select from df the elements in "nums array<int>" each on a single row renamed as single_num||
+    df.select(F.explode("nums").alias("single_num"))
+
+# MapType
+select from df home value in "phones map<string, string>"||
+    df.select(F.col("phones")["home"])
+select from df columns "key string, value string" from "phones map<string, string>" each key value on a single row||
+    df.select(F.explode("phones"))
+
+# StructType
+select from df column city from "address struct<city string, country string>"||
+    df.select("address.city")
+select from df all columns in address from "address struct<city string, country string>"||
+    df.select("address.*")
+
+# Rows
+create a Row with values (11, "Sandra")||
+    Row(11, "Sandra")
+create a named Row with values (age=11, name="Sandra")||
+    Row(age=11, name="Sandra")
+given spark_row = Row(age=11, name="Sandra") print the name using dict notation||
+    print(spark_row["name"])
+given spark_row = Row(age=11, name="Sandra") print the name using dot notation||
+    print(spark_row.name)
+
+# Select and Rename
+ways to rename or transform columns;;
+    select with alias and transformations
+    selectExpr
+    withColumn
+    withColumnRenamed
+from df select the column name||
+    df.select("name")
+from df select the column name renamed as first_name||
+    df.select(F.col("name").alias("first_name"))
+from df rename the column name as first_name||
+    df.withColumnRenamed("name", "first_name")
+from df select all using an alias table||
+    df.alias("table").select("table.*")
+from df concat columns f"{first_name}, {last_name}" renamed as full_name||
+    df(F.concat(F.col("first_name"), F.lit(","), F.col("last_name")).alias("full_name"))
+from df select using expresions "age * 12" renamed as age_in_months||
+    df.selectExpr("age * 12 as age_in_months")
+from df as table select "age * 12" using expresions renamed as age_in_months||
+    df.alias("table").selectExpr("table.age * 12 as age_in_months")
+from df select id column using dict notation||
+    df.select(df["id"])
+
+# General functions
+function to get column from string|| col
+function to use python objects as part of spark calculations|| lit
+functions available on top of Column class;; cast, asc, desc, contains
+function to convert column to another data type|| cast
+function to get length of array column|| size
+from df select 1 when age>=18 and 0 when age<18|| df.select(F.when(F.col("age")>=18, 1).otherwise(0))
+
+# String functions
+function to get lowercase string|| lower
+function to get uppercase string|| upper
+function to get size of string|| length
+function to get specific indexes in a string|| substring
+function to cut a string by a character|| split
+function to fill with characters to the left|| lpad
+function to fill with characters to the right|| rpad
+function to concatenate strings|| concat
+function to join strings with separator|| concat_ws
+function to format string as title|| initcap
+function to remove leading spaces|| ltrim
+function to remove trailing spaces|| rtrim
+function to remove leading and trailing spaces|| trim
+
+# Datetime functions
+function to convert date column to string with specific format|| date_format
+function to get today's date|| current_date
+function to get now's datetime|| current_timestamp
+function to extract day number in year|| dayofyear
+function to extract day number in month|| dayofmonth
+function to extract day number in week|| dayofweek
+function to extract week number of year|| weekofyear
+function to extract year|| year
+function to extract hour|| hour
+function to extract minute|| minute
+function to extract second|| second
+function to extract month|| month
+function to increment date by days|| date_add
+function to decrement date by day|| date_sub
+function to get timedelta from two dates|| datediff
+function to get diff of months from two dates|| months_between
+function to increment date by number of months|| add_months
+function to increment date by one day|| next_day
+function to convert string to date|| to_date
+function to convert string to timestamp|| to_timestamp
+function to convert string to unix time|| unix_timestamp
+function to convert unix integer time to date or timestamp|| from_unixtime
+function to get first period from date|| trunc
+function to get first period from timestamp|| date_trunc
+
+# Null functions
+function to return first not null value|| coalesce
+from df drop na values|| df.na.drop()
+from df fill na values with 0|| df.na.fill(0)
+
+# Filtering
+from df filter using sql syntax where age >= 18||
+    df.filter("age >= 18")
+from df filter using columns where age >= 18||
+    df.filter(F.col("age") >= 18)
+from df filter using columns where age >= 18 and name == "Susan"||
+    df.filter((F.col("age") >= 18) & (F.col("name") == "Susan"))
+from df filter using columns where age >= 18 or name == "Susan"||
+    df.filter((F.col("age") >= 18) | (F.col("name") == "Susan"))
+
+# Dropping
+from df drop the column name||
+    df.drop("name")
+from df drop the columns name and age||
+    df.drop("name", "age")
+from df drop the duplicated rows||
+    df.dropDuplicates()
+from df drop the duplicated rows on user_id||
+    df.dropDuplicates(["user_id"])
+from df drop the duplicated rows on user_id and user_code||
+    df.dropDuplicates(["user_id"])
+from df drop the duplicated rows not using dropDuplicates or drop_duplicates||
+    df.distinct()
+
+# Sorting
+from df sort by name ascending with boolean flag||
+    df.sort(F.col("name"), ascending=True)
+from df sort by name ascending using sql functions||
+    df.sort(F.asc("name"))
+from df sort by name descending using col function||
+    df.sort(F.col("name").desc())
+from df sort by name descending using col function with nulls at the begining||
+    df.sort(F.col("name").desc_nulls_first())
+from df sort by name ascending using sql functions with nulls at the end||
+    df.sort(F.asc_nulls_last("name"))
+from df sort by name ascending, age descending nulls first using the most compact syntax||
+    df.sort(F.asc("name"), F.desc_nulls_first("age"))
+
+# Aggregate functions
+function to count rows|| count
+function to get max|| max
+function to get min|| min
+function to count distinct rows|| countDistinct
+function to aggregate by numerical addititon|| sum
+function to aggregate by numerical weight|| avg
+from df group by deparment and count employee and average salary||
+    df.groupby("department").agg(F.count("employee"), F.avg("salary"))
+
+# Joining
+from games and teams perform inner join using alias on homeTeamID and teamID||
+    games.alias("games").join(teams.alias("teams), on=F.col("games.homeTeamID") == F.col("teams.teamID"), how="inner)
+from games and teams perform outer join using column name both on teamID||
+    games.join(teams, on="teamID", how="outer")
+from games and teams as broadcast perform outer join using column name both on teamID||
+    games.join(F.broadcast(teams), on="teamID", how="outer")
+from customers and sellers perform cross join||
+    customers.crossJoin(sellers)
+
+# Read and Write
+read csv at path using format api infering schema with header and delimiter "|"(options)||
+    spark.read.format("csv").options(inferSchema=True, header=True, sep="|").load("path")
+read parquet at path using direct api with schema "name string, age string"(key-value arguments)||
+    spark.read.parquet(path, schema="name string, age string")
+write df to csv in path using format api with header and delimiter "|"(key-value argument)||
+    df.write.format("csv").save(path, header=True, sep="|")
+write df to json in path using direct api in append mode(function) and gzip compresion(option)||
+    df.write.mode("append").option("compresion", "gzip").save(path)
+from df shuffle the DataFrame into 16 partitions on year column||
+    df.repatition(16, "year")
+from df reduce the number of partitions to 1 single partition||
+    df.coalesce(1)
+from df write to parquet partitioning by leagueID and season using format api in path||
+    df.write.partitionBy("leagueID", "season").format("parquet").save(path)
+
+# udf
+register an udf called tostr that convert anything to string type and save to tostr||
+    tostr = spark.udf.register("tostr", lambda x: str(x), StringType())
+write the decorator used in a function to create an udf that returns a string||
+    @F.udf(StringType())

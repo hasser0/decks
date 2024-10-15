@@ -1,0 +1,24 @@
+what is sqs?;; simple queue service is a fully managed serverless service to decouple applications using queues
+what is kinesis?;; is a fully managed streaming data service for big data
+what is sns?;; simple notification service is a fully managed service to deliver message in a pub/sub format
+what is mq?;; managed message broker service to migrate rabbitmq and activemq applications
+
+# sqs
+sqs use case;; decouple applications
+how many message can sqs handle per second?;; 1-10000 per second
+how many days are messages retained in sqs?;; 4-14 days
+what is the maximum amount of message allowed in the sqs queue?;; no limit
+what queue model sqs follows?;; fifo queue
+
+# sns
+sns use case;; send messages to multiple subscribers
+what are key terms to use sns?;; notifications, subscribers, publishers, topics
+how many publishers are related to a message?;; one publisher
+how many subscribers are related to a message?;; multiple subscribers
+who receive a message from a topic?;; all subscribers receive all messages from a topic
+what is the maximum amount of subscribers per topic?;; 12_500_000 subscribers
+what is the maximum amount of topics per account?;; 100_000 topics
+
+# mq
+what disadvantage has mq over sns or sqs?;; doesn't scale as much
+what features has mq?;; queue feature and topics feature

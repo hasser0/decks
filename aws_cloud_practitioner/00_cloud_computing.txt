@@ -1,0 +1,70 @@
+what is the shared responsability model(srm)?;; model that divide customer and aws responsabilities
+what is the acceptable use policy?;; don't use aws for
+	illegal purposes
+	delivery of harmful or offensive content
+	security or network violations
+
+# cloud
+types of cloud;;
+	private cloud
+	public cloud
+	hybrid cloud
+cloud computing advantages(6);;
+	trade capex for opex
+	benefit from massive economies of scale
+	stop guessing capacity
+	increase speed and agility
+	stop spending money running and maintaining data centers
+	go global in minutes
+cloud computing characteristics(brrom);;
+	broad network access
+	resource pooling
+	rapid elasticity
+	on demand self service
+	measure service
+cloud computing models;;
+	iaas: you manage hardware and bare metal
+	paas: you manage and deploy your applications
+	saas: you use the application managed by service provider
+what is managed by on premise but not iaas?;;
+	virtualization
+	servers
+	storage
+	networking
+what is managed by iaas but not paas?;;
+	middleware
+	os
+	runtime
+what is managed by paas but not saas?;;
+	data
+	application
+what is managed by saas?;; nothing
+what is serverless?;; cloud computing model to build simple applications without managing or scaling infrastructure
+what is a managed service?;; cloud services where customer manage certain part of the infrastructure
+what is a fully managed service?;; cloud services with full infrastructure management done by cloud provider
+
+# pricing
+how are services pay on the cloud?;; pay as you go pricing and on demand delivery
+what is paid on aws?;;
+	compute: pay for what you compute
+	storage: pay for what you store
+	networking: pay for data transfer out of aws
+
+# regions and az
+what are all the global services;;
+	iam
+	route53
+	cloudfront
+	waf
+what are regions?;; cluster of data centers
+what are availability zones?;; groups of data centers(one or more) within the same region
+us-east-1, eu-west-3 are examples of ...;; regions
+us-east-1a, us-east-1b, us-east-1c are examples of ...;; availability zone
+how many availability zones contain each region?;; 3 to 6
+how many data centers contain each availability zone?;; one or more
+main availability zones purpose;; disaster recovery
+key points to take into account when selecting a region for a service(capp);;
+	compliance: legal restrictions
+	availability: different service per region
+	proximity
+	pricing: different pricing per region

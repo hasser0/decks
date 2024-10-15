@@ -1,0 +1,50 @@
+# Data Concepts
+what is data?;; raw facts
+what is information?;; transformed data
+what is knowledge?;; understanding of information meaning
+what is a database?;; computer structure containing data and metadata
+what is data management?;; collection, storage, and retrieval of data
+
+# Types of Databases
+what is OLTP?;; database for daily operations support
+what is OLAP?;; database for historical data and business metrics
+what is a data warehouse?;; specialized database for historical and aggregated data
+
+# Data Issues
+what is data quality?;; valid, accurate, and timely data
+what is data inconsistency?;; differing results from different data versions
+what is data redundancy?;; unnecessary storage of data in multiple places
+what is data integrity?;; data conformity to real-world objects and constraints
+what is data anomaly?;; inconsistent changes in a database
+
+# Historical Models Concepts
+what is an entity?;; physical or abstract object
+what is an attribute?;; feature of an entity
+what is a relationship?;; association among entities
+what is a constraint?;; data restriction
+what is a tuple in the relational model?;; row in a table
+what is a table in the relational model?;; two-dimensional data structure
+what is a schema?;; conceptual organization of a database from an administrator's view
+what is a field?;; column in a table
+what is a record?;; set of fields describing a single object
+what is a file?;; collection of records
+what is the difference between a filesystem file and a relational table?;; tables are logical and independent of physical implementation, while files are tied to physical storage
+what is an entity instance?;; row in a relational table
+what is an entity set?;; collection of similar entities
+what is connectivity?;; type of relationships in data
+what is a query?;; task performed on a database
+
+# Business Rules
+what is a business rule?;; concise description of a policy or process
+which business rules sources are trustworthy?;; managers and documentation
+which business rules sources are fast but less reliable?;; end-users
+what are important questions to discover business rules?;; how many instances of A relate to one instance of B?
+
+# Management Systems
+what is DBMS?;; database management system, intermediary for managing databases
+what is the most important advantage of RDBMS?;; hides complexity from users
+
+# Data Language
+what is a declarative language?;; specifies what needs to be done without details on how
+what is DDL?;; Data Definition Language, subset of SQL for defining data
+what is DML?;; Data Manipulation Language, subset of SQL for manipulating data

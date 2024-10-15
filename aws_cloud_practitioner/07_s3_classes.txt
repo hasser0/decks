@@ -1,0 +1,12 @@
+s3 storage classes;;
+	standard
+	standard infrequent access
+	one zone infrequent access
+	glacier instant retrieval
+	glacier flexible retrieval
+	glacier deep archive
+	intelligent tiering
+storage class with lowest availability;; one zone infrequent access
+storage classes without retrival fee;; standard
+storage classes with minute to hour retrieval latency;; glacier deep archive and glacier flexible retrieval
+what are lifecycle rules?;; rules to automatically change object storage classes

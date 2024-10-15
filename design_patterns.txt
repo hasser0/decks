@@ -1,0 +1,40 @@
+# SOLID Principles
+what is the S in SOLID and what is it about?;; Single Responsibility Principle states that a class should have a single reason to change
+what is the O in SOLID and what is it about?;; Open-Close Principle states that a class should be open for extension (by using inheritance) and closed for modification
+what is the L in SOLID and what is it about?;; Liskov Substitution Principle states that a base class should be able to substitute a child class
+what is the I in SOLID and what is it about?;; Interface Segregation Principle states that we should not overload our interfaces and use several ones instead
+what is the D in SOLID and what is it about?;; Dependency Inversion Principle states that high-level classes should use low-level abstractions and not be concerned with the implementation
+what is gamma categorization?;; a classification for design patterns
+    Creational Patterns;; constructor or mechanism, piecewise or wholesale
+    Structural Patterns;; wrappers to mimic interfaces
+    Behavioral Patterns;; no central theme
+what creational design patterns exist?;;
+    Builder
+    Factory
+    Prototype
+    Singleton
+
+# Pattern implementations
+how is the Builder Facets pattern implemented?;; creating multiple BuilderFacet classes that set properties and link them using class properties
+how is the Factory Method pattern implemented?;; creating one or multiple class methods that handle creation logic
+how is the Factory pattern implemented?;; creating one Factory class that defines multiple class methods to handle creation logic
+how is the Abstract Factory pattern implemented?;; creating multiple classes that inherit from an abstract base class that defines the methods to be implemented
+how is the Prototype pattern implemented?;; using a Factory class, defining prototypes inside it, creating copy or deepcopy methods, and exposing a method for each prototype
+how is the Singleton Decorator pattern implemented?;; creating a function that takes the class name, and returns a function that adds to a dict the first and always returns the singleton object
+how is the Singleton Metaclass pattern implemented?;; creating a metaclass that defines a static property called instance and defines the __call__ function to create and return the instance
+
+# Use cases
+when is the Builder pattern recommended?;; when the creation of an object should be done step by step
+when is the Factory pattern recommended?;; when the creation of an object should be done entirely and it's a complicated process, but there's a single factory
+when is the Abstract Factory pattern recommended?;; when there are several families of related classes and a single factory is not enough
+when is the Prototype pattern recommended?;; when there are object attributes that we want to repeat multiple times
+when is the Singleton pattern recommended?;; when only one object makes sense, the initializer is expensive, or to implement factories
+
+# Builder
+how are steps chained in the Builder pattern?;; return the object itself at each step
+
+# Factory
+what is the difference between Factory Method and Factory?;; Factory Method is in the same class it creates, and Factory follows the SRP by using a separate class
+
+# Prototypes
+what is a Prototype?;; an object that works as a blueprint to create new objects, using copy or deepcopy

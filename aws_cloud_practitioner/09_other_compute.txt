@@ -1,0 +1,23 @@
+what is ecr?;; elastic container repository is a managed container image registry
+what is ecs?;; elastic container service is a fully managed container orchestration service to deploy, manage and scale containerized applications
+what is fargate?;; fully managed serverless service to containerized applications
+what is lambda functions?;; serverless faas service to deploy event-driven code/functions
+what is api gateway?;; fully managed serverless service to create, publish, maintain and monitor apis
+what is batch?;; fully managed service to launch batch jobs on schedule
+what is lightsail?;; aws light version intended for cloud novices
+
+who provides ec2 instances to run containers on ecs?;; customer
+who cares of starting and stoping ec2 instances running ecs containers?;; aws
+how long can a lambda function run on a single call?;; at most 15 minutes
+how are lambda calls billed?;; per request and gbs compute time(the harder the hardware the more expensive)
+scheduled lambda function workflows are triggered using ...;; a cron cloudwatch event
+main api gateway use case;; expose lambda functions apis
+types of apis supported by api gateway;; restful apis and websockets
+how are batch jobs defined?;; defined using docker images and run on ecs
+how are batch jobs scaled?;; batch provides the right amount of compute and memory depending on your workload
+what can be launched on lightsail?;;
+	instances
+	databases
+	load balancers
+	storage
+	network

@@ -1,0 +1,10 @@
+teoría axiomática de primer orden;; sistema formal deductivo tal que
+    axiomas contienen a los de KL
+    reglas de inferencia son las de KL
+
+axiomas lógicos;; axiomas de KL
+axioma propios de T;; axiomas de T que no son de KL
+modelo de una teoría axiomática T;; modelo que cumple los axiomas de T
+teoría axiomática consistente;; T del cuál no se puede deducir nunca a y ~a
+teoría axiomática contradictoria;; T del cuál se deduce a y ~a
+clausura universal de a;; sentencia que liga todas las variables libres de con cuantificadores universales

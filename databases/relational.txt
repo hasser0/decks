@@ -1,0 +1,59 @@
+# Relational models
+what is the relational model?;; data model by Edgar Codd based on set theory
+what is a relational diagram?;; graphical representation of the relational model
+what is the most important advantage of the relational model?;; logical and structural independence
+what is the ER model?;; conceptual data model by Peter Chen
+what is an ER diagram?;; graphical representation of the ER model
+what are the differences between relational model and entity relationship model?;;
+    relational model uses foreign keys for relationships
+    ER model does not specify relationship implementation
+
+# Keys
+what is a key?;; an attribute or set of attributes
+what is a primary key?;; a key in a table that uniquely identifies rows and ensures entity integrity
+what is a candidate key?;; a key that is a candidate to be a primary key
+what is a super key?;; a key where a subset is a candidate key
+what is an alternate key?;; a candidate key that is not the primary key
+what is a foreign key?;; a key that refers to a primary key and ensures referential integrity
+what is a surrogate key?;; a key that is generated for a primary key within a system
+what is a natural key?;; a key that is a primary key and makes sense outside the system
+what is a composite key?;; a key with multiple attributes
+what is a simple key?;; a key with a single attribute
+what is an intelligent key?;; a key that concatenates attributes from a candidate key
+
+# Select Primary Keys
+when should be used natural keys?;; whenever natural keys exists for the entity
+when should be used composite keys?;; for M-M relations
+characteristics of a good primary key;;
+    unique
+    not intelligent keys
+    simple keys
+    unchangeable over time
+    numerical(preferably)
+    security compliant
+
+# Entity Relation Modeling
+main components in an ERM;; entities, relations and attributes
+secondary components in an ERM;; relationship strength, cardinality and degree
+types of cardinality in a relationship;; 1-1, 1-M, M-M
+what is the EER model?;; extended entity relationship model is based on ERM adding subtypes, supertypes and clustering
+what is an entity supertype?;; is a general entity related that contains multiple subtypes
+what is an entity subtype?;; is a subset of an entity supertype
+what is a subtype discriminator?;; an attribute in the supertype entity that determines the subtype
+what is an overlapping subtype?;; supertype-subtype relation where each entity can belong to multiple subtypes
+what is a completeness constrain?;; constrain that specifies whether each supertype must be a subtype
+what is a partial completeness?;; no every supertype is a subtype
+what is a total completeness?;; every supertype must be a subtype
+what is a disjoint subtype?;; supertype-subtype relation where each entity can only belong to a single subtype
+how are modelled supertypes?;; create a single table with the common attributes
+how are modelled subtypes?;; create a subtype table with a FK pointing to the supertype PK
+
+# Normalization
+what is normalization?;; process to reduce or eliminate redundancies on a database
+what is denormalization?;; inverse process of normalization
+what is functional dependenct?;; we say B is functional dependent on A if the relation A -> B is a function
+what is partial dependenct?;; we say B is partial dependent on (A1,A2) if one and only one of A1 -> B, A2 -> B is a function
+what is transitive dependenct?;; we say C is transitive dependent on A if the relations A -> B, B -> C is a function
+rules of 1NF;; no repeating group, primary key exists
+rules of 2NF;; 1NF, no partial dependency
+rules of 3NF;; 2NF, no transitive dependencyF

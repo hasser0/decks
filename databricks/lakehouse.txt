@@ -1,0 +1,34 @@
+# Simple
+magic command to list directories;; %fs
+magic command sql;; %sql
+magic command to run notebooks;; %run
+dbutils stands for;; databricks utilities
+delta lake implementation;; parquets and json
+delta lake is not a storage, is a;; framework
+transactions log do;; store transactions in json, update, insert, delete, restore, optimize, drop, vacuum
+transactions that delete parquet files;; drop, vacuum
+what does hive metastore do?;; store metadata about tables in a separated place from dbfs
+where are managed table stored?;; dbfs:/user/hive/warehouse
+managed vs external tables location;; use default schema location or external location
+managed vs external tables files;; delete files on drops or not
+what does deep clone do? copy data and metadata, can sync tables, it is slow
+what does shallow clone do? copy only transactions logs, it is faster than deep clone
+types of views;; stored, temporary(session scope), global(cluster scope on restart)
+
+# Input
+create a stored view|| create view __view__ as __query__
+create a temp view|| create temp view __view__ as __query__
+create a global view|| create global temp view __view__ as __query__
+describe metadata of table|| describe extended __table__
+describe metadata of database|| describe database extended __database__
+describe metadata of function|| describe function extended __function__
+ctas|| create table __table__ as select * from __table__
+create a schema in a custom location|| create schema __schema__ location __location__
+create a table in a custom location|| create table __table__(__schema__) location __location__
+get current version details|| describe detail __table__
+get all transaction details|| describe history __table__
+restore table version|| restore table __table__ to version as of __version__
+improve performance and delete unnecesary history|| optimize __table__
+reindex table|| optimize __table__ zorder by __column__
+remove unnecesary files|| vacuum __table__ [retention-time]
+get table version by number|| select * from __table__@v1

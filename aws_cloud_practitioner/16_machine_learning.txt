@@ -1,0 +1,15 @@
+what is aws rekognition?;; ml service to find objects in images and videos
+what is aws transcribe?;; ml service to automatically convert speech to text
+what is aws polly?;; ml service to turn text into speech
+what is aws translate?;; ml service to translate text between languages
+what is aws lex?;; ml service to recognize speech, understand intention and process request, usefull for chatbots
+what is aws connect?;; ml service to receive calls, understand them using aws lex an process, usefull for contact centers
+what is aws comprehend?;; ml service to find insights and relationships in text
+what is aws sagemaker?;; fully managed ml service to create and deploy custom ml models
+what is aws forecast?;; fully managed ml service to deliver time series forecasts
+what is aws kendra?;; fully managed document search service powered by ml to extract answers from documents
+what is aws personalize?;; fully managed ml service for system recommendation
+what is aws textract?;; service to extract text from documents
+
+aws transcribe feature to ensure personal information is not saved?;; identify and manage pii
+

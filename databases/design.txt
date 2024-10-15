@@ -1,0 +1,26 @@
+# Database Design
+what is database design?;; process yielding a database description
+what is structural dependence?;; relation between file structure and program, modifying structure requires program changes
+what is structural independence?;; no dependency on file structure
+what is data dependence?;; relation between data and programs, modifying data features requires program changes
+why is important to document database design?;; communicates, explains, and understands data overview
+
+# Data models
+what are the basic building blocks of all data models?;;
+    entity
+    attribute
+    relationship
+    constraints
+what is a semantic data model?;; integrates data and relationships in one place
+
+# Degrees of Data Abstraction
+which types of models does ANSI/SPARC establish?;;
+    external
+    conceptual
+    internal
+what is the external model?;; end-users' view of data (schemas in relational databases)
+what is the conceptual model?;; global view for database designers
+features of the conceptual model?;; software and hardware independent
+what is logical design?;; process of creating a conceptual data model
+what is the internal model?;; DBMS's view of the conceptual model implementation
+features of the internal model?;; software dependent

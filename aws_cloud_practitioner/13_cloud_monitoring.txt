@@ -1,0 +1,39 @@
+what is cloudwatch?;; monitoring service for aws cloud resources and applications
+what is cloudwatch alarms?;; cloudwatch service that trigger actions based on metrics
+what is cloudwatch metrics?;; metrics taken on time interval about aws services
+what is cloudwatch billing?;; service to measure billing costs of aws services
+what is cloudwatch dashboards?;; graphical representation of cloudwatch metrics
+what is cloudwatch logs?;; monitoring service to store and access log files
+what is eventbridge?;; serverless service to connect applications using events
+what is cloudtrail?;; governance, audit and compliance service to monitor user and api activities
+what is x-ray?;; service to debug and monitor microservices architectures
+what is codeguru?;; ml service for automated code reviews and application performance recommendations
+what is codeguru reviewer?;; automated code reviews
+what is codeguru profiler?;; production performance profiler
+what is health dashboard?;; service to monitor all your services and regions historically
+
+what kind of triggers exists in cloudwatch alarms?;;
+	autoscaling
+	ec2 instances actions
+what kind of metrics exists on cloudwatch for ec2 instances?;;
+	sns notifications
+	cpu utilization
+	status checks
+	network
+what kind of metrics exists on cloudwatch for ebs?;; disk read/writes
+what kind of metrics exists on cloudwatch for s3?;;
+	bucket size
+	number of objects
+when there are no metrics for an specific scenario you can ...;; build your own custom metrics
+which services are integrated with cloudwatch logs?;; ecs, elasticbeanstalk, lambda, route53
+what is needed to watch logs from an ec2 instance in cloudwatch logs?;; install the cloudwatch agent
+how was eventbridge named before?;; cloudwatch events
+what types of events can be used on eventbridge?;;
+	events within aws account
+	cron schedules
+	custom events
+which scope applies to cloudtrail?;; all regions or single region
+where can cloudtrail logs be stored?;; in cloudwatch logs or s3 buckets
+what problems resolve x-ray?;; difficult to debug and monitor microservices
+how was health dashboard service history named before?;; service health dashboard
+how was health dashboard account named before?;; personal health dashboard

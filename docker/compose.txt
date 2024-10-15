@@ -1,0 +1,45 @@
+# basics
+atomic yaml datatypes;; string, integer, float, bool
+complex yaml datatype;; list, dictionary
+what is docker compose?;; tool to manage multiple container applications on the same host
+what is version key used for in docker compose file;; to match a specific docker compose specification
+
+detach mode in docker compose;; managed by docker compose commands
+remove mode in docker compose;; managed by docker compose commands
+why named volumes are declare at .services.mycontainer and .volumes;; because a single volume can be used by multiple containers
+what does docker-compose up command do?;; create all resources(volumes, networks, images and container)
+what does docker-compose down command do?;; delete almost all resources(except volumes and images)
+
+# docker compose syntax
+docker compose file name|| docker-compose.yaml
+jq to declare version 3.8|| .version = "3.8"
+jq to declare name mycompose|| .name = "mycompose"
+jq to declare container mycontainer|| .services.mycontainer
+jq to declare image myimage for a mycontainer|| .services.mycontainer.image = "myimage"
+jq to declare anonymous volume in /logs for mycontainer|| .services.mycontainer.volumes = ["/logs"]
+jq to declare anonymous volumes in /logs and /data for mycontainer|| .services.mycontainer.volumes = ["/logs", "/data"]
+jq to declare named volume mydata|| .volumes.mydata
+jq to declare named volume mydata in /data for mycontainer|| .services.mycontainer.volumes = ["mydata:/data"]
+jq to declare named volumes mydata in /data and mylogs in /logs for mycontainer|| .services.mycontainer.volumes = ["mydata:/data", "mylogs:/logs"]
+jq to declare bind mount ./myapp to /myapp for mycontainer|| .services.mycontainer.volumes = ["./myapp:/myapp"]
+jq to declare env variable MY_USER=hasser for mycontainer|| .services.mycontainer.environment.MY_USER = "hasser"
+jq to declare env variable MY_PWD=pwd1234 for mycontainer|| .services.mycontainer.environment.MY_PWD = "pwd1234"
+jq to declare env variable from file in ./.env for mycontainer|| .services.mycontainer.env_file = ["./.env"]
+jq to declare network mynet for mycontainer|| .services.mycontainer.networks = ["mynet"]
+jq to declare ports 80:80 and 3000:3000 for mycontainer|| .services.mycontainer.porst = ["80:80", "3000:3000"]
+jq to declare dependency for mycontainer on mycontainer2|| .services.mycontainer.depends_on = ["mycontainer2"]
+jq to declare mycontainer run interactive mode|| .services.mycontainer.stdin_open = "true"
+jq to declare mycontainer run terminal mode|| .services.mycontainer.tty = "true"
+jq to declare container name mycontainer_name for mycontainer|| .services.mycontainer.container_name = "mycontainer_name"
+
+jq to declare ./myapp/ as the directory where dockerfile should be built and found for mycontainer|| .services.mycontainer.build.context = "./myapp/"
+jq to declare dockerfile name as mydockefile for mycontainer|| .services.mycontainer.build.dockerfile = "mydockerfile"
+jq to declare MYARG=80 as at built time arg for mycontainer|| .services.mycontainer.build.args.MYARG = 80
+
+# docker compose commands
+command to build and start all resources|| docker-compose up
+command to build and start all resources in detach mode|| docker-compose up -d
+command to build all images|| docker-compose build
+command to stop all resources except volumes|| docker-compose down
+command to stop all resources include volumes|| docker-compose down -v
+command to run a specific service call myservice|| docker-compose run myservice

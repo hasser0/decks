@@ -1,0 +1,46 @@
+what is ebs?;; elastic block store is a network block storage service designed for ec2 instances
+what is ebs multi-attach?;; service to attach an ebs volume to multiple instances
+what is an ami?;; amazon machine image is a template containing software configurations
+what is an ebs snapshot?;; backup from ebs volume stored in s3
+what is recycle bin snapshots?;; rules to retain deleted snapshots
+what is ebs snapshot archive?;; ebs snapshot feature cheaper for infrequent access data
+what is efs?;; elastic file system is a fully managed serverless network file system service
+what is efs infrequent access?;; efs storage class cost optimize for infrequent accessed data
+what is fsx?;; amazon third party file systems
+what is ec2 instance store;; ephemeral, high performant, instance attached storage
+
+# ebs
+ebs volumes are inherently tied to ...;; a specific availability zone
+ebs volumes can be mounted to ... at the same time;; only one ec2 instance
+ebs volumes can be mounted to ec2 instances in ...;; the same availability zone
+... can be mounted on a single ec2 instance;; multiple ebs volumes
+ephemeral ebs volumes can be created using ...;; delete on termination field
+
+# snapshots
+ebs snapshots are inherently tied to ...;; a specific region
+ebs snapshots are used for ...;; backup data and transfer to a different availability zones
+before creating an ebs snapshot it is recommended to ...;; detach the volume from any instance
+recycle bin snapshots can retain data from ... up to ...;; 1 day ... 1 year
+
+# ami
+advantages of using ami;;
+	faster boot
+	add software
+	add configuration
+types of ami;;
+	public ami
+	own ami
+	marketplace ami
+what is ec2 image builder?;; a service to automate creation(build, validate, test) of vms or containers
+
+# instance store
+when to use ec2 instance store over ebs?;; when high io performance is needed
+while ebs is ... ec2 instance store is ...;; a network disk ... disk attached to instances
+the main disadvantage of ec2 instance store is that ...;; it is ephemeral and can incur in data loss
+
+# efs
+in contrast to ebs, efs can be ...;; mounted on multiple ec2 instances on multiple availability zones
+ebs is ... than efs;; 3x cheaper
+fsx options;;
+	windows file server(for windows servers)
+	lustre(linux cluster for high performance computing)

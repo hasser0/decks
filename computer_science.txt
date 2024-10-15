@@ -1,0 +1,44 @@
+# http
+what is an uri?;; uniform resource identifier is a resource identificator used throughout http
+what is an urn?;; uniform resource name is a resource identificator in a particular namespace
+which is the most common form of uri?;; url
+what does url stands for?;; uniform resource locator
+which parts compose mime types?;; type/subtype
+
+# charset, encoding and collation
+what is a charset?;; is a set of characters, sometimes also used to refer to the encoding
+what is a encoding?;; is an algorithm or way to represent a charset in memory
+what is a collation?;; is a set of rules on a charset mainly for comparison
+what is ASCII?;; a charset
+what is unicode?;; an encoding
+what is UTF-8?;; a unicode encoding
+
+# devops and servers
+what is a wsgi? web server gateway interface is interface between python applications and reverse proxy to translate http requests to python objects
+what is a asgi? asynchronous server gateway interface is asynchronous version of wsgi
+what is a reverse proxy?;; is a component between internet and web servers
+
+what is owasp?;; open web applications security project is set of rules to improve application security
+how to store passwords in a database?;; salt the passwords and use a slow hash function
+which is good hashing function for password?;; bcrypt
+
+# programming languages
+what is variable declaration?;; statement that provides variable name and its type
+what is variable initialization?;; statement that provides the initial value hold by a variable
+when does variable shadowing occur?;; when a variable in a scope is declared with the same name as a variable in an outer scope
+what is a mutable variable?;; a variable that is allowed to change
+what is an immutable variable?;; a variable that is not allowed to change
+what is a strongly typed programming language?;; programming language that tracks variable types at compile time or runtime
+what is a weakly typed programming language?;; not strongly typed programming language
+what is a dynamic programming language?;; programming language that can change variable types at runtime
+what is a static programming language?;; programming language that cannot change variable types at runtime
+
+# heap vs stack
+what is the heap?;; is a pre-reserved memory area used to store variable length of data known on runtime
+what is the stack?;; is a reserved memory area used to store fixed length variables known on compile time
+what kind of data does the stack store?;; temporary data limited by scope
+what kind of data does the stack store?;; global or dynamic data not limited by scope
+data structure used by stack memory;; LIFO structure
+data structure used by heap memory;; not specific structure
+which of stack and heap memory is faster to access?;; stack memory
+which of stack and heap memory is easier to manage?;; stack memory

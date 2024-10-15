@@ -1,0 +1,59 @@
+what is iam?;; identity access management is a service that helps you control access to resources
+what is iam access advisor?;; shows permissions granted to a user and last time were used
+what is iam credential report?;; list all your users with their credentials
+what is iam identity center?;; single sign on for multiple accounts
+what is sts?;; security token service to create temporary limited-privileges credentials
+what is cognito?;; service for identity on web and mobile
+what is cloudshell?;; service that provides a shell to access resources
+
+what is a user?;; entity that represents one person
+what is a group?;; set of users with policies attached
+what is a role?;; identity with set of permissions assumable temporarily
+what is a policy?;; document that defines a set of permissions
+what is a root user?;; default user account created with any aws account
+
+# users, groups and policies
+when should root users be used?;; should not be used or shared
+principle to apply while creating permissions;; least privilege principle
+how should permissions be granted to users or groups?;; using policies
+how many groups can a user belong to?;; zero or more
+can groups contain other groups?;; no, only users
+policies are attached to ...;; users, roles and groups
+types of policies;;
+	inline policy: (single user)
+	group policy
+structure of a policy;;
+	version
+	id
+	statement
+structure of a statement in policy structure(crepas);;
+	condition
+	resources
+	effect
+	principal
+	action
+	sid
+
+# iam security
+how to secure iam access?;;
+	strong password policy
+	mfa
+password policies;;
+	length
+	characters
+	periodic renewal
+	no old passwords
+types of devices for mfa;;
+	virtual device (in phone)
+	physical device
+how to access programmatically?;; with an access key
+	cli
+	sdk
+
+# best practices
+use ... instead of using root account?;; iam admin user
+number of users per physical user;; one
+permission is to group as user is to;; group
+tools to monitor iam users;;
+	iam credentials report
+	iam access advisor

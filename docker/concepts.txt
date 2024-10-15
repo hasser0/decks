@@ -1,0 +1,29 @@
+docker use cases;;
+    production and development environments reproducible
+    manage versions within many projects
+which of attach or detach is the default mode when creating a container?;; attach
+which of attach or detach is the default mode when starting an existing container?;; detach
+difference between attach and interactive mode;; both allow us to see output, but interactive allow us to input data
+types of external data storages;;
+    volumes: managed by docker
+    bind mounts: managed by user
+types of volumes;;
+    anonymous volumes
+    named volumes
+does anonymous volumes persist after container is removed?;; when container is run with --rm, no, otherwise they are persisted but not reused
+does named volumes persist after container is removed?;; yes, they are not attached to any container
+use case for bind mount and COPY together;; to create development and production images at the same time
+how to ignore files on COPY command?;; using .dockerignore
+typical files to .dockerignore;; Dockerfile, .git, __pycache__
+types of variables supported by docker;;
+    ARG: build-time
+    ENV: runtime
+how are multiple environment variables, volumes declare when running a container;; using multiple times the same flags
+types of docker network communication;;
+    container-container
+    container-host
+    container-www
+types of networks drivers and its behaviour;;
+    bridge: attach containers to a new network in your host
+    host: attach containers to your host
+    mcvlan: attach containers to your LAN
