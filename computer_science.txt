@@ -17,7 +17,6 @@ what is UTF-8?;; a unicode encoding
 what is a wsgi? web server gateway interface is interface between python applications and reverse proxy to translate http requests to python objects
 what is a asgi? asynchronous server gateway interface is asynchronous version of wsgi
 what is a reverse proxy?;; is a component between internet and web servers
-
 what is owasp?;; open web applications security project is set of rules to improve application security
 how to store passwords in a database?;; salt the passwords and use a slow hash function
 which is good hashing function for password?;; bcrypt
@@ -32,6 +31,8 @@ what is a strongly typed programming language?;; programming language that track
 what is a weakly typed programming language?;; not strongly typed programming language
 what is a dynamic programming language?;; programming language that can change variable types at runtime
 what is a static programming language?;; programming language that cannot change variable types at runtime
+unit testing;; testing correctness of small units of code
+defensive programming;; technique that anticipates all possible software misuses
 
 # heap vs stack
 what is the heap?;; is a pre-reserved memory area used to store variable length of data known on runtime
@@ -42,3 +43,10 @@ data structure used by stack memory;; LIFO structure
 data structure used by heap memory;; not specific structure
 which of stack and heap memory is faster to access?;; stack memory
 which of stack and heap memory is easier to manage?;; stack memory
+
+# oop
+four pillars of OOP;;
+    encapsulation
+    inheritance
+    polymorphism
+    abstraction
