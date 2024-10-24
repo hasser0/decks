@@ -1,0 +1,43 @@
+limit definition;;
+    \[ \lim_{x\rightarrow a} f(x) = L \]
+    \[ \equiv \]
+    \[ \exists L\forall\epsilon \exists\delta \forall x: (0<|x -a|<\delta) \rightarrow (|f(x)-L|<\epsilon) \]
+continuity definition;;
+    \[ \lim_{x\rightarrow a} f(x) = f(a) \]
+real axioms;;
+    associative (addition/multiplication)
+    commutative (addition/multiplication)
+    identity (addition/multiplication)
+    inverse (addition/multiplication)
+    closure (addition/multiplication)
+    distributive
+    trichotomy
+    least upper bound
+least upper bound axiom;; if \( A \) is a not an empty set and has an upper bound, then it has a minimum upper bound
+intermediate value theorem;;
+    \[ f\in C[a,b] \]
+    \[ f(a) < 0 < f(b) \]
+    \[ \therefore \]
+    \[ \exists x\in [a,b]: f(x) = 0 \]
+bounded theorem;;
+    \[ f\in C[a,b] \]
+    \[ \therefore \]
+    \[ \exists N \forall x\in [a,b]: f(x) \leq N \]
+extreme value theorem;;
+    \[ f\in C[a,b] \]
+    \[ \therefore \]
+    \[ \exists y\in [a,b] \forall x\in [a,b]: f(x) \leq f(y) \]
+intermediate value theorem proof;;
+    \[ A = \{ x : f(y) < 0, y\in [a, x] \} \]
+    \[ \text{R.A. } f(\sup A) \neq 0 \]
+bounded theorem proof;;
+    \[ A = \{ x : a\le x\le b, f \text{ upper bounded in } [a, x] \} \]
+    \[ \text{R.A. } \sup A < b \]
+extreme value theorem proof;;
+    \[ A = \{ f(x) : x\in [a,b] \} \]
+    \[ \text{R.A. using using bounded theorem proof on } \sup A \neq f(y), y\in [a,b] \]
+archimedean property proof;;
+    \[ \forall n\in N \sup N \ge n \]
+    \[ \forall n\in N \sup N \ge n+1 \]
+    \[ \therefore \]
+    \[ \sup N = \sup N + 1\]
