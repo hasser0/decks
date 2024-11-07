@@ -33,6 +33,9 @@ what is a dynamic programming language?;; programming language that can change v
 what is a static programming language?;; programming language that cannot change variable types at runtime
 unit testing;; testing correctness of small units of code
 defensive programming;; technique that anticipates all possible software misuses
+what is an expression?;; a sequence of symbols that returns a value
+what is an operator?;; a symbol used to perform operations on operands
+what is variable shadowing?;; declare a variable in a scope with the same name than other in an outer scope
 
 # heap vs stack
 what is the heap?;; is a pre-reserved memory area used to store variable length of data known on runtime
