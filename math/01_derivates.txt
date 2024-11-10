@@ -1,6 +1,0 @@
-accurate informal definition of derivate;; secant limit
-definition of \( f \) differentiable in \( a \);; when the following limit exists
-    \[ \lim_{h\rightarrow 0} \frac{f(a+h) - f(a)}{h} \]
-difference between \( f', f'(a), f'(x) \);; \( f' \) is a function, \( f'(a) \) is a number, \( f'(x) \) is used as a number and as a function
-differentiability implies continuity theorem proof;;
-    \[ \lim_{h\rightarrow 0} f(a+h) - f(a) = 0 \]

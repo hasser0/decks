@@ -1,0 +1,43 @@
+# Fundamentals
+real axioms;;
+    associative (addition/multiplication)
+    commutative (addition/multiplication)
+    identity (addition/multiplication)
+    inverse (addition/multiplication)
+    closure (addition/multiplication)
+    distributive
+    trichotomy
+    least upper bound
+least upper bound axiom;; if \( A \) is a not an empty set and has an upper bound, then it has a minimum upper bound
+dense set;; a subset \( A \) in \( B \) such that any subset of \( B \) contains at least one element of \( A \)
+
+# Limits and continuity
+limit definition;;
+    \[ \lim_{x\rightarrow a} f(x) = L \]
+    \[ \equiv \]
+    \[ \forall \epsilon > 0 \ \exists\delta > 0: (0<|x -a|<\delta)\rightarrow (|f(x)-L|<\epsilon) \]
+continuity definition;;
+    \[ \lim_{x\rightarrow a} f(x) = f(a) \]
+intermediate value theorem;;
+    \[ f\in C[a,b] \]
+    \[ f(a) < 0 < f(b) \]
+    \[ \therefore \]
+    \[ \exists x\in [a,b]: f(x) = 0 \]
+bounded theorem;;
+    \[ f\in C[a,b] \]
+    \[ \therefore \]
+    \[ \exists N \ \forall x\in [a,b]: f(x) \leq N \]
+extreme value theorem;;
+    \[ f\in C[a,b] \]
+    \[ \therefore \]
+    \[ \exists y\in [a,b] \ \forall x\in [a,b]: f(x) \leq f(y) \]
+archimedean property;;
+    \[ \forall \epsilon > 0 \ \exists n\in N: \epsilon > \frac{1}{n} \]
+
+# Derivates
+accurate informal definition of derivate;; secant limit
+definition of \( f \) differentiable in \( a \);; \( f \) is differentiable in \( a \) if exists
+    \[ \lim_{h\rightarrow 0} \frac{f(a+h) - f(a)}{h} \]
+difference between \( f', f'(a), f'(x) \);; \( f' \) is a function, \( f'(a) \) is a number, \( f'(x) \) is used as a number and as a function
+differentiability implies continuity theorem;;
+
