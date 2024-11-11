@@ -17,4 +17,19 @@ construction sequence;; \( \varepsilon_1, \cdots, \varepsilon_n \) sequence of e
     \( \varepsilon_i \) is a sentence
     \( \varepsilon_i = \epsilon_\lnot(\varepsilon_j) \ j < i \)
     \( \varepsilon_i = \epsilon_\square(\varepsilon_j, \varepsilon_k) \ j,k < i \)
-\induction principle;; the set \( S \) containing all sentence symbols and close under formula building operations is the set of all wff
+induction principle;;
+    if \( S \) is a set of wff containing all sentence symbols
+    and \( S \) close under five formula building operations
+    then \( S \) is the set of all wff
+
+# Truth assignments
+truth assignment;; \( v: S \rightarrow \{T,F\} \)
+    \( S \) set of sentence symbols
+truth assignment extension;; \( \bar{v}: \bar{S} \rightarrow \{T,F\} \)
+    \( \bar{S} \) set of wff
+\( \bar{v}\) satisfies \( \varphi \);; if \( \bar{v}(\varphi) = T \)
+compactness theorem;; If every finite subset of \( \Sigma \) is satisfied, then \( \Sigma \) is satisfied
+\( \Sigma \models \tau \) (tautologically implies);; all truth assignments for sentences in \( \Sigma, \tau \) that satisfies \( \Sigma \) also satisfies \( \tau \)
+tautologically equivalent;; \( \sigma \models \tau \) and \( \tau \models \sigma \)
+tautology;; \( \varnothing \models \tau \)
+vacuosly implies;; no exists truth assignment that satisfies \( \Sigma \)
