@@ -14,15 +14,6 @@ what creational design patterns exist?;;
     Prototype
     Singleton
 
-# Pattern implementations
-how is the Builder Facets pattern implemented?;; creating multiple BuilderFacet classes that set properties and link them using class properties
-how is the Factory Method pattern implemented?;; creating one or multiple class methods that handle creation logic
-how is the Factory pattern implemented?;; creating one Factory class that defines multiple class methods to handle creation logic
-how is the Abstract Factory pattern implemented?;; creating multiple classes that inherit from an abstract base class that defines the methods to be implemented
-how is the Prototype pattern implemented?;; using a Factory class, defining prototypes inside it, creating copy or deepcopy methods, and exposing a method for each prototype
-how is the Singleton Decorator pattern implemented?;; creating a function that takes the class name, and returns a function that adds to a dict the first and always returns the singleton object
-how is the Singleton Metaclass pattern implemented?;; creating a metaclass that defines a static property called instance and defines the __call__ function to create and return the instance
-
 # Use cases
 when is the Builder pattern recommended?;; when the creation of an object should be done step by step
 when is the Factory pattern recommended?;; when the creation of an object should be done entirely and it's a complicated process, but there's a single factory
@@ -30,11 +21,3 @@ when is the Abstract Factory pattern recommended?;; when there are several famil
 when is the Prototype pattern recommended?;; when there are object attributes that we want to repeat multiple times
 when is the Singleton pattern recommended?;; when only one object makes sense, the initializer is expensive, or to implement factories
 
-# Builder
-how are steps chained in the Builder pattern?;; return the object itself at each step
-
-# Factory
-what is the difference between Factory Method and Factory?;; Factory Method is in the same class it creates, and Factory follows the SRP by using a separate class
-
-# Prototypes
-what is a Prototype?;; an object that works as a blueprint to create new objects, using copy or deepcopy
