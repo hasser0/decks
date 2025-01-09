@@ -1,9 +1,3 @@
-# Review
-data mart;;
-acid;;
-lakehouse;;
-dimensional modelling;;
-entity relation modelling;;
 3vs;;
     volume
     velocity
@@ -17,11 +11,13 @@ data warehouse schema on ...;; write
 data lake pipeline type;; elt
 data lake data type;; structured, semistructured, unstructured
 data lake schema on ...;; read
+best option for schema evolution;; data lake and data lakehouse
 
 # Terminology
 data mesh;; domain based data management
 data mesh slogan;; teams own data products by domain
 data lineage;; visual dataflow representation
+data skew;; unequal distribution of data across nodes
 schema evolution;; adapt to data schema changes
 
 # Formats
@@ -34,3 +30,12 @@ parquet use cases;;
     columnar processing
     analytics
     distributed systems
+
+# Validations
+data completeness;; essential data is present
+data consistency;; consistent formats and values across systems
+data accuracy;; data is correct
+data integrity;; referential integrity
+data completeness validation;; find missing values, count nulls
+data consistency validation;; cross fields validations
+data accuracy validation;; assert data in range of values or accepted values

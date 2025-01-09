@@ -36,6 +36,7 @@ defensive programming;; technique that anticipates all possible software misuses
 what is an expression?;; a sequence of symbols that returns a value
 what is an operator?;; a symbol used to perform operations on operands
 what is variable shadowing?;; declare a variable in a scope with the same name than other in an outer scope
+what is a generic class?;; a class that accepts types as parameter like list[int], tuple[int, float]
 
 # heap vs stack
 what is the heap?;; is a pre-reserved memory area used to store variable length of data known on runtime
