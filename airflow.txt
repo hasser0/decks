@@ -1,0 +1,28 @@
+core components;;
+    webserver
+    scheduler
+    metadata database
+    executor
+    triggerer
+    worker
+
+core concepts;;
+    tasks
+    operator
+    dependencies
+    dag
+
+airflow sensor;; special type of operator that wait for something
+airflow hook;; high level interface to an external platform
+airflow connections;;
+airflow notifiers;;
+backfill;; action done by airflow to execute previous dag runs
+dags folder;; default folder to save dag file definitions
+dagbag;; extension of default folder to save dag file definitons
+subdags;; special type of operator that is composed of more operators 
+branching;; operation to take dynamic execution paths
+trigger_rules;; specify tasks states conditions to run a task
+macros and variables;; predefined and user defined variables to use in a dag
+xcoms;; cross communications to send data across tasks
+TriggerDagRunOperator;; trigger other dags from one dag
+ExternalTaskSensor;; wait for a dag task to finish execution

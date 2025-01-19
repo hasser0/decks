@@ -54,3 +54,64 @@ four pillars of OOP;;
     inheritance
     polymorphism
     abstraction
+
+# networking
+what is a MAC address?;; media access control is a unique identifier assigned to a NIC
+what is a NIC?;; network interface controller is a device to communicate over networks
+what is modulate?;; process of varying periodic waveforms or signals to transmit information
+what is a server?;; a device that provides a service or resources to other devices
+what is a client?;; a device that uses services or resources provided by servers
+what is a protocol?;; a set of rules to format and process data
+what is DHCP?;; dynamic host configuration protocol assigns IP addresses in a network
+what is a repeater?;; an old device used to repeat a signal on a single port
+what is a hub?;; a multiport repeater
+what is a switch?;; a hub that repeats signals only on relevant ports using MAC addresses in hardware
+what is a router?;; a device that routes data from one IP network to another
+what is a firewall?;; a dedicated device to filter incoming traffic
+what is a WLC?;; a wireless LAN controller is a device to manage access points
+what is an IDS?;; intrusion detection system is a firewall that alerts about attacks
+what is an IPS?;; intrusion protection system is a firewall that alerts and prevents attacks
+what layers does the OSI model specify?;;
+    application
+    presentation
+    session
+    transport
+    network
+    data link
+    physical
+what layers does the TCP/IP model specify?;;
+    application
+    transport
+    network
+    data link
+    physical
+what OSI layer is used on a hub?;; layer 1
+what OSI layer is used on a switch?;; layer 2
+what OSI layer is used on a router?;; layer 3
+port for protocol http;; 80
+port for protocol https;; 443
+port for protocol ftp;; 21
+port for protocol tftp;; 69
+port for protocol ssh;; 22
+port for protocol telnet;; 23
+well-known ports range;; 1-1023
+user ports range;; 1024-49151
+ephemeral ports range;; 49152-65535
+how many bits describe an IP address?;; 32 bits
+parts of an IP address?;; network and host portions
+features of network portion in a class A IP address;; 8 bits describe the network portion starting with 0
+features of network portion in a class B IP address;; 16 bits describe the network portion starting with 10
+features of network portion in a class C IP address;; 24 bits describe the network portion starting with 110
+features of network portion in a class D IP address;; 32 bits describe the network portion starting with 1110
+features of network portion in a class E IP address;; 32 bits describe the network portion starting with 1111
+directed broadcast address for network 172.31.0.0;; 172.31.255.255
+local broadcast address;; 255.255.255.255/32
+local loopback address;; 127.0.0.0/8
+private network addresses;;
+    00001010.________.________.________
+    10101100.0001____.________.________
+    11000000.10100100.________.________
+how to get the first IP address in a subnet?;; fill the host part with 0's except for the last bit
+how to get the last IP address in a subnet?;; fill the host part with 1's except for the last bit
+how to get the IP subnet in a subnet?;; fill the host part with 0's
+how to get the broadcast IP in a subnet?;; fill the host part with 1's
