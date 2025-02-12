@@ -115,3 +115,12 @@ how to get the first IP address in a subnet?;; fill the host part with 0's excep
 how to get the last IP address in a subnet?;; fill the host part with 1's except for the last bit
 how to get the IP subnet in a subnet?;; fill the host part with 0's
 how to get the broadcast IP in a subnet?;; fill the host part with 1's
+
+# hash, encryption and communication
+what is a hash function?;; a mathematical function that can take a variable size input and produce a fixed size output
+what is symmetric encryption?;; algorithm that use the same key for encryption and decryption
+what is asymmetric encryption?;; algorithm that use the different key for encryption and decryption
+what is simplex communication?;; communication between two components where information flows in only one direction
+what is half duplex communication?;; communication between two components where information flows both ways, but not at the same time
+what is duplex communication?;; communication between two components where information can flows both ways simultaneously
+
