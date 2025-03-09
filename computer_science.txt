@@ -1,54 +1,44 @@
 # http
-what is an uri?;; uniform resource identifier is a resource identificator used throughout http
-what is an urn?;; uniform resource name is a resource identificator in a particular namespace
-which is the most common form of uri?;; url
-what does url stands for?;; uniform resource locator
-which parts compose mime types?;; type/subtype
+what is an URI?;; Uniform Resource Identifier is a resource identificator used throughout http
+what is an URN?;; Uniform Resource Name is a resource identificator in a particular namespace
+what is an URL?;; Uniform Resource Locator is the most common form of URI
+what is MIME types?;; Multipurpose Internet Mail Extensions indicates the nature and format of a document
 
 # charset, encoding and collation
 what is a charset?;; is a set of characters, sometimes also used to refer to the encoding
 what is a encoding?;; is an algorithm or way to represent a charset in memory
 what is a collation?;; is a set of rules on a charset mainly for comparison
-what is ASCII?;; a charset
-what is unicode?;; an encoding
-what is UTF-8?;; a unicode encoding
+what is ASCII?;; a charset and encoding
+what is unicode?;; an charset
+what is UTF-8?;; an encoding
 
 # devops and servers
-what is a wsgi? web server gateway interface is interface between python applications and reverse proxy to translate http requests to python objects
-what is a asgi? asynchronous server gateway interface is asynchronous version of wsgi
+what is a WSGI? Web Server Gateway Interface is interface between python applications and reverse proxy to translate http requests to python objects
+what is a ASGI? Asynchronous Server Gateway Interface is asynchronous version of WSGI
 what is a reverse proxy?;; is a component between internet and web servers
-what is owasp?;; open web applications security project is set of rules to improve application security
-how to store passwords in a database?;; salt the passwords and use a slow hash function
-which is good hashing function for password?;; bcrypt
+what is OWASP?;; Open Web Applications Security Project is set of rules to improve application security
 
 # programming languages
 what is variable declaration?;; statement that provides variable name and its type
 what is variable initialization?;; statement that provides the initial value hold by a variable
-when does variable shadowing occur?;; when a variable in a scope is declared with the same name as a variable in an outer scope
 what is a mutable variable?;; a variable that is allowed to change
 what is an immutable variable?;; a variable that is not allowed to change
 what is a strongly typed programming language?;; programming language that tracks variable types at compile time or runtime
 what is a weakly typed programming language?;; not strongly typed programming language
 what is a dynamic programming language?;; programming language that can change variable types at runtime
 what is a static programming language?;; programming language that cannot change variable types at runtime
-unit testing;; testing correctness of small units of code
-defensive programming;; technique that anticipates all possible software misuses
+what is unit testing;; testing correctness of small units of code
+what is defensive programming;; technique that anticipates all possible software misuses
 what is an expression?;; a sequence of symbols that returns a value
 what is an operator?;; a symbol used to perform operations on operands
 what is variable shadowing?;; declare a variable in a scope with the same name than other in an outer scope
-what is a generic class?;; a class that accepts types as parameter like list[int], tuple[int, float]
+what is a generic class?;; a class that accepts types as parameters
 
 # heap vs stack
 what is the heap?;; is a pre-reserved memory area used to store variable length of data known on runtime
 what is the stack?;; is a reserved memory area used to store fixed length variables known on compile time
-what kind of data does the stack store?;; temporary data limited by scope
-what kind of data does the stack store?;; global or dynamic data not limited by scope
-data structure used by stack memory;; LIFO structure
-data structure used by heap memory;; not specific structure
-which of stack and heap memory is faster to access?;; stack memory
-which of stack and heap memory is easier to manage?;; stack memory
 
-# oop
+# OOP
 four pillars of OOP;;
     encapsulation
     inheritance
@@ -68,9 +58,9 @@ what is a hub?;; a multiport repeater
 what is a switch?;; a hub that repeats signals only on relevant ports using MAC addresses in hardware
 what is a router?;; a device that routes data from one IP network to another
 what is a firewall?;; a dedicated device to filter incoming traffic
-what is a WLC?;; a wireless LAN controller is a device to manage access points
-what is an IDS?;; intrusion detection system is a firewall that alerts about attacks
-what is an IPS?;; intrusion protection system is a firewall that alerts and prevents attacks
+what is a WLC?;; Wireless LAN Controller is a device to manage access points
+what is an IDS?;; Intrusion Detection System is a firewall that alerts about attacks
+what is an IPS?;; Intrusion Protection System is a firewall that alerts and prevents attacks
 what layers does the OSI model specify?;;
     application
     presentation
@@ -88,33 +78,15 @@ what layers does the TCP/IP model specify?;;
 what OSI layer is used on a hub?;; layer 1
 what OSI layer is used on a switch?;; layer 2
 what OSI layer is used on a router?;; layer 3
-port for protocol http;; 80
-port for protocol https;; 443
-port for protocol ftp;; 21
-port for protocol tftp;; 69
-port for protocol ssh;; 22
-port for protocol telnet;; 23
+port for protocol HTTP;; 80
+port for protocol HTTPS;; 443
+port for protocol FTP;; 21
+port for protocol TFTP;; 69
+port for protocol SSH;; 22
+port for protocol Telnet;; 23
 well-known ports range;; 1-1023
 user ports range;; 1024-49151
 ephemeral ports range;; 49152-65535
-how many bits describe an IP address?;; 32 bits
-parts of an IP address?;; network and host portions
-features of network portion in a class A IP address;; 8 bits describe the network portion starting with 0
-features of network portion in a class B IP address;; 16 bits describe the network portion starting with 10
-features of network portion in a class C IP address;; 24 bits describe the network portion starting with 110
-features of network portion in a class D IP address;; 32 bits describe the network portion starting with 1110
-features of network portion in a class E IP address;; 32 bits describe the network portion starting with 1111
-directed broadcast address for network 172.31.0.0;; 172.31.255.255
-local broadcast address;; 255.255.255.255/32
-local loopback address;; 127.0.0.0/8
-private network addresses;;
-    00001010.________.________.________
-    10101100.0001____.________.________
-    11000000.10100100.________.________
-how to get the first IP address in a subnet?;; fill the host part with 0's except for the last bit
-how to get the last IP address in a subnet?;; fill the host part with 1's except for the last bit
-how to get the IP subnet in a subnet?;; fill the host part with 0's
-how to get the broadcast IP in a subnet?;; fill the host part with 1's
 
 # hash, encryption and communication
 what is a hash function?;; a mathematical function that can take a variable size input and produce a fixed size output
